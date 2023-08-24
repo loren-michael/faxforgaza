@@ -1,4 +1,4 @@
-## Getting Started
+<!-- ## Getting Started
 
 We provide a sample app using React that you can deploy on App Platform. These steps will get this sample application running for you using App Platform.
 
@@ -53,4 +53,4 @@ When you no longer need this sample application running live, you can delete it 
 2. Navigate to the sample app.
 3. In the **Settings** tab, click **Destroy**.
 
-**Note: If you do not delete your app, charges for using DigitalOcean services will continue to accrue.**
+**Note: If you do not delete your app, charges for using DigitalOcean services will continue to accrue.** -->
