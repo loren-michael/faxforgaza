@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
@@ -17,6 +17,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <div id="background-color">
+        <NavBar />
         <div className="app min-h-screen text-blue-200 flex items-center flex-col p-20">
           <Routes>
             <Route exact path="/" element={ <Home /> }/>
