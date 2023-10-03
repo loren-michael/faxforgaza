@@ -7,7 +7,7 @@ const NavBar = () => {
       <div class="w-full">
         <span class="float-left">Loren Hartman</span>
         <span class="float-right">
-          <NavLink to="/about" href="/about" class="font-sans text-lg text-white"></NavLink>
+          <NavLink to="/about" href="/about" class="font-sans text-lg text-black"></NavLink>
           <NavLink to="/resume" href="/resume" class="font-sans text-lg text-white"></NavLink>
         </span>
       </div>
