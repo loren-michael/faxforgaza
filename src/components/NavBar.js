@@ -3,7 +3,7 @@ import React from 'react';
 
 const NavBar = () => {
   return (
-    <div>
+    <nav class="bg-hartmanblue-600">
       {/* <div class="w-full">
         <a href="/"><span class="font-merriweather font-semibold text-2xl h-40 float-left pl-5 text-white"> Loren Hartman </span></a>
         <span class="float-right">
@@ -41,7 +41,7 @@ const NavBar = () => {
       </div>
         </div>
       </nav>
-    </div>
+    </nav>
   )
 }
 
