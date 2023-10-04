@@ -1,5 +1,4 @@
 import React from "react";
-// import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
@@ -19,14 +18,12 @@ export default function App() {
     <BrowserRouter>
       <section className="body-font font-merriweather">
         <NavBar />
-        <div className="app min-h-screen bg-blue-100 text-black flex items-center flex-col p-20">
-          <Routes>
-            <Route exact path="/" element={ <Home /> }/>
-            <Route path="/about" element={ <AboutMe /> } />
-            <Route path="/projects" element={ <Projects /> }/>
-            <Route path="/resume" element={ <Resume /> }/>
-          </Routes>
-        </div>
+        <Routes>
+          <Route exact path="/" element={ <Home /> }/>
+          <Route path="/about" element={ <AboutMe /> } />
+          <Route path="/projects" element={ <Projects /> }/>
+          <Route path="/resume" element={ <Resume /> }/>
+        </Routes>
       </section>
     </BrowserRouter>
   );

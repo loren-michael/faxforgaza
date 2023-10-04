@@ -6,6 +6,7 @@ const Projects = () => {
   return (
     <div>
       <NavBar />
+      <div>Projects</div>
     </div>
   )
 }

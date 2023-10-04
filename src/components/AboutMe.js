@@ -6,6 +6,7 @@ const AboutMe = () => {
   return (
     <div>
       <NavBar />
+      <div>about me</div>
     </div>
   )
 }

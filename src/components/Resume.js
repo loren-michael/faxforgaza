@@ -6,6 +6,7 @@ const Resume = () => {
   return (
     <div>
       <NavBar />
+      <div>Resume</div>
     </div>
   )
 }
