@@ -3,7 +3,7 @@ import React from 'react'
 
 const Splash = () => {
   return (
-    <div class="bg-hartmanblue-200">
+    <div class="bg-blue-100">
       
     </div>
   )
