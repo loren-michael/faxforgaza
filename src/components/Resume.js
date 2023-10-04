@@ -3,7 +3,7 @@ import React from 'react'
 
 const Resume = () => {
   return (
-    <div>
+    <div class="h-full bg-hartmanblue-200">
       <div>Resume</div>
     </div>
   )
