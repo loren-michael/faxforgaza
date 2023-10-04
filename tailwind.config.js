@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    colors: {
+    extend: {
+      fontFamily: {
+        'merriweather': ['merriweather', 'sans-serif']
+      },
+      colors: {
         hartmanblue: {
           50: "#EAF3FA",
           100: "#D1E4F5",
@@ -17,6 +21,6 @@ module.exports = {
         }
       },
     },
-  extend: {},
+  },
   plugins: [],
 }

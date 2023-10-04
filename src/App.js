@@ -17,7 +17,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <div>
+      <section className="body-font font-merriweather">
         <NavBar />
         <div className="app min-h-screen bg-hartmanblue-100 text-black flex items-center flex-col p-20">
           <Routes>
@@ -27,7 +27,7 @@ export default function App() {
             <Route path="/resume" element={ <Resume /> }/>
           </Routes>
         </div>
-      </div>
+      </section>
     </BrowserRouter>
   );
 }
