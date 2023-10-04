@@ -2,7 +2,9 @@ import React from 'react'
 
 const Splash = () => {
   return (
-    <div>Landing page view</div>
+    <div class="bg-hartmanblue-200">
+      
+    </div>
   )
 }
 
