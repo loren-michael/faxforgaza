@@ -4,8 +4,8 @@ import React from 'react'
 
 const Resume = () => {
   return (
-    <div class="h-full bg-hartmanblue-200">
-      <div>Resume</div>
+    <div class="bg-hartmanblue-200">
+      <div class="h-full bg-hartmanblue-200">Resume</div>
     </div>
   )
 }
