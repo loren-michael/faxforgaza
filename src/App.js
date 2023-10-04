@@ -17,9 +17,9 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <div id="background-color">
+      <div>
         <NavBar />
-        <div className="app min-h-screen text-blue-200 flex items-center flex-col p-20">
+        <div className="app min-h-screen bg-hartmanblue-100 text-black flex items-center flex-col p-20">
           <Routes>
             <Route exact path="/" element={ <Home /> }/>
             <Route path="/about" element={ <AboutMe /> } />
