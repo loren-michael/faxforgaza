@@ -3,50 +3,49 @@ import React from 'react';
 import photo from '../resources/photo.jpg'
 
 const AboutMe = () => {
-  return (
+    return (
     <div> about me
     <div class="bg-gray-100">
-    <div class="container mx-auto py-8">
-        <div class="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4">
-            <div class="col-span-4 sm:col-span-3">
-                <div class="bg-white shadow rounded-lg p-6">
-                    <div class="flex flex-col items-center">
-                        <img src={photo} alt="Loren" class="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0"></img>
-                        <h1 class="text-xl font-bold">Loren Hartman</h1>
-                        <p class="text-gray-600">Software Engineer</p>
-                        <div class="mt-6 flex flex-wrap gap-4 justify-center">
-                            <a href="/" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Contact</a>
-                            <a href="/" class="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded">Resume</a>
+        <div class="container mx-auto py-8">
+            <div class="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4">
+                <div class="col-span-4 sm:col-span-3">
+                    <div class="bg-white shadow rounded-lg p-6">
+                        <div class="flex flex-col items-center">
+                            <img src={photo} alt="Loren" class="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0"></img>
+                            <h1 class="text-xl font-bold">Loren Hartman</h1>
+                            <p class="text-gray-600">Software Engineer</p>
+                            <div class="mt-6 flex flex-wrap gap-4 justify-center">
+                                <a href="/" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Contact</a>
+                                <a href="/" class="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded">Resume</a>
+                            </div>
+                        </div>
+                        <hr class="my-6 border-t border-gray-300"></hr>
+                        <div class="flex flex-col">
+                            <span class="text-gray-600 uppercase font-bold tracking-wider mb-2">Skills</span>
+                            <ul>
+                                <li class="mb-2">JavaScript</li>
+                                <li class="mb-2">React</li>
+                                <li class="mb-2">Node.js</li>
+                                <li class="mb-2">HTML/CSS</li>
+                                <li class="mb-2">Tailwind Css</li>
+                            </ul>
                         </div>
                     </div>
-                    <hr class="my-6 border-t border-gray-300">
-                    <div class="flex flex-col">
-                        <span class="text-gray-600 uppercase font-bold tracking-wider mb-2">Skills</span>
-                        <ul>
-                            <li class="mb-2">JavaScript</li>
-                            <li class="mb-2">React</li>
-                            <li class="mb-2">Node.js</li>
-                            <li class="mb-2">HTML/CSS</li>
-                            <li class="mb-2">Tailwind Css</li>
-                        </ul>
-                    </div>
-                  </hr>
                 </div>
-            </div>
-            <div class="col-span-4 sm:col-span-9">
-                <div class="bg-white shadow rounded-lg p-6">
-                    <h2 class="text-xl font-bold mb-4">About Me</h2>
-                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus est
-                        vitae tortor ullamcorper, ut vestibulum velit convallis. Aenean posuere risus non velit egestas
-                        suscipit. Nunc finibus vel ante id euismod. Vestibulum ante ipsum primis in faucibus orci luctus
-                        et ultrices posuere cubilia Curae; Aliquam erat volutpat. Nulla vulputate pharetra tellus, in
-                        luctus risus rhoncus id.
-                    </p>
+                <div class="col-span-4 sm:col-span-9">
+                    <div class="bg-white shadow rounded-lg p-6">
+                        <h2 class="text-xl font-bold mb-4">About Me</h2>
+                        <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus est
+                            vitae tortor ullamcorper, ut vestibulum velit convallis. Aenean posuere risus non velit egestas
+                            suscipit. Nunc finibus vel ante id euismod. Vestibulum ante ipsum primis in faucibus orci luctus
+                            et ultrices posuere cubilia Curae; Aliquam erat volutpat. Nulla vulputate pharetra tellus, in
+                            luctus risus rhoncus id.
+                        </p>
 
                     <h3 class="font-semibold text-center mt-3 -mb-2">
                         Find me on
                     </h3>
-                    <div class="flex justify-center items-center gap-6 my-6">
+                    {/* <div class="flex justify-center items-center gap-6 my-6">
                         <a class="text-gray-700 hover:text-orange-600" aria-label="Visit Loren's LinkedIn" href="https://www.linkedin.com/in/lorenhartman/"
                             target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6">
                                 <path fill="currentColor"
@@ -82,7 +81,7 @@ const AboutMe = () => {
                                 </path>
                             </svg>
                         </a>
-                    </div>
+                    </div> */}
 
 
                     <h2 class="text-xl font-bold mt-6 mb-4">Experience</h2>
