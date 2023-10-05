@@ -3,6 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     colors: {
+      'primary': '#24639E',
+      'secondary': '#A8CBEB',
       'hartmanblue': {
         50: "#EAF3FA",
         100: "#D1E4F5",
