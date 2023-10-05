@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     colors: {
-      hartmanblue: {
+      'hartmanblue': {
         50: "#EAF3FA",
         100: "#D1E4F5",
         200: "#A8CBEB",
