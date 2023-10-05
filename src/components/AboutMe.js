@@ -44,6 +44,7 @@ const AboutMe = () => {
                         During my career as a sound engineer, I rose to the position of Production Manager for a concert venue while also freelancing at other venues in the area. As a PM, I made sure that performers and staff were kept up to date on the schedule for the day and had all of the information needed to ensure a smooth day for everyone. This involved a lot of communication and attention to detail daily. I also was in charge of staffing a ticketing agent for most shows.<br></br><br></br>
 
                         I love working with JavaScript and React but also have a great appreciation for Ruby on Rails. As a person who enjoys thinking logically, databases just make sense! I have a passion for accessibility and would love to find a company that prioritizes making the experience of their app as uniform as possible for all users.
+                        <br></br><br></br>
                         </p>
 
                     <h3 class="font-semibold text-center mt-3 -mb-2">
