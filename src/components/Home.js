@@ -4,7 +4,7 @@ import AboutMe from './AboutMe';
 
 const Home = () => {
   return (
-    <div>
+    <div class="h-full">
       <AboutMe />
     </div>
   )
