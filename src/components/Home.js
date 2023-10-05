@@ -1,11 +1,11 @@
 import "../App.css";
 import React from 'react';
-import Splash from './Splash';
+import AboutMe from './AboutMe';
 
 const Home = () => {
   return (
     <div>
-      <Splash />
+      <AboutMe />
     </div>
   )
 }
