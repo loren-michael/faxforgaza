@@ -5,7 +5,7 @@ import photo from '../resources/photo.jpg'
 const AboutMe = () => {
     return (
     <div>
-        <div class="bg-hartmanblue-200">
+        <div class="bg-blue-100">
             <div class="container mx-auto py-8">
                 <div class="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4">
                     <div class="col-span-4 sm:col-span-3">
@@ -22,7 +22,7 @@ const AboutMe = () => {
                             </div>
                         <hr class="my-6 border-t border-gray-300"></hr>
                         <div class="flex flex-col">
-                            <span class="text-hartmanblue-600 font-merriweather uppercase font-bold tracking-wider mb-2">Skills</span>
+                            <span class="text-blue-500 font-merriweather uppercase font-bold tracking-wider mb-2">Skills</span>
                             <ul class="font-merriweather">
                                 <li class="mb-2">JavaScript</li>
                                 <li class="mb-2">React</li>
@@ -39,9 +39,9 @@ const AboutMe = () => {
                 <div class="col-span-4 sm:col-span-9">
                     <div class="bg-white shadow rounded-lg p-6">
                         <h2 class="text-xl font-bold mb-4 font-merriweather">About Me</h2>
-                        <p class="text-gray-700 font-merriweather">I am a freshly certified Full Stack Engineer looking for work! During the Covid-19 pandemic, I decided to shift gears and move away from my previous career as a live sound engineer. Coding felt like a natural change for me! Between experience as an alpha tester for MMORPGs and an unofficial community leader who ran a forum with over 50,000 members and teamspeak server for years, I had an idea of what I was getting myself into.
+                        <p class="text-gray-700 font-merriweather">I am a freshly certified Full Stack Engineer looking for work! During the Covid-19 pandemic, I decided to shift gears and move away from my previous career as a live sound engineer. Coding felt like a natural change for me! Between experience as an alpha tester for MMORPGs and an unofficial community leader who ran a forum with over 50,000 members and teamspeak server for years, I had an idea of what I was getting myself into.<br></br>
                         
-                        During my career as a sound engineer, I rose to the position of Production Manager for a concert venue while also freelancing at other venues in the area. As a PM, I made sure that performers and staff were kept up to date on the schedule for the day and had all of the information needed to ensure a smooth day for everyone. This involved a lot of communication and attention to detail daily. I also was in charge of staffing a ticketing agent for most shows.
+                        During my career as a sound engineer, I rose to the position of Production Manager for a concert venue while also freelancing at other venues in the area. As a PM, I made sure that performers and staff were kept up to date on the schedule for the day and had all of the information needed to ensure a smooth day for everyone. This involved a lot of communication and attention to detail daily. I also was in charge of staffing a ticketing agent for most shows.<br></br>
 
                         I love working with JavaScript and React but also have a great appreciation for Ruby on Rails. As a person who enjoys thinking logically, databases just make sense! I have a passion for accessibility and would love to find a company that prioritizes making the experience of their app as uniform as possible for all users.
                         </p>
@@ -91,10 +91,10 @@ const AboutMe = () => {
                     <h2 class="text-xl font-bold mt-6 mb-4">Experience</h2>
                     <div class="mb-6">
                         <div class="flex justify-between">
-                            <span class="text-hartmanblue-600 font-bold">Production Manager and Lead Engineer</span>
+                            <span class="text-blue-500 font-bold">Production Manager and Lead Engineer</span>
                             <p>
-                                <span class="text-hartmanblue-400 mr-2">at Gman Tavern</span>
-                                <span class="text-hartmanblue-400">2016 - 2021</span>
+                                <span class="text-blue-300 mr-2">at Gman Tavern</span>
+                                <span class="text-blue-300">2016 - 2021</span>
                             </p>
                         </div>
                         <p class="mt-2">Managed event coordination for a concert venue. Communicated with performers and organizers to ensure a successful event from booking to completion. Scheduled ticketing staff. Typical day included stage managing for load-in and load-out and also running front of house and monitor positions during concerts.
@@ -102,10 +102,10 @@ const AboutMe = () => {
                     </div>
                     <div class="mb-6">
                         <div class="flex justify-between">
-                            <span class="text-hartmanblue-600 font-bold">Freelance Sound Engineer</span>
+                            <span class="text-blue-500 font-bold">Freelance Sound Engineer</span>
                             <p>
-                                <span class="text-hartmanblue-400 mr-2">Chicago, IL</span>
-                                <span class="text-hartmanblue-400">2016 - present</span>
+                                <span class="text-blue-300 mr-2">Chicago, IL</span>
+                                <span class="text-blue-300">2016 - present</span>
                             </p>
                         </div>
                         <p class="mt-2">As an experienced live sound engineer I work with multiple venues and event coordinators throughout the city, including Metro, Cubby Bear, and Unity Temple in Oak Park, IL.
@@ -113,10 +113,10 @@ const AboutMe = () => {
                     </div>
                     <div class="mb-6">
                         <div class="flex justify-between">
-                            <span class="text-hartmanblue-600 font-bold">Presser, Packager, Shipping</span>
+                            <span class="text-blue-500 font-bold">Presser, Packager, Shipping</span>
                             <p>
-                                <span class="text-hartmanblue-400 mr-2">at Busy Beaver Button Company</span>
-                                <span class="text-hartmanblue-400">2016 - 2022</span>
+                                <span class="text-blue-300 mr-2">at Busy Beaver Button Company</span>
+                                <span class="text-blue-300">2016 - 2022</span>
                             </p>
                         </div>
                         <p class="mt-2">Detail oriented work assembling and shipping numerous large orders. Trained new employees in packaging and shipping. Built a Google Sheets spreadsheet application to help with company time management and staff scheduling based on previous job records.
@@ -124,10 +124,10 @@ const AboutMe = () => {
                     </div>
                     <div class="mb-6">
                         <div class="flex justify-between">
-                            <span class="text-hartmanblue-600 font-bold">Sound Assistant</span>
+                            <span class="text-blue-500 font-bold">Sound Assistant</span>
                             <p>
-                                <span class="text-hartmanblue-400 mr-2">at Ringling Bros and Barnum and Bailey</span>
-                                <span class="text-hartmanblue-400">2007-2008</span>
+                                <span class="text-blue-300 mr-2">at Ringling Bros and Barnum and Bailey</span>
+                                <span class="text-blue-300">2007-2008</span>
                             </p>
                         </div>
                         <p class="mt-2">Set up and ran sound for the live band during circus shows. Responsibilities included managing truck pack and coordinating local union workers with other departments.
