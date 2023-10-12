@@ -1,12 +1,22 @@
 import "../App.css";
 import React from 'react';
 import photo from '../resources/photo.jpg'
+import LorenHartmanResume from '../resources/LorenHartmanResume.pdf'
 
 const AboutMe = () => {
 
-    const downloadResume = () => {
-        
+    const downloadResume = () => { 
+        // using Java Script method to get PDF file 
+        let alink = document.createElement('a')
+        alink.download = { LorenHartmanResume }
+        alink.click()
     }
+
+
+
+    // const downloadResume = () => {
+    //     fetch('LorenHartmanResume.pdf')
+    // }
 
     return (
         <div>
