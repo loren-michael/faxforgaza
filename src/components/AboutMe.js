@@ -23,7 +23,7 @@ const AboutMe = () => {
                                     <p class="text-gray-600 font-merriweather">Software Engineer</p>
                                     <p class="text-gray-500 font-merriweather">they/them/theirs</p>
                                     <div class="mt-6 flex flex-wrap gap-4 justify-center">
-                                        <a href="/" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded font-merriweather">Contact</a>
+                                        {/* <a href="/" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded font-merriweather">Contact</a> */}
                                         {/* <button href="../resources/LorenHartmanResume.pdf" class="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded font-merriweather">Resume</button> */}
                                     </div>
                                 </div>
