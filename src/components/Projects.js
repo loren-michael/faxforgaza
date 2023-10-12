@@ -6,8 +6,8 @@ const Projects = () => {
     <div>
       <div class="bg-blue-100">
         <div class="container mx-auto py-8">
-          <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 px-4">
-            <div class="col-span-4 sm:col-span-3">
+          <div class="grid grid-cols-1">
+            {/* <div class="col-span-4 sm:col-span-3"> */}
               <div class="bg-white shadow rounded-lg p-6">
                 <div class="col-span-4 sm:col-span-9">
                   <div class="bg-white shadow rounded-lg p-6">
@@ -42,7 +42,7 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </div>
