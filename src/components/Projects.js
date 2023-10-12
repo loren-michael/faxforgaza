@@ -27,7 +27,7 @@ const Projects = () => {
                 </div>
                 <div class="bg-white shadow rounded-lg p-6">
                   <h2 class="text-xl font-bold mb-4 font-merriweather">Character Manager</h2>
-                  <p class="text-gray-600 font-merriweather">Ruby, Sinatra, React</p>
+                  <p class="text-gray-600 font-merriweather">D&D Character database</p>
                   <p class="text-gray-500 font-merriweather">Ruby on Rails, React</p>
                   <p class="text-gray-700 font-merriweather">This simple app was designed to demonstrate knowledge of Ruby with Sinatra. It allows you to create and manage the levels of D&D characters.
                   <br></br><br></br>
