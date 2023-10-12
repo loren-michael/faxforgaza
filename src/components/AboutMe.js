@@ -1,22 +1,9 @@
 import "../App.css";
 import React from 'react';
 import photo from '../resources/photo.jpg'
-import LorenHartmanResume from '../resources/LorenHartmanResume.pdf'
+// import LorenHartmanResume from '../resources/LorenHartmanResume.pdf'
 
 const AboutMe = () => {
-
-    const downloadResume = () => { 
-        // using Java Script method to get PDF file 
-        let alink = document.createElement('a')
-        alink.download = { LorenHartmanResume }
-        alink.click()
-    }
-
-
-
-    // const downloadResume = () => {
-    //     fetch('LorenHartmanResume.pdf')
-    // }
 
     return (
         <div>
@@ -32,7 +19,7 @@ const AboutMe = () => {
                                     <p class="text-gray-500 font-merriweather">they/them/theirs</p>
                                     <div class="mt-6 flex flex-wrap gap-4 justify-center">
                                         <a href="/" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded font-merriweather">Contact</a>
-                                        <button onClick={ downloadResume } class="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded font-merriweather">Resume</button>
+                                        <a href="'../resources/LorenHartmanResume.pdf" target="_blank" class="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded font-merriweather">Resume</a>
                                     </div>
                                 </div>
                             <hr class="my-6 border-t border-gray-300"></hr>
