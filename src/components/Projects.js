@@ -1,6 +1,6 @@
 import "../App.css";
 import React from 'react'
-import YouTube from "react-youtube";
+// import YouTube from "react-youtube";
 
 const Projects = () => {
 
@@ -14,14 +14,14 @@ const Projects = () => {
   // };
 
 
-  const options = {
-    height: '390',
-    width: '640',
-    playerVars: {
-      autoplay: 1,
-      controls: 1
-    }
-  };
+  // const options = {
+  //   height: '390',
+  //   width: '640',
+  //   playerVars: {
+  //     autoplay: 1,
+  //     controls: 1
+  //   }
+  // };
 
   return (
     <div>
@@ -40,6 +40,9 @@ const Projects = () => {
                     onReady={this.pauseVideo()}
                     id="sellit video"
                   /> */}
+                  <div>
+                    
+                  </div>
                   <p class="text-gray-700 font-merriweather">This app allows users to buy and sell audio gear. Simliar to eBay or Etsy. Users are authenticated, validations exist for all new items, and carts can be modified until the point of purchase.
                   <br></br><br></br>
                   </p>
