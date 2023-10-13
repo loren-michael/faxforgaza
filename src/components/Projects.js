@@ -56,11 +56,11 @@ const Projects = () => {
                   </p>
                   <div class="flex justify-center items-center gap-6 my-6">
                     <a class="text-gray-700 hover:text-blue-600" aria-label="Sell It! Demo" href="https://youtu.be/4cvZbOYlLcg" target="_blank" rel="noopener noreferrer">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-6">
                       <path fill="currentColor"
-                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                          d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
                       </path>
-                      </svg>
+                    </svg>
                     </a>
                     <a class="text-gray-700 hover:text-blue-600" aria-label="Sell It! Repo" href="https://github.com/loren-michael/phase-5-project" target="_blank" rel="noopener noreferrer">
                       <svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-6 text-gray-700 hover:text-blue-600">
@@ -96,11 +96,11 @@ const Projects = () => {
                   </p>
                   <div class="flex justify-center items-center gap-6 my-6">
                     <a class="text-gray-700 hover:text-blue-600" aria-label="Movie Rental Demo" href="https://youtu.be/NlN0V4Bq_yM" target="_blank" rel="noopener noreferrer">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-6">
                       <path fill="currentColor"
-                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                          d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
                       </path>
-                      </svg>
+                    </svg>
                     </a>
                     <a class="text-gray-700 hover:text-blue-600" aria-label="Movie Rental Repo" href="https://github.com/loren-michael/phase-4-project-final" target="_blank" rel="noopener noreferrer">
                       <svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-6 text-gray-700 hover:text-blue-600">
@@ -136,11 +136,11 @@ const Projects = () => {
                   </p>
                   <div class="flex justify-center items-center gap-6 my-6">
                     <a class="text-gray-700 hover:text-blue-600" aria-label="Character Manager Demo" href="https://youtu.be/IPAvHJ6HqBk" target="_blank" rel="noopener noreferrer">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-6">
                       <path fill="currentColor"
-                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                          d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
                       </path>
-                      </svg>
+                    </svg>
                     </a>
                     <a class="text-gray-700 hover:text-blue-600" aria-label="Character Manager Repo" href="https://github.com/loren-michael/phase-3-project-frontend" target="_blank" rel="noopener noreferrer">
                       <svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-6 text-gray-700 hover:text-blue-600">
@@ -175,11 +175,11 @@ const Projects = () => {
                   </p>
                   <div class="flex justify-center items-center gap-6 my-6">
                     <a class="text-gray-700 hover:text-blue-600" aria-label="Recipe Manager 2 Demo" href="https://youtu.be/7tJt0OAALhk" target="_blank" rel="noopener noreferrer">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-6">
                       <path fill="currentColor"
-                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                          d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
                       </path>
-                      </svg>
+                    </svg>
                     </a>
                     <a class="text-gray-700 hover:text-blue-600" aria-label="Recipe Manager 2 Repo" href="https://github.com/loren-michael/phase-2-react-project" target="_blank" rel="noopener noreferrer">
                       <svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-6 text-gray-700 hover:text-blue-600">
@@ -214,11 +214,11 @@ const Projects = () => {
                   </p>
                   <div class="flex justify-center items-center gap-6 my-6">
                     <a class="text-gray-700 hover:text-blue-600" aria-label="Recipe Manage 1 Demo" href="https://youtu.be/93D8D1Pqez8" target="_blank" rel="noopener noreferrer">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-6">
                       <path fill="currentColor"
-                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                          d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
                       </path>
-                      </svg>
+                    </svg>
                     </a>
                     <a class="text-gray-700 hover:text-blue-600" aria-label="Recipe Manager 1 Repo" href="https://github.com/loren-michael/phase-1-project" target="_blank" rel="noopener noreferrer">
                       <svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-6 text-gray-700 hover:text-blue-600">
