@@ -51,6 +51,9 @@ const Projects = () => {
                   <p class="text-gray-600 text-center font-merriweather">eCommerce site</p>
                   <p class="text-gray-500 text-center font-merriweather">Ruby on Rails, React, Redux</p>
                   <br></br>
+                  <p class="text-gray-700 font-merriweather">This app allows users to buy and sell audio gear. Simliar to eBay or Etsy. Users are authenticated, validations exist for all new items, and carts can be modified until the point of purchase.
+                  <br></br><br></br>
+                  </p>
                   <div class="flex justify-center items-center gap-6 my-6">
                     <a class="text-gray-700 hover:text-blue-600" aria-label="Sell It! Demo" href="https://youtu.be/4cvZbOYlLcg" target="_blank" rel="noopener noreferrer">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6">
@@ -82,15 +85,15 @@ const Projects = () => {
                       <img class="h-auto max-w-full rounded-lg" src={ sellit3 } alt="Sell It! Item Description"/>
                     </div>
                   </div>
-                  <p class="text-gray-700 font-merriweather">This app allows users to buy and sell audio gear. Simliar to eBay or Etsy. Users are authenticated, validations exist for all new items, and carts can be modified until the point of purchase.
-                  <br></br><br></br>
-                  </p>
                 </div>
                 <div class="bg-white shadow rounded-lg p-6">
                   <h2 class="text-xl text-center font-bold mb-4 font-merriweather">Movie Rental App</h2>
                   <p class="text-gray-600 text-center font-merriweather">Movie rental database site</p>
                   <p class="text-gray-500 text-center font-merriweather">Ruby on Rails, React</p>
                   <br></br>
+                  <p class="text-gray-700 font-merriweather">This app was meant to go a little deeper into my understanding of Ruby on Rails, while also applying useContext to access state from a central location. Also includes validations and authentication for users using bcrypt.
+                  <br></br><br></br>
+                  </p>
                   <div class="flex justify-center items-center gap-6 my-6">
                     <a class="text-gray-700 hover:text-blue-600" aria-label="Movie Rental Demo" href="https://youtu.be/NlN0V4Bq_yM" target="_blank" rel="noopener noreferrer">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6">
@@ -122,15 +125,15 @@ const Projects = () => {
                       <img class="h-auto max-w-full rounded-lg" src={ MR3 } alt="Movie Rental Available"/>
                     </div>
                   </div>
-                  <p class="text-gray-700 font-merriweather">This app was meant to go a little deeper into my understanding of Ruby on Rails, while also applying useContext to access state from a central location. Also includes validations and authentication for users using bcrypt.
-                  <br></br><br></br>
-                  </p>
                 </div>
                 <div class="bg-white shadow rounded-lg p-6">
                   <h2 class="text-xl text-center font-bold mb-4 font-merriweather">Character Manager</h2>
                   <p class="text-gray-600 text-center font-merriweather">D&D Character database</p>
                   <p class="text-gray-500 text-center font-merriweather">Ruby on Rails, React</p>
                   <br></br>
+                  <p class="text-gray-700 font-merriweather">This simple app was designed to demonstrate knowledge of Ruby with Sinatra. It allows you to create and manage the levels of D&D characters.
+                  <br></br><br></br>
+                  </p>
                   <div class="flex justify-center items-center gap-6 my-6">
                     <a class="text-gray-700 hover:text-blue-600" aria-label="Character Manager Demo" href="https://youtu.be/IPAvHJ6HqBk" target="_blank" rel="noopener noreferrer">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6">
@@ -162,14 +165,14 @@ const Projects = () => {
                       <img class="h-auto max-w-full rounded-lg" src={  } alt=""/>
                     </div> */}
                   </div>
-                  <p class="text-gray-700 font-merriweather">This simple app was designed to demonstrate knowledge of Ruby with Sinatra. It allows you to create and manage the levels of D&D characters.
-                  <br></br><br></br>
-                  </p>
                 </div>
                 <div class="bg-white shadow rounded-lg p-6">
                   <h2 class="text-xl text-center font-bold mb-4 font-merriweather">Recipe Manager v2</h2>
                   <p class="text-gray-600 text-center font-merriweather">Simple recipe manager</p>
                   <br></br>
+                  <p class="text-gray-700 font-merriweather">The second app I made is another Recipe Manager - I guess I really wanted to expand on that idea! This time around, I utilized Semantic UI cards to my home page for a better display and also included the ability to "favorite" a recipe and leave a comment.
+                  <br></br><br></br>
+                  </p>
                   <div class="flex justify-center items-center gap-6 my-6">
                     <a class="text-gray-700 hover:text-blue-600" aria-label="Recipe Manager 2 Demo" href="https://youtu.be/7tJt0OAALhk" target="_blank" rel="noopener noreferrer">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6">
@@ -201,14 +204,14 @@ const Projects = () => {
                       <img class="h-auto max-w-full rounded-lg" src={ RM23 } alt="Recipe Manager 2 Create"/>
                     </div>
                   </div>
-                  <p class="text-gray-700 font-merriweather">The second app I made is another Recipe Manager - I guess I really wanted to expand on that idea! This time around, I utilized Semantic UI cards to my home page for a better display and also included the ability to "favorite" a recipe and leave a comment.
-                  <br></br><br></br>
-                  </p>
                 </div>
                 <div class="bg-white shadow rounded-lg p-6">
                   <h2 class="text-xl text-center font-bold mb-4 font-merriweather">Recipe Manager v1</h2>
                   <p class="text-gray-600 text-center font-merriweather">A very simple JS based recipe manager</p>
                   <br></br>
+                  <p class="text-gray-700 font-merriweather">This was the first app that I build for a Flatiron project. It uses basic DOM manipulation to show a list of recipes from an included JSON database, and also allows you to add your own recipes to the list. The functionality is very basic, and does not include any validations or the ability to delete recipes without editing the database directly.
+                  <br></br><br></br>
+                  </p>
                   <div class="flex justify-center items-center gap-6 my-6">
                     <a class="text-gray-700 hover:text-blue-600" aria-label="Recipe Manage 1 Demo" href="https://youtu.be/93D8D1Pqez8" target="_blank" rel="noopener noreferrer">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6">
@@ -240,9 +243,6 @@ const Projects = () => {
                       <img class="h-auto max-w-full rounded-lg" src={ RM14 } alt="Recipe Manager 1 Create"/>
                     </div>
                   </div>
-                  <p class="text-gray-700 font-merriweather">This was the first app that I build for a Flatiron project. It uses basic DOM manipulation to show a list of recipes from an included JSON database, and also allows you to add your own recipes to the list. The functionality is very basic, and does not include any validations or the ability to delete recipes without editing the database directly.
-                  <br></br><br></br>
-                  </p>
                 </div>
               </div>
             </div>
