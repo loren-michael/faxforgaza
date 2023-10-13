@@ -86,7 +86,7 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-                <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+                <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-500"></hr>
                 <div class="bg-white shadow rounded-lg p-6">
                   <h2 class="text-xl text-center font-bold mb-4 font-merriweather">Movie Rental App</h2>
                   <p class="text-gray-600 text-center font-merriweather">Movie rental database site</p>
@@ -127,7 +127,7 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-                <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+                <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-500"></hr>
                 <div class="bg-white shadow rounded-lg p-6">
                   <h2 class="text-xl text-center font-bold mb-4 font-merriweather">Character Manager</h2>
                   <p class="text-gray-600 text-center font-merriweather">D&D Character database</p>
@@ -168,7 +168,7 @@ const Projects = () => {
                     </div> */}
                   </div>
                 </div>
-                <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+                <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-500"></hr>
                 <div class="bg-white shadow rounded-lg p-6">
                   <h2 class="text-xl text-center font-bold mb-4 font-merriweather">Recipe Manager v2</h2>
                   <p class="text-gray-600 text-center font-merriweather">Simple recipe manager</p>
@@ -208,7 +208,7 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-                <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+                <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-500"></hr>
                 <div class="bg-white shadow rounded-lg p-6">
                   <h2 class="text-xl text-center font-bold mb-4 font-merriweather">Recipe Manager v1</h2>
                   <p class="text-gray-600 text-center font-merriweather">A very simple JS based recipe manager</p>
