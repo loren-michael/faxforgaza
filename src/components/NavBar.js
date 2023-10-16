@@ -18,6 +18,7 @@ const NavBar = () => {
         <div class="text-sm lg:flex-grow">
           {/* <a href="/about" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4 font-merriweather"> About </a> */}
           <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4 font-merriweather"> Home </a>
+          <a href="/resume" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4 font-merriweather"> Resume </a>
           <a href="/projects" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4 font-merriweather"> Projects </a>
           {/* <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white font-merriweather"> Blog </a> */}
         </div>
