@@ -1,6 +1,6 @@
 import "../App.css";
 import React from 'react';
-import LorenHartmanResume from '../resources/LorenHartmanResume.pdf'
+// import LorenHartmanResume from '../resources/LorenHartmanResume.pdf'
 
 const NavBar = () => {
   return (
@@ -23,8 +23,8 @@ const NavBar = () => {
           {/* <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white font-merriweather"> Blog </a> */}
         </div>
         <div>
-          {/* <a href="/resume" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather"> Resume </a> */}
-          <a href={require("../path/to/file.pdf")} download="myFile">Download file</a>
+          <a href={require("../resources/LorenHartmanResume.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather"> Resume </a>
+          {/* <a href={require("../resources/LorenHartmanResume.pdf")} download="myFile"> Resume </a> */}
         </div>
       </div>
     </div>
