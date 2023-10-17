@@ -1,5 +1,6 @@
 import "../App.css";
 import React from 'react';
+import LorenHartmanResume from '../resources/LorenHartmanResume.pdf'
 
 const NavBar = () => {
   return (
@@ -23,6 +24,7 @@ const NavBar = () => {
         </div>
         <div>
           {/* <a href="/resume" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather"> Resume </a> */}
+          <a href={require("../path/to/file.pdf")} download="myFile">Download file</a>
         </div>
       </div>
     </div>
