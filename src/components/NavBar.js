@@ -12,17 +12,17 @@ const NavBar = () => {
       </div>
       <div class="block lg:hidden">
         <button class="flex items-center px-3 py-2 border rounded text-blue-200 bg-blue-600 hover:text-white hover:border-white">
-          <svg class="fill-current h-3 w-3 font-merriweather" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          <svg class="fill-current h-3 w-3 font-merriweather" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">Menu<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
         </button>
       </div>
       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-sm lg:flex-grow">
-          <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4 font-merriweather"><title>Home</title></a>
-          <a href="/projects" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4 font-merriweather"><title>Projects</title></a>
+          <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4 font-merriweather">Home</a>
+          <a href="/projects" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4 font-merriweather">Projects</a>
           {/* <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white font-merriweather"> Blog </a> */}
         </div>
         <div>
-          <a href={require("../resources/LorenHartmanResume.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather"><title>Resume</title></a>
+          <a href={require("../resources/LorenHartmanResume.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather">Resume</a>
         </div>
       </div>
     </div>
