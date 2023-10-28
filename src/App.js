@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <section className="body-font font-merriweather">
+      <section className="body-font font-merriweather bg-blue-100">
         <NavBar />
         <Routes>
           <Route exact path="/" element={ <Home /> }/>
