@@ -2,7 +2,6 @@ import "../App.css";
 import React from 'react';
 import photo from '../resources/photo.jpg'
 import { useParams } from "react-router-dom";
-// import LorenHartmanResume from '../resources/LorenHartmanResume.pdf'
 
 const AboutMe = () => {
 
