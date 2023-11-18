@@ -21,9 +21,9 @@ const NavBar = () => {
           <a href="https://faxzero.com/fax_congress.php" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4 font-merriweather"> FaxZero </a>
           <a href="https://www.house.gov/representatives/find-your-representative" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white font-merriweather"> Find Your Representative </a>
         </div>
-        <div>
+        {/* <div>
           <a href={require("../resources/LorenHartmanResume.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather">Resume</a>
-        </div>
+        </div> */}
       </div>
     </div>
   )
