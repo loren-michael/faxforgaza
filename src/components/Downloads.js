@@ -41,7 +41,7 @@ const Downloads = () => {
                         <h2 class="text-xl font-bold mb-4 font-merriweather">Fax For Gaza</h2>
                         <p class="text-gray-700 font-merriweather">Fax for Gaza is a site meant to make it a little easier to contact your representatives by providing PDF files that you can fax for free to your representatives using FaxZero.com
                         <br></br><br></br>
-                        It is our hope that if people are given these resources they will be more likely to utilize them daily until Palestine is free.
+                        It is our hope that if people are given these resources and links they will be more likely to utilize them daily to flood our representatives with faxes directly from their phones.
                         <br></br><br></br>
                         </p>
 
@@ -87,41 +87,41 @@ const Downloads = () => {
                     {/* </div> */}
 
 
-                    <h2 class="text-xl font-bold mt-6 mb-4">Experience</h2>
+                    <h2 class="text-xl font-bold mt-6 mb-4">PDF Downloads</h2>
                     <div class="mb-6">
                         <div class="flex justify-between">
-                            <span class="text-blue-500 font-bold">Production Manager and Lead Engineer</span>
-                            <p>
+                            <span class="text-blue-500 font-bold">Letter to your House Representative</span>
+                            {/* <p>
                                 <span class="text-blue-300 mr-2">at Gman Tavern</span>
                                 <span class="text-blue-300">2016 - 2021</span>
-                            </p>
+                            </p> */}
                         </div>
-                        <p class="mt-2">Managed event coordination for a concert venue. Communicated with performers and organizers to ensure a successful event from booking to completion. Scheduled ticketing staff. Typical day included stage managing for load-in and load-out and also running front of house and monitor positions during concerts.
+                        <p class="mt-2">Download this PDF and fill out the name of your representative, your name and address, date, and add a signature if you would like.
                         </p>
                     </div>
                     <div class="mb-6">
                         <div class="flex justify-between">
-                            <span class="text-blue-500 font-bold">Freelance Sound Engineer</span>
-                            <p>
+                            <span class="text-blue-500 font-bold">Letter to your State Senators</span>
+                            {/* <p>
                                 <span class="text-blue-300 mr-2">Chicago, IL</span>
                                 <span class="text-blue-300">2016 - present</span>
-                            </p>
+                            </p> */}
                         </div>
-                        <p class="mt-2">As an experienced live sound engineer I work with multiple venues and event coordinators throughout the city, including Metro, Cubby Bear, and Unity Temple in Oak Park, IL.
+                        <p class="mt-2">Download this PDF and fill out the name of your senators, your name and address, date, and add a signature if you would like.
                         </p>
                     </div>
                     <div class="mb-6">
                         <div class="flex justify-between">
-                            <span class="text-blue-500 font-bold">Presser, Packager, Shipping</span>
-                            <p>
+                            <span class="text-blue-500 font-bold">Letter to your Governor</span>
+                            {/* <p>
                                 <span class="text-blue-300 mr-2">at Busy Beaver Button Company</span>
                                 <span class="text-blue-300">2016 - 2022</span>
-                            </p>
+                            </p> */}
                         </div>
-                        <p class="mt-2">Detail oriented work assembling and shipping numerous large orders. Trained new employees in packaging and shipping. Built a Google Sheets spreadsheet application to help with company time management and staff scheduling based on previous job records.
+                        <p class="mt-2">Download this PDF and fill out the name of your Governor, your name and address, date, and add a signature if you would like.
                         </p>
                     </div>
-                    <div class="mb-6">
+                    {/* <div class="mb-6">
                         <div class="flex justify-between">
                             <span class="text-blue-500 font-bold">Sound Assistant</span>
                             <p>
@@ -131,7 +131,7 @@ const Downloads = () => {
                         </div>
                         <p class="mt-2">Set up and ran sound for the live band during circus shows. Responsibilities included managing truck pack and coordinating local union workers with other departments.
                         </p>
-                    </div>
+                    </div> */}
                     </div>
                 </div>
             </div>
