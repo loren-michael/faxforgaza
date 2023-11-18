@@ -4,6 +4,7 @@ import logo from '../resources/logo.jpg'
 
 const Downloads = () => {
     const [errors, setErrors] = useState([]);
+    const [name, setName] = useState("");
     const [address, setAddress] = useState({
         line1: "",
         city: "",
@@ -28,20 +29,6 @@ const Downloads = () => {
                                     {/* <button href="../resources/LorenHartmanResume.pdf" class="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded font-merriweather">Resume</button> */}
                                 {/* </div> */}
                             </div>
-                        {/* <hr class="my-6 border-t border-gray-300"></hr> */}
-                        {/* <div class="flex flex-col">
-                            <span class="text-blue-500 font-merriweather uppercase font-bold tracking-wider mb-2">Skills</span>
-                            <ul class="font-merriweather">
-                                <li class="mb-2">JavaScript</li>
-                                <li class="mb-2">React</li>
-                                <li class="mb-2">Redux</li>
-                                <li class="mb-2">Ruby on Rails</li>
-                                <li class="mb-2">PostgreSQL</li>
-                                <li class="mb-2">ChatGPT</li>
-                                <li class="mb-2">HTML/CSS</li>
-                                <li class="mb-2">Tailwind Css</li>
-                            </ul>
-                        </div> */}
                     </div>
                 </div>
                 <div class="col-span-4 sm:col-span-9">
@@ -93,6 +80,48 @@ const Downloads = () => {
                             </svg>
                         </a> */}
                     {/* </div> */}
+                    <h2>Enter your information</h2>
+                    <div class="mb-6">
+                        <div class="flex justify-between">
+                            <form className="lookup-information">
+                                <label htmlFor="name">Name: </label>
+                                <input 
+                                    type="text"
+                                    id="name"
+                                    value={ name }
+                                    onChange={ e => setName(e.target.value) }
+                                />
+                                <label htmlFor="line1">Street: </label>
+                                <input 
+                                    type="text"
+                                    id="street"
+                                    value={ address.line1 }
+                                    onChange={ e => setAddress({...address, line1: e.target.value}) }
+                                />
+                                                                <label htmlFor="line1">Street: </label>
+                                <input 
+                                    type="text"
+                                    id="city"
+                                    value={ address.city }
+                                    onChange={ e => setAddress({...address, city: e.target.value}) }
+                                />
+                                                                <label htmlFor="line1">Street: </label>
+                                <input 
+                                    type="text"
+                                    id="state"
+                                    value={ address.state }
+                                    onChange={ e => setAddress({...address, state: e.target.value}) }
+                                />
+                                                                <label htmlFor="line1">Street: </label>
+                                <input 
+                                    type="text"
+                                    id="zip"
+                                    value={ address.zip }
+                                    onChange={ e => setAddress({...address, zip: e.target.value}) }
+                                />
+                            </form>
+                        </div>
+                    </div>
 
 
                     <h2 class="text-xl font-bold mt-6 mb-4">PDF Downloads</h2>
