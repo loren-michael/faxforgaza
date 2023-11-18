@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../resources/logo.jpg'
 
 
 const Downloads = () => {
+    const [errors, setErrors] = useState([]);
+    const [address, setAddress] = useState({
+        line1: "",
+        city: "",
+        state: "",
+        zip: ""
+    })
+
     return (
         <div>
         <div class="bg-blue-100">
