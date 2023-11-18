@@ -146,10 +146,11 @@ const Downloads = () => {
                     <div class="mb-6">
                         <div class="flex justify-between">
                             <span class="text-blue-500 font-bold">Letter to your House Representative</span>
-                            {/* <p>
-                                <span class="text-blue-300 mr-2">at Gman Tavern</span>
-                                <span class="text-blue-300">2016 - 2021</span>
-                            </p> */}
+                            <span>
+                                <div>
+                                    <a href={require("../resources/BlankHouse.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather">Fillable House Rep PDF</a>
+                                </div>
+                            </span>
                         </div>
                         <p class="mt-2">Download this PDF and fill out the name of your representative, your name and address, date, and add a signature if you would like.
                         </p>
@@ -157,10 +158,11 @@ const Downloads = () => {
                     <div class="mb-6">
                         <div class="flex justify-between">
                             <span class="text-blue-500 font-bold">Letter to your State Senators</span>
-                            {/* <p>
-                                <span class="text-blue-300 mr-2">Chicago, IL</span>
-                                <span class="text-blue-300">2016 - present</span>
-                            </p> */}
+                            <span>
+                                <div>
+                                    <a href={require("../resources/BlankSenate.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather">Fillable Senator PDF</a>
+                                </div>
+                            </span>
                         </div>
                         <p class="mt-2">Download this PDF and fill out the name of your senators, your name and address, date, and add a signature if you would like.
                         </p>
@@ -168,10 +170,11 @@ const Downloads = () => {
                     <div class="mb-6">
                         <div class="flex justify-between">
                             <span class="text-blue-500 font-bold">Letter to your Governor</span>
-                            {/* <p>
-                                <span class="text-blue-300 mr-2">at Busy Beaver Button Company</span>
-                                <span class="text-blue-300">2016 - 2022</span>
-                            </p> */}
+                            <span>
+                                <div>
+                                    <a href={require("../resources/BlankGovernor.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather">Fillable Governor PDF</a>
+                                </div>
+                            </span>
                         </div>
                         <p class="mt-2">Download this PDF and fill out the name of your Governor, your name and address, date, and add a signature if you would like.
                         </p>
