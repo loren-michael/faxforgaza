@@ -10,7 +10,10 @@ const Downloads = () => {
         city: "",
         state: "",
         zip: ""
-    })
+    });
+    const [representative, setRepresentative] = useState({});
+
+
 
     return (
         <div>
@@ -98,21 +101,21 @@ const Downloads = () => {
                                     value={ address.line1 }
                                     onChange={ e => setAddress({...address, line1: e.target.value}) }
                                 />
-                                                                <label htmlFor="line1">Street: </label>
+                                <label htmlFor="line1">City: </label>
                                 <input 
                                     type="text"
                                     id="city"
                                     value={ address.city }
                                     onChange={ e => setAddress({...address, city: e.target.value}) }
                                 />
-                                                                <label htmlFor="line1">Street: </label>
+                                <label htmlFor="line1">State: </label>
                                 <input 
                                     type="text"
                                     id="state"
                                     value={ address.state }
                                     onChange={ e => setAddress({...address, state: e.target.value}) }
                                 />
-                                                                <label htmlFor="line1">Street: </label>
+                                <label htmlFor="line1">Zip Code: </label>
                                 <input 
                                     type="text"
                                     id="zip"
