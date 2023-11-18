@@ -83,45 +83,60 @@ const Downloads = () => {
                             </svg>
                         </a> */}
                     {/* </div> */}
-                    <h2>Enter your information</h2>
+                    <h2 class="text-xl font-bold mt-6 mb-4">Enter your information to find your representatives:</h2>
                     <div class="mb-6">
                         <div class="flex justify-between">
                             <form className="lookup-information">
-                                <label htmlFor="name">Name: </label>
-                                <input 
-                                    type="text"
-                                    id="name"
-                                    value={ name }
-                                    onChange={ e => setName(e.target.value) }
-                                />
-                                <label htmlFor="line1">Street: </label>
-                                <input 
-                                    type="text"
-                                    id="street"
-                                    value={ address.line1 }
-                                    onChange={ e => setAddress({...address, line1: e.target.value}) }
-                                />
-                                <label htmlFor="line1">City: </label>
-                                <input 
-                                    type="text"
-                                    id="city"
-                                    value={ address.city }
-                                    onChange={ e => setAddress({...address, city: e.target.value}) }
-                                />
-                                <label htmlFor="line1">State: </label>
-                                <input 
-                                    type="text"
-                                    id="state"
-                                    value={ address.state }
-                                    onChange={ e => setAddress({...address, state: e.target.value}) }
-                                />
-                                <label htmlFor="line1">Zip Code: </label>
-                                <input 
-                                    type="text"
-                                    id="zip"
-                                    value={ address.zip }
-                                    onChange={ e => setAddress({...address, zip: e.target.value}) }
-                                />
+                                <div class="md:col-span-5">
+                                    <label htmlFor="name">Name: </label>
+                                    <input 
+                                        class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                                        type="text"
+                                        id="name"
+                                        value={ name }
+                                        onChange={ e => setName(e.target.value) }
+                                    />
+                                </div>
+                                <div class="md:col-span-5">
+                                    <label htmlFor="line1">Street: </label>
+                                    <input 
+                                        class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                                        type="text"
+                                        id="street"
+                                        value={ address.line1 }
+                                        onChange={ e => setAddress({...address, line1: e.target.value}) }
+                                    />
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label htmlFor="line1">City: </label>
+                                    <input 
+                                        class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                                        type="text"
+                                        id="city"
+                                        value={ address.city }
+                                        onChange={ e => setAddress({...address, city: e.target.value}) }
+                                    />
+                                </div>
+                                <div class="md:col-span-1">
+                                    <label htmlFor="line1">State: </label>
+                                    <input 
+                                        class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                                        type="text"
+                                        id="state"
+                                        value={ address.state }
+                                        onChange={ e => setAddress({...address, state: e.target.value}) }
+                                    />
+                                </div>
+                                <div class="md:col-span-1">
+                                    <label htmlFor="line1">Zip Code: </label>
+                                    <input 
+                                        class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                                        type="text"
+                                        id="zip"
+                                        value={ address.zip }
+                                        onChange={ e => setAddress({...address, zip: e.target.value}) }
+                                    />
+                                </div>
                             </form>
                         </div>
                     </div>
