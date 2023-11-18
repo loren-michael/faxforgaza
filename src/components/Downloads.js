@@ -46,6 +46,8 @@ const Downloads = () => {
                         <br></br><br></br>
                         </p>
 
+                        <hr class="my-6 border-t border-gray-300"></hr>
+
                     {/* <h3 class="font-semibold text-center mt-3 -mb-2">
                         Find me on
                     </h3>
@@ -86,6 +88,7 @@ const Downloads = () => {
                             </svg>
                         </a> */}
                     {/* </div> */}
+
                     <h2 class="text-xl font-bold mt-6 mb-4">Enter your information to find your representatives:</h2>
                     <div class="mb-6">
                         <div class="flex justify-between">
@@ -145,6 +148,7 @@ const Downloads = () => {
                         </div>
                     </div>
 
+                    <hr class="my-6 border-t border-gray-300"></hr>
 
                     <h2 class="text-xl font-bold mt-6 mb-4">PDF Downloads</h2>
                     <div class="mb-6">
