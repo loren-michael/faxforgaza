@@ -152,7 +152,7 @@ const Downloads = () => {
                             <span class="text-blue-500 font-bold">Letter to your House Representative</span>
                             <span>
                                 <div>
-                                    <a href={require("../resources/BlankHouse.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather">Fillable House Rep PDF</a>
+                                    <a href={require("../resources/HouseRepLetter.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather">Fillable House Rep PDF</a>
                                 </div>
                             </span>
                         </div>
@@ -164,7 +164,7 @@ const Downloads = () => {
                             <span class="text-blue-500 font-bold">Letter to your State Senators</span>
                             <span>
                                 <div>
-                                    <a href={require("../resources/BlankSenate.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather">Fillable Senator PDF</a>
+                                    <a href={require("../resources/SenatorLetter.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather">Fillable Senator PDF</a>
                                 </div>
                             </span>
                         </div>
@@ -176,7 +176,7 @@ const Downloads = () => {
                             <span class="text-blue-500 font-bold">Letter to your Governor</span>
                             <span>
                                 <div>
-                                    <a href={require("../resources/BlankGovernor.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather">Fillable Governor PDF</a>
+                                    <a href={require("../resources/GovernorLetter.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather">Fillable Governor PDF</a>
                                 </div>
                             </span>
                         </div>
