@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import logo from '../resources/logo.jpg'
-// import GovernorLetter from '../resources/GovernorLetter.pdf'
-// import HouseRepLetter from '../resources/HouseRepLetter.pdf'
-// import SenatorLetter from '../resources/SenatorLetter.pdf'
+import GovernorLetter from '../resources/GovernorLetter.pdf'
+import HouseRepLetter from '../resources/HouseRepLetter.pdf'
+import SenatorLetter from '../resources/SenatorLetter.pdf'
 
 
 const Downloads = () => {
@@ -26,7 +26,7 @@ const Downloads = () => {
         })
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         fetch(repLookupURL, {
             method: "GET",
@@ -86,7 +86,7 @@ const Downloads = () => {
                             {errors.map(err => {
                                 return (<p>{err}</p>)
                             })}
-                            <form className="lookup-information" onSubmit={handleSubmit}>
+                            <form className="lookup-information" onSubmit={e => handleSubmit(e)}>
                                 <div class="md:col-span-5">
                                     <label htmlFor="name">Name: </label>
                                     <input 
