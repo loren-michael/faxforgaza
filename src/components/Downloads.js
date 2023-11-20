@@ -90,6 +90,7 @@ const Downloads = () => {
                                 <div class="md:col-span-5">
                                     <label htmlFor="name">Name: </label>
                                     <input 
+                                        required
                                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                                         type="text"
                                         id="name"
@@ -100,6 +101,7 @@ const Downloads = () => {
                                 <div class="md:col-span-5">
                                     <label htmlFor="line1">Street: </label>
                                     <input 
+                                        required
                                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                                         type="text"
                                         id="street"
@@ -110,6 +112,7 @@ const Downloads = () => {
                                 <div class="md:col-span-2">
                                     <label htmlFor="line1">City: </label>
                                     <input 
+                                        required
                                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                                         type="text"
                                         id="city"
@@ -120,6 +123,7 @@ const Downloads = () => {
                                 <div class="md:col-span-1">
                                     <label htmlFor="line1">State: </label>
                                     <input 
+                                        required
                                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                                         type="text"
                                         id="state"
@@ -130,6 +134,7 @@ const Downloads = () => {
                                 <div class="md:col-span-1">
                                     <label htmlFor="line1">Zip Code: </label>
                                     <input 
+                                        required
                                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                                         type="text"
                                         id="zip"
