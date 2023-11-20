@@ -7,7 +7,7 @@ import SenatorLetter from '../resources/SenatorLetter.pdf'
 
 const Downloads = () => {
 
-    const repLookupURL = "https://www.googleapis.com/civicinfo/v2/representatives";
+    const repLookupURL = "https://www.googleapis.com/civicinfo/v2/representativesrepresentativeInfoByAddress?apix_params=address";
     const [errors, setErrors] = useState([]);
     const [name, setName] = useState("");
     const [address, setAddress] = useState({
@@ -46,7 +46,7 @@ const Downloads = () => {
                     resetForm()
                 })
             } else {
-                r.json().then(data => console.log(data))
+                r.json().then(data => setErrors(data.errors))
             }
         })
     }
