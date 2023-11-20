@@ -16,7 +16,7 @@ const Downloads = () => {
         zip: ""
     });
     const [representatives, setRepresentatives] = useState({});
-
+    
     const resetForm = () => {
         setAddress({
             line1: "",
@@ -25,10 +25,12 @@ const Downloads = () => {
             zip: ""
         })
     }
-
+    
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch(repLookupURL, {
+        const addressParams = "%" + address.line1 + "%" + address.city + "%" + address.state + "%" + address.state + "%" + address.zip
+        console.log(addressParams)
+        fetch(repLookupURL + "/" + addressParams, {
             method: "GET",
             headers: {
                 "content-type": "application/json",
