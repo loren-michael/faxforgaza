@@ -86,7 +86,7 @@ const Downloads = () => {
                             {errors.map(err => {
                                 return (<p>{err}</p>)
                             })}
-                            <form className="lookup-information" onSubmit={handleSubmit}>
+                            <form class={representatives ? "lookup-form" : "invisible"} className="lookup-information" onSubmit={handleSubmit}>
                                 <div class="md:col-span-5">
                                     <label htmlFor="name">Name: </label>
                                     <input 
