@@ -6,6 +6,7 @@ import SenatorLetter from '../resources/SenatorLetter.pdf'
 
 
 const Downloads = () => {
+
     const repLookupURL = "https://www.googleapis.com/civicinfo/v2/representatives";
     const [errors, setErrors] = useState([]);
     const [name, setName] = useState("");
@@ -28,7 +29,7 @@ const Downloads = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        const addressParams = "%" + address.line1 + "%" + address.city + "%" + address.state + "%" + address.state + "%" + address.zip
+        const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip + "%20key=AIzaSyBLWurIqPdcg3FqOpCI-0YibZkYKZjWU1A"
         console.log(addressParams)
         fetch(repLookupURL + "/" + addressParams, {
             method: "GET",
