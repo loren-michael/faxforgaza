@@ -33,8 +33,7 @@ const Downloads = () => {
             headers: {
                 "content-type": "application/json",
                 "accept": "application/json"
-            },
-            body: JSON.stringify(address)
+            }
         })
         .then(r => {
             if (r.ok) {
