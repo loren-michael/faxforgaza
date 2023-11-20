@@ -86,7 +86,7 @@ const Downloads = () => {
                     <div class="mb-6">
                         <div class="flex justify-between">
                             {errors.map(err => {
-                                return (<p>{err}</p>)
+                                return (<p>{err.message}</p>)
                             })}
                             <form class={representatives ? "lookup-form" : "invisible"} className="lookup-information" onSubmit={handleSubmit}>
                                 <div class="md:col-span-5">
