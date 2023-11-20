@@ -45,7 +45,7 @@ const Downloads = () => {
                     resetForm()
                 })
             } else {
-                r.json().then(data => setErrors(data.errors))
+                r.json().then(data => console.log(data))
             }
         })
     }
