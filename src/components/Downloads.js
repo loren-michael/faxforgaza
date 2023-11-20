@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import logo from '../resources/logo.jpg'
-import GovernorLetter from '../resources/GovernorLetter.pdf'
-import HouseRepLetter from '../resources/HouseRepLetter.pdf'
-import SenatorLetter from '../resources/SenatorLetter.pdf'
+// import GovernorLetter from '../resources/GovernorLetter.pdf'
+// import HouseRepLetter from '../resources/HouseRepLetter.pdf'
+// import SenatorLetter from '../resources/SenatorLetter.pdf'
 
 
 const Downloads = () => {
