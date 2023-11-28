@@ -4,9 +4,13 @@ import logo from '../resources/logo.jpg'
 // import HouseRepLetter from '../resources/HouseRepLetter.pdf'
 // import SenatorLetter from '../resources/SenatorLetter.pdf'
 
+// https://civicinfo.googleapis.com/civicinfo/v2/representatives?levels=country&levels=administrativeArea1&roles=legislatorUpperBody&roles=legislatorLowerBody&roles=headOfGovernment&key=[YOUR_API_KEY]
+// https://civicinfo.googleapis.com/civicinfo/v2/representatives?address=1639%20West%20Farwell%20Avenue%2C%20Chicago%20IL%2060626&levels=country&levels=administrativeArea1&roles=legislatorUpperBody&roles=legislatorLowerBody&roles=headOfGovernment&key=[YOUR_API_KEY]
+
+
 
 const Downloads = () => {
-    const repLookupURL = "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4&address=";
+    const repLookupURL = "https://civicinfo.googleapis.com/civicinfo/v2/representatives?address=";
     const [errors, setErrors] = useState([]);
     const [name, setName] = useState("");
     const [address, setAddress] = useState({
@@ -29,9 +33,9 @@ const Downloads = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip + "%20key=AIzaSyBLWurIqPdcg3FqOpCI-0YibZkYKZjWU1A"
+        const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
         console.log(repLookupURL + addressParams)
-        fetch(repLookupURL + addressParams, {
+        fetch(repLookupURL + addressParams + "&levels=country&levels=administrativeArea1&roles=legislatorUpperBody&roles=legislatorLowerBody&roles=headOfGovernment&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4", {
             method: "GET",
             headers: {
                 "content-type": "application/json",
