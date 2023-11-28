@@ -6,8 +6,7 @@ import logo from '../resources/logo.jpg'
 
 
 const Downloads = () => {
-
-    const repLookupURL = "https://www.googleapis.com/civicinfo/v2/representativesrepresentativeInfoByAddress?apix_params=address";
+    const repLookupURL = "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4&address=";
     const [errors, setErrors] = useState([]);
     const [name, setName] = useState("");
     const [address, setAddress] = useState({
