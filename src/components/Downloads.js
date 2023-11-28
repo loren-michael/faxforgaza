@@ -18,6 +18,7 @@ const Downloads = () => {
     const [representatives, setRepresentatives] = useState({});
     
     const resetForm = () => {
+        setName("")
         setAddress({
             line1: "",
             city: "",
