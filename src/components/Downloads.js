@@ -29,8 +29,8 @@ const Downloads = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip + "%20key=AIzaSyBLWurIqPdcg3FqOpCI-0YibZkYKZjWU1A"
-        console.log(addressParams)
-        fetch(repLookupURL + "/" + addressParams, {
+        console.log(repLookupURL + addressParams)
+        fetch(repLookupURL + addressParams, {
             method: "GET",
             headers: {
                 "content-type": "application/json",
