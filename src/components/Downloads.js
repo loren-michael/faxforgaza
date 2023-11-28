@@ -43,7 +43,7 @@ const Downloads = () => {
                 r.json()
                 .then(representatives => {
                     setRepresentatives(representatives)
-                    // resetForm()
+                    console.log(representatives)
                 })
             } else {
                 r.json().then(data => setErrors(data.errors))
