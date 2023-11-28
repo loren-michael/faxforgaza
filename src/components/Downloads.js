@@ -83,7 +83,7 @@ const Downloads = () => {
                         <hr class="my-6 border-t border-gray-300"></hr>
 
 
-                    <div class={representatives ? "hidden" : ""}> 
+                    <div> 
                         <h2 class="text-xl font-bold mt-6 mb-4">Enter your information to find your representatives:</h2>
                         <div class="mb-6">
                             <div class="flex justify-between">
@@ -151,7 +151,10 @@ const Downloads = () => {
                             </div>
                         </div>
                     </div>
-                    <div class={representatives ? "" : "hidden"}>
+
+                    <hr class="my-6 border-t border-gray-300"></hr>
+
+                    <div>
                         <button onClick={ resetForm() } class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button>
                     </div>
 
