@@ -17,15 +17,15 @@ const Downloads = () => {
     });
     const [representatives, setRepresentatives] = useState({});
     
-    const resetForm = () => {
-        setName("")
-        setAddress({
-            line1: "",
-            city: "",
-            state: "",
-            zip: ""
-        })
-    }
+    // const resetForm = () => {
+    //     setName("")
+    //     setAddress({
+    //         line1: "",
+    //         city: "",
+    //         state: "",
+    //         zip: ""
+    //     })
+    // }
     
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -155,7 +155,7 @@ const Downloads = () => {
                     <hr class="my-6 border-t border-gray-300"></hr>
 
                     <div>
-                        <button onClick={ resetForm() } class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button>
+                        {/* <button onClick={ resetForm() } class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button> */}
                     </div>
 
 
