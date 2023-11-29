@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../resources/logo.jpg'
-import RepCard from './RepCard';
+import RepDisplay from './RepDisplay';
 // import GovernorLetter from '../resources/GovernorLetter.pdf'
 // import HouseRepLetter from '../resources/HouseRepLetter.pdf'
 // import SenatorLetter from '../resources/SenatorLetter.pdf'
@@ -162,9 +162,7 @@ const Downloads = () => {
 
                     <div>
                         <h2 class="text-xl font-bold mt-6 mb-4">Your representatives based on your address:</h2>
-                        {representatives.map(rep => {
-                            return <RepCard rep={rep} />
-                        })}
+                            {representatives ? <RepDisplay representatives={representatives} /> : <p>Please fill out the form above to find your representatives.</p>}
                     </div>
 
 
