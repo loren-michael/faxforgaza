@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../resources/logo.jpg'
+import RepCard from './RepCard';
 // import GovernorLetter from '../resources/GovernorLetter.pdf'
 // import HouseRepLetter from '../resources/HouseRepLetter.pdf'
 // import SenatorLetter from '../resources/SenatorLetter.pdf'
@@ -21,15 +22,15 @@ const Downloads = () => {
     });
     const [representatives, setRepresentatives] = useState({});
     
-    // const resetForm = () => {
-    //     setName("")
-    //     setAddress({
-    //         line1: "",
-    //         city: "",
-    //         state: "",
-    //         zip: ""
-    //     })
-    // }
+    const resetForm = () => {
+        setName("")
+        setAddress({
+            line1: "",
+            city: "",
+            state: "",
+            zip: ""
+        })
+    }
     
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -150,6 +151,7 @@ const Downloads = () => {
                                             onChange={ e => setAddress({...address, zip: e.target.value}) }
                                         />
                                     </div>
+                                    <button onClick={resetForm()} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button>
                                     <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Submit </button>
                                 </form>
                             </div>
@@ -159,13 +161,16 @@ const Downloads = () => {
                     <hr class="my-6 border-t border-gray-300"></hr>
 
                     <div>
-                        {/* <button onClick={ resetForm() } class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button> */}
+                        <h2 class="text-xl font-bold mt-6 mb-4">Your representatives based on your address:</h2>
+                        {representatives.map(rep => {
+                            return <RepCard rep={rep} />
+                        })}
                     </div>
 
 
                     <hr class="my-6 border-t border-gray-300"></hr>
 
-                    <h2 class="text-xl font-bold mt-6 mb-4">PDF Downloads</h2>
+                    <h2 class="text-xl font-bold mt-6 mb-4">Blank Form PDF Downloads</h2>
                     <div class="mb-6">
                         <div class="flex justify-between">
                             <span class="text-blue-500 font-bold">Letter to your House Representative</span>
