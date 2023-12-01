@@ -54,7 +54,7 @@ const handleSubmit = (e) => {
               {errors.map(err => {
                   return (<p>{err.message}</p>)
               })}
-              <form class={representatives ? "lookup-form" : "invisible"} className="lookup-information" onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit()}>
                   <div class="md:col-span-5">
                       <label htmlFor="name">Name: </label>
                       <input 

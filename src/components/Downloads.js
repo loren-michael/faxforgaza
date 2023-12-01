@@ -90,7 +90,7 @@ const Downloads = () => {
 
 
                     <div> 
-                        {/* <Form representatives={representatives} setRepresentatives={setRepresentatives}  /> */}
+                        <Form representatives={representatives} setRepresentatives={setRepresentatives}  />
                     </div>
 
                     <hr class="my-6 border-t border-gray-300"></hr>
