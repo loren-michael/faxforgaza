@@ -12,7 +12,8 @@ const Form = ({ representatives, setRepresentatives }) => {
       zip: ""
   });
 
-  const resetForm = () => {
+  function resetForm (e) {
+    e.preventDefault();
     setName("")
     setAddress({
         line1: "",
