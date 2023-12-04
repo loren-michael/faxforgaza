@@ -12,6 +12,7 @@ import Form from './Form';
 
 
 const Downloads = () => {
+    const [formDisplay, setFormDisplay] = useState(false)
     // const repLookupURL = "https://civicinfo.googleapis.com/civicinfo/v2/representatives?address=";
     // const [errors, setErrors] = useState([]);
     // const [name, setName] = useState("");
@@ -23,6 +24,11 @@ const Downloads = () => {
     // });
     const [representatives, setRepresentatives] = useState({});
     
+    function handleFormDisplay(e) {
+        e.preventDefault();
+        setFormDisplay(true)
+    }
+
     // const resetForm = () => {
     //     setName("")
     //     setAddress({
@@ -90,7 +96,8 @@ const Downloads = () => {
 
 
                     <div> 
-                        <Form representatives={representatives} setRepresentatives={setRepresentatives}  />
+                        {formDisplay ? <Form setFormDisplay={setFormDisplay} representatives={representatives} setRepresentatives={setRepresentatives} /> : <button onClick={e => handleFormDisplay(e)} class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded"> Look Up Your Representatives </button>}
+                        
                     </div>
 
                     <hr class="my-6 border-t border-gray-300"></hr>
