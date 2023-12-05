@@ -57,6 +57,7 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
                 "content-type": "application/json",
                 "accept": "application/json"
             }
+        })
             .then(r => {
                 if (r.ok) {
                     r.json()
@@ -65,7 +66,7 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
                     r.json().then(data => setErrors(data.errors))
                 }
             })
-        })
+
         // REPRESENTATIVE LOOKUP
 
         fetch(repLookupURL + addressParams + repParams, {
@@ -74,6 +75,7 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
                 "content-type": "application/json",
                 "accept": "application/json"
             }
+        })
             .then(r => {
                 if (r.ok) {
                     r.json().then(rep => setRepresentatives({...representatives, representative: rep}))
@@ -81,7 +83,6 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
                     r.json().then(data => setErrors(data.errors))
                 }
             })
-        })
     }
 
     return (
