@@ -101,10 +101,18 @@ const Downloads = () => {
 
                     <hr class="my-6 border-t border-gray-300"></hr>
 
-                    <div>
-                        <h2 class="text-xl font-bold mt-6 mb-4">Your representatives based on your address:</h2>
-                            {representatives ? <RepDisplay representatives={representatives} /> : <p>Please fill out the form above to find your representatives.</p>}
-                    </div>
+                    
+                    {representatives ? 
+                        <div>
+                            <h2 class="text-xl font-bold mt-6 mb-4">Your representatives based on your address:</h2>
+                                {representatives ? <RepDisplay representatives={representatives} /> : <p>Please fill out the form above to find your representatives.</p>}
+                        </div>
+
+                        :
+
+                        <div></div>                
+                    }
+                    
 
 
                     <hr class="my-6 border-t border-gray-300"></hr>
