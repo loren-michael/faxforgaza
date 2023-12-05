@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 
-
 const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
     const repLookupURL = "https://civicinfo.googleapis.com/civicinfo/v2/representatives?address=";
+    const senatorParams = "&levels=country&roles=legislatorUpperBody&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4";
+    const repParams = "&levels=country&roles=legislatorLowerBody&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4";
     const [errors, setErrors] = useState([]);
     const [name, setName] = useState("");
     const [address, setAddress] = useState({
@@ -47,9 +48,10 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
         //     }
         // })
 
-        // THIS WILL BE SENATOR LOOKUP
+        // SENATOR LOOKUP
+
         const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
-        fetch(repLookupURL + addressParams + "", {
+        fetch(repLookupURL + addressParams + senatorParams, {
             method: "GET",
             headers: {
                 "content-type": "application/json",
@@ -64,8 +66,9 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
                 }
             })
         })
-        // THIS WILL BE REPRESENTATIVE LOOKUP
-        fetch(repLookupURL + addressParams + "", {
+        // REPRESENTATIVE LOOKUP
+
+        fetch(repLookupURL + addressParams + repParams, {
             method: "GET",
             headers: {
                 "content-type": "application/json",
