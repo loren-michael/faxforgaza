@@ -22,10 +22,12 @@ const Downloads = () => {
     //     state: "",
     //     zip: ""
     // });
-    const [representatives, setRepresentatives] = useState({
-        senators: {},
-        representative: {}
-    });
+    // const [representatives, setRepresentatives] = useState({
+    //     senators: {},
+    //     representative: {}
+    // });
+    const [userSenators, setUserSenators] = useState([]);
+    const [userRepresentative, setUserRepresentative] = useState([])
 
     function handleFormDisplay() {
         setFormDisplay(true)
@@ -98,7 +100,7 @@ const Downloads = () => {
 
 
                     <div> 
-                        {formDisplay ? <Form setFormDisplay={setFormDisplay} representatives={representatives} setRepresentatives={setRepresentatives} /> : <button onClick={handleFormDisplay} class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded"> Look Up Your Representatives </button>}
+                        {formDisplay ? <Form setFormDisplay={setFormDisplay} userSenators={userSenators} setUserSenators={setUserSenators} userRepresentative={userRepresentative} setUserRepresentative={setUserRepresentative} /> : <button onClick={handleFormDisplay} class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded"> Look Up Your Representatives </button>}
                         
                     </div>
 

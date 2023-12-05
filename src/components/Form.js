@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
+const Form = ({ setFormDisplay, userSenators, setUserSenators, userRepresentative, setUserRepresentative }) => {
     const repLookupURL = "https://civicinfo.googleapis.com/civicinfo/v2/representatives?address=";
     const senatorParams = "&levels=country&roles=legislatorUpperBody&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4";
     const repParams = "&levels=country&roles=legislatorLowerBody&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4";
@@ -60,8 +60,8 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
         })
             .then(r => {
                 if (r.ok) {
-                    // r.json().then(data => setRepresentatives({...representatives, senators: data.officials})).then(console.log(representatives))
-                    r.json().then(data => console.log("full data", data, "just officials", data.officials))
+                    r.json().then(data => setUserSenators(data.officials))
+                    // r.json().then(data => console.log("full data", data, "just officials", data.officials))
                 } else {
                     r.json().then(data => setErrors(data.errors))
                 }
@@ -78,8 +78,8 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
         })
             .then(r => {
                 if (r.ok) {
-                    // r.json().then(data => setRepresentatives({...representatives, representative: data.officials})).then(console.log(representatives))
-                    r.json().then(data => console.log("full data", data, "just officials", data.officials))
+                    r.json().then(data => setUserRepresentative(data.officials))
+                    // r.json().then(data => console.log("full data", data, "just officials", data.officials))
                 } else {
                     r.json().then(data => setErrors(data.errors))
                 }
