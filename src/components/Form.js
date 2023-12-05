@@ -60,8 +60,8 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
         })
             .then(r => {
                 if (r.ok) {
-                    // r.json().then(senators => setRepresentatives({...representatives, senators: senators})).then(console.log(representatives))
-                    r.json().then(senators => console.log(senators))
+                    r.json().then(data => setRepresentatives({...representatives, senators: data.officials})).then(console.log(representatives))
+                    // r.json().then(senators => console.log(senators))
                 } else {
                     r.json().then(data => setErrors(data.errors))
                 }
@@ -78,8 +78,8 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
         })
             .then(r => {
                 if (r.ok) {
-                    // r.json().then(rep => setRepresentatives({...representatives, representative: rep})).then(console.log(representatives))
-                    r.json().then(reps => console.log(reps))
+                    r.json().then(data => setRepresentatives({...representatives, representative: data.officials})).then(console.log(representatives))
+                    // r.json().then(reps => console.log(reps))
                 } else {
                     r.json().then(data => setErrors(data.errors))
                 }
