@@ -24,8 +24,7 @@ const Downloads = () => {
     // });
     const [representatives, setRepresentatives] = useState({
         senators: {},
-        representative: {},
-        governor: {}
+        representative: {}
     });
 
     function handleFormDisplay() {
