@@ -26,26 +26,27 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
 
     function handleSubmit(e) {
         e.preventDefault();
-        const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
-        console.log(repLookupURL + addressParams)
-        fetch(repLookupURL + addressParams + "&levels=country&levels=administrativeArea1&roles=legislatorUpperBody&roles=legislatorLowerBody&roles=headOfGovernment&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4", {
-            method: "GET",
-            headers: {
-                "content-type": "application/json",
-                "accept": "application/json"
-            }
-        })
-        .then(r => {
-            if (r.ok) {
-                r.json()
-                .then(representatives => {
-                    setRepresentatives(representatives)
-                    console.log(representatives)
-                })
-            } else {
-                r.json().then(data => setErrors(data.errors))
-            }
-        })
+        console.log("test from form component")
+        // const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
+        // console.log(repLookupURL + addressParams)
+        // fetch(repLookupURL + addressParams + "&levels=country&levels=administrativeArea1&roles=legislatorUpperBody&roles=legislatorLowerBody&roles=headOfGovernment&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4", {
+        //     method: "GET",
+        //     headers: {
+        //         "content-type": "application/json",
+        //         "accept": "application/json"
+        //     }
+        // })
+        // .then(r => {
+        //     if (r.ok) {
+        //         r.json()
+        //         .then(representatives => {
+        //             setRepresentatives(representatives)
+        //             console.log(representatives)
+        //         })
+        //     } else {
+        //         r.json().then(data => setErrors(data.errors))
+        //     }
+        // })
     }
 
     return (
