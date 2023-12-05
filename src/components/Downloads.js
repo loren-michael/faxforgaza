@@ -24,8 +24,7 @@ const Downloads = () => {
     // });
     const [representatives, setRepresentatives] = useState({});
     
-    function handleFormDisplay(e) {
-        e.preventDefault();
+    function handleFormDisplay() {
         setFormDisplay(true)
     }
 
@@ -96,7 +95,7 @@ const Downloads = () => {
 
 
                     <div> 
-                        {formDisplay ? <Form setFormDisplay={setFormDisplay} representatives={representatives} setRepresentatives={setRepresentatives} /> : <button onClick={e => handleFormDisplay(e)} class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded"> Look Up Your Representatives </button>}
+                        {formDisplay ? <Form setFormDisplay={setFormDisplay} representatives={representatives} setRepresentatives={setRepresentatives} /> : <button onClick={handleFormDisplay} class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded"> Look Up Your Representatives </button>}
                         
                     </div>
 

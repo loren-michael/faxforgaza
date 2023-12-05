@@ -13,7 +13,7 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
     });
 
     function resetForm (e) {
-        e.preventDefault();
+        // e.preventDefault();
         setName("")
         setAddress({
             line1: "",
@@ -54,10 +54,10 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
         <h2 class="text-xl font-bold mt-6 mb-4">Enter your information to find your representatives:</h2>
         <div class="mb-6">
             <div class="flex justify-between">
-                {errors.map(err => {
+                {/* {errors.map(err => {
                     return (<p>{err.message}</p>)
-                })}
-                <form onSubmit={handleSubmit()}>
+                })} */}
+                <form onSubmit={handleSubmit}>
                     <div class="md:col-span-5">
                         <label htmlFor="name">Name: </label>
                         <input 
@@ -113,7 +113,7 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
                             onChange={ e => setAddress({...address, zip: e.target.value}) }
                         />
                     </div>
-                    <button onClick={resetForm()} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button>
+                    <button onClick={resetForm} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button>
                     <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Submit </button>
                 </form>
             </div>
