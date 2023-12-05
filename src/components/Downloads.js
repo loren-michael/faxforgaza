@@ -101,12 +101,15 @@ const Downloads = () => {
 
                     <div> 
                         {formDisplay ? <Form setFormDisplay={setFormDisplay} userSenators={userSenators} setUserSenators={setUserSenators} userRepresentative={userRepresentative} setUserRepresentative={setUserRepresentative} /> : <button onClick={handleFormDisplay} class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded"> Look Up Your Representatives </button>}
-                        
                     </div>
 
                     <hr class="my-6 border-t border-gray-300"></hr>
 
-                    {/* <hr class="my-6 border-t border-gray-300"></hr> */}
+                    <div>
+                        {userRepresentative && userSenators ? <div><RepDisplay userSenators={userSenators} userRepresentative={userRepresentative} /></div> : <div>Please look up your representatives using the form.</div> }
+                    </div>
+
+                    <hr class="my-6 border-t border-gray-300"></hr>
 
                     <h2 class="text-xl font-bold mt-6 mb-4">Blank Form PDF Downloads</h2>
                     <div class="mb-6">

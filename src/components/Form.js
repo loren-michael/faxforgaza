@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Form = ({ setFormDisplay, userSenators, setUserSenators, userRepresentative, setUserRepresentative }) => {
     const repLookupURL = "https://civicinfo.googleapis.com/civicinfo/v2/representatives?address=";
@@ -26,30 +27,7 @@ const Form = ({ setFormDisplay, userSenators, setUserSenators, userRepresentativ
 
     function handleSubmit(e) {
         e.preventDefault();
-        // THIS IS THE MASTER FETCH THAT GIVES BACK TOO MANY ROLES
-        // const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
-        // console.log(repLookupURL + addressParams)
-        // fetch(repLookupURL + addressParams + "&levels=country&levels=administrativeArea1&roles=legislatorUpperBody&roles=legislatorLowerBody&roles=headOfGovernment&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4", {
-        //     method: "GET",
-        //     headers: {
-        //         "content-type": "application/json",
-        //         "accept": "application/json"
-        //     }
-        // })
-        // .then(r => {
-        //     if (r.ok) {
-        //         r.json()
-        //         .then(representatives => {
-        //             setRepresentatives(representatives)
-        //             console.log(representatives)
-        //         })
-        //     } else {
-        //         r.json().then(data => setErrors(data.errors))
-        //     }
-        // })
-
         // SENATOR LOOKUP
-
         const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
         fetch(repLookupURL + addressParams + senatorParams, {
             method: "GET",
@@ -66,9 +44,7 @@ const Form = ({ setFormDisplay, userSenators, setUserSenators, userRepresentativ
                     r.json().then(data => setErrors(data.errors))
                 }
             })
-
         // REPRESENTATIVE LOOKUP
-
         fetch(repLookupURL + addressParams + repParams, {
             method: "GET",
             headers: {
@@ -84,6 +60,7 @@ const Form = ({ setFormDisplay, userSenators, setUserSenators, userRepresentativ
                     r.json().then(data => setErrors(data.errors))
                 }
             })
+        setFormDisplay(false)
     }
 
     return (
