@@ -61,7 +61,7 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
             .then(r => {
                 if (r.ok) {
                     r.json()
-                    .then(senators => setRepresentatives({...representatives, senators: senators}))
+                    .then(senators => setRepresentatives({...representatives, senators: senators})).then(console.log(representatives))
                 } else {
                     r.json().then(data => setErrors(data.errors))
                 }
@@ -78,7 +78,7 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
         })
             .then(r => {
                 if (r.ok) {
-                    r.json().then(rep => setRepresentatives({...representatives, representative: rep}))
+                    r.json().then(rep => setRepresentatives({...representatives, representative: rep})).then(console.log(representatives))
                 } else {
                     r.json().then(data => setErrors(data.errors))
                 }
