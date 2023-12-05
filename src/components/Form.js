@@ -74,13 +74,13 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
                             required
                             class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                             type="text"
-                            id="street"
+                            id="line1"
                             value={ address.line1 }
                             onChange={ e => setAddress({...address, line1: e.target.value}) }
                         />
                     </div>
                     <div class="md:col-span-2">
-                        <label htmlFor="line1">City: </label>
+                        <label htmlFor="city">City: </label>
                         <input 
                             required
                             class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
@@ -91,7 +91,7 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
                         />
                     </div>
                     <div class="md:col-span-1">
-                        <label htmlFor="line1">State: </label>
+                        <label htmlFor="state">State: </label>
                         <input 
                             required
                             class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
@@ -102,7 +102,7 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
                         />
                     </div>
                     <div class="md:col-span-1">
-                        <label htmlFor="line1">Zip Code: </label>
+                        <label htmlFor="zip">Zip Code: </label>
                         <input 
                             required
                             class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
