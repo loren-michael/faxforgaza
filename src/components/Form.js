@@ -12,8 +12,7 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
         zip: ""
     });
 
-    function resetForm (e) {
-        // e.preventDefault();
+    function resetForm () {
         setName("")
         setAddress({
             line1: "",
@@ -26,27 +25,27 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log("test from form component")
-        // const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
-        // console.log(repLookupURL + addressParams)
-        // fetch(repLookupURL + addressParams + "&levels=country&levels=administrativeArea1&roles=legislatorUpperBody&roles=legislatorLowerBody&roles=headOfGovernment&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4", {
-        //     method: "GET",
-        //     headers: {
-        //         "content-type": "application/json",
-        //         "accept": "application/json"
-        //     }
-        // })
-        // .then(r => {
-        //     if (r.ok) {
-        //         r.json()
-        //         .then(representatives => {
-        //             setRepresentatives(representatives)
-        //             console.log(representatives)
-        //         })
-        //     } else {
-        //         r.json().then(data => setErrors(data.errors))
-        //     }
-        // })
+        // console.log("test from form component")
+        const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
+        console.log(repLookupURL + addressParams)
+        fetch(repLookupURL + addressParams + "&levels=country&levels=administrativeArea1&roles=legislatorUpperBody&roles=legislatorLowerBody&roles=headOfGovernment&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4", {
+            method: "GET",
+            headers: {
+                "content-type": "application/json",
+                "accept": "application/json"
+            }
+        })
+        .then(r => {
+            if (r.ok) {
+                r.json()
+                .then(representatives => {
+                    setRepresentatives(representatives)
+                    console.log(representatives)
+                })
+            } else {
+                r.json().then(data => setErrors(data.errors))
+            }
+        })
     }
 
     return (
@@ -54,9 +53,9 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
         <h2 class="text-xl font-bold mt-6 mb-4">Enter your information to find your representatives:</h2>
         <div class="mb-6">
             <div class="flex justify-between">
-                {/* {errors.map(err => {
+                {errors.map(err => {
                     return (<p>{err.message}</p>)
-                })} */}
+                })}
                 <form onSubmit={handleSubmit}>
                     <div class="md:col-span-5">
                         <label htmlFor="name">Name: </label>
@@ -113,10 +112,14 @@ const Form = ({ representatives, setRepresentatives, setFormDisplay }) => {
                             onChange={ e => setAddress({...address, zip: e.target.value}) }
                         />
                     </div>
-                    <button onClick={resetForm} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button>
+                    <button onClick={resetForm} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded pdr-4"> Reset </button>
                     <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Submit </button>
                 </form>
             </div>
+            {/* <div>
+                <h2 class="text-xl font-bold mt-6 mb-4">Your representatives based on your address:</h2>
+                    {representatives ? <RepDisplay representatives={representatives} /> : <p>Please fill out the form above to find your representatives.</p>}
+            </div> */}
         </div>
         </div>
     )
