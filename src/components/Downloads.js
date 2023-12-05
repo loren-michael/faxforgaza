@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import logo from '../resources/logo.jpg'
-import RepDisplay from './RepDisplay';
+// import RepDisplay from './RepDisplay';
 import Form from './Form';
+// import RepCard from './RepCard';
+// import SenCard from './SenCard';
 // import GovernorLetter from '../resources/GovernorLetter.pdf'
 // import HouseRepLetter from '../resources/HouseRepLetter.pdf'
 // import SenatorLetter from '../resources/SenatorLetter.pdf'
@@ -104,12 +106,16 @@ const Downloads = () => {
                     </div>
 
                     <hr class="my-6 border-t border-gray-300"></hr>
-
+{/* 
                     <div>
-                        {userRepresentative && userSenators ? <div><RepDisplay userSenators={userSenators} userRepresentative={userRepresentative} /></div> : <div>Please look up your representatives using the form.</div> }
+                        {userRepresentative ? <RepCard userRepresentative={userRepresentative} /> : <div></div>}
                     </div>
 
-                    <hr class="my-6 border-t border-gray-300"></hr>
+                    <div>
+                        {userSenators ? <SenCard userSenators={userSenators} /> : <div></div>}
+                    </div> */}
+
+                    {/* <hr class="my-6 border-t border-gray-300"></hr> */}
 
                     <h2 class="text-xl font-bold mt-6 mb-4">Blank Form PDF Downloads</h2>
                     <div class="mb-6">

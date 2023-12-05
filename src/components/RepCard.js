@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RepCard = ({ rep }) => {
+const RepCard = ({ userRepresentative }) => {
   return (
     <div>RepCard</div>
   )
