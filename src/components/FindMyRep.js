@@ -29,7 +29,7 @@ function FindMyRep ({ userSenators, setUserSenators, userRepresentative, setUser
         </div>
       </div>
     </div>
-)
+  )
 }
 
 export default FindMyRep
