@@ -3,7 +3,7 @@ import logo from '../resources/logo.jpg'
 import { Form } from 'react-router-dom'
 
 
-const FindMyRep = ({ userSenators, setUserSenators, userRepresentative, setUserRepresentative }) => {
+function FindMyRep ({ userSenators, setUserSenators, userRepresentative, setUserRepresentative }) {
 
   return (
     <div>
