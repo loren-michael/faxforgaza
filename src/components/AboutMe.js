@@ -3,7 +3,7 @@ import React from 'react';
 import photo from '../resources/photo.jpg'
 import { useParams } from "react-router-dom";
 
-const AboutMe = () => {
+function AboutMe () {
 
     const params = useParams();
 

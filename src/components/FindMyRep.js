@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import logo from '../resources/logo.jpg'
 import { Form } from 'react-router-dom'
 
 
-const FindMyRep = () => {
-  const [userSenators, setUserSenators] = useState([]);
-  const [userRepresentative, setUserRepresentative] = useState([]);
+const FindMyRep = ({ userSenators, setUserSenators, userRepresentative, setUserRepresentative }) => {
 
   return (
     <div>

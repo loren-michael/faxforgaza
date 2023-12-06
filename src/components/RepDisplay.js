@@ -1,8 +1,9 @@
-import React from 'react'
-import logo from '../resources/logo.jpg'
+import React from 'react';
+import logo from '../resources/logo.jpg';
+import SenCard from './SenCard';
+import RepCard from './RepCard';
 
-const RepDisplay = ({ representatives }) => {
-  console.log("from rep display", representatives)
+function RepDisplay({ userRepresentative, userSenators }) {
 
   return (
     <div>
@@ -22,10 +23,18 @@ const RepDisplay = ({ representatives }) => {
             <div class="col-span-4 sm:col-span-9">
                 <div class="bg-white shadow rounded-lg p-6">
                     <h2>Here are your state senators:</h2>
-                    {/* Add map with rep cards */}
+                    {userSenators.map(senator => {
+                      return(
+                        <SenCard senator={senator} />
+                      )
+                    })}
 
                     <h2>Here is your local representative:</h2>
-                    {/* Add card for local rep */}
+                    {userRepresentative.map(representative => {
+                      return (
+                        <RepCard representative={representative} />
+                      )
+                    })}
 
                 </div>
             </div>

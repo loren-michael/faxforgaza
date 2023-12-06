@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import logo from '../resources/logo.jpg'
 // import RepDisplay from './RepDisplay';
-import Form from './Form';
+// import Form from './Form';
 // import RepCard from './RepCard';
 // import SenCard from './SenCard';
 // import GovernorLetter from '../resources/GovernorLetter.pdf'

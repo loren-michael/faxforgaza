@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-const Form = ({ userSenators, setUserSenators, userRepresentative, setUserRepresentative }) => {
+function Form ({ userSenators, setUserSenators, userRepresentative, setUserRepresentative }) {
     const navigate = useNavigate();
     const repLookupURL = "https://civicinfo.googleapis.com/civicinfo/v2/representatives?address=";
     const senatorParams = "&levels=country&roles=legislatorUpperBody&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4";

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from '../resources/logo.jpg'
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -17,6 +17,8 @@ import RepDisplay from "./components/RepDisplay";
  */
 
 export default function App() {
+  const [userSenators, setUserSenators] = useState([]);
+  const [userRepresentative, setUserRepresentative] = useState([]);
 
   return (
     <BrowserRouter>
@@ -24,8 +26,8 @@ export default function App() {
         <NavBar />
         <Routes>
           <Route exact path="/" element={ <Home /> }/>
-          <Route path="/findmyrep" element={ <FindMyRep /> } />
-          <Route path="/representatives" element={ <RepDisplay /> }/>
+          <Route path="/findmyrep" element={ <FindMyRep setUserSenators={setUserSenators} setUserRepresentative={setUserRepresentative} userSenators={userSenators} userRepresentative={userRepresentative} /> } />
+          <Route path="/representatives" element={ <RepDisplay userSenators={userSenators} userRepresentative={userRepresentative} /> }/>
           {/* <Route path="/resume" element={ <Resume /> }/> */}
         </Routes>
       </section>

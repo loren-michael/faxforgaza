@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SenCard = ({ userSenators }) => {
+function SenCard ({ userSenators }) {
   return (
     <div>SenCard</div>
   )
