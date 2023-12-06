@@ -6,7 +6,6 @@ import Downloads from "./Downloads";
 const Home = () => {
   return (
     <div class="h-full flex-grow">
-      {/* <AboutMe /> */}
       <Downloads />
     </div>
   )

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-const Form = ({ setFormDisplay, userSenators, setUserSenators, userRepresentative, setUserRepresentative }) => {
+const Form = ({ userSenators, setUserSenators, userRepresentative, setUserRepresentative }) => {
+    const navigate = useNavigate();
     const repLookupURL = "https://civicinfo.googleapis.com/civicinfo/v2/representatives?address=";
     const senatorParams = "&levels=country&roles=legislatorUpperBody&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4";
     const repParams = "&levels=country&roles=legislatorLowerBody&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4";
@@ -22,7 +23,6 @@ const Form = ({ setFormDisplay, userSenators, setUserSenators, userRepresentativ
             state: "",
             zip: ""
         })
-        setFormDisplay(false)
     }
 
     function handleSubmit(e) {
@@ -60,7 +60,7 @@ const Form = ({ setFormDisplay, userSenators, setUserSenators, userRepresentativ
                     r.json().then(data => setErrors(data.errors))
                 }
             })
-        setFormDisplay(false)
+        navigate("/representatives")
     }
 
     return (
@@ -127,8 +127,8 @@ const Form = ({ setFormDisplay, userSenators, setUserSenators, userRepresentativ
                             onChange={ e => setAddress({...address, zip: e.target.value}) }
                         />
                     </div>
-                    <button onClick={resetForm} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded pdr-4"> Reset </button>
-                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Submit </button>
+                    <button onClick={resetForm} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded pr-4"> Reset </button>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded pl-4"> Submit </button>
                 </form>
             </div>
             {/* <div>

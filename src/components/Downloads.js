@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import logo from '../resources/logo.jpg'
 // import RepDisplay from './RepDisplay';
 import Form from './Form';
@@ -14,61 +15,9 @@ import Form from './Form';
 
 
 const Downloads = () => {
-    const [formDisplay, setFormDisplay] = useState(false)
-    // const repLookupURL = "https://civicinfo.googleapis.com/civicinfo/v2/representatives?address=";
-    // const [errors, setErrors] = useState([]);
-    // const [name, setName] = useState("");
-    // const [address, setAddress] = useState({
-    //     line1: "",
-    //     city: "",
-    //     state: "",
-    //     zip: ""
-    // });
-    // const [representatives, setRepresentatives] = useState({
-    //     senators: {},
-    //     representative: {}
-    // });
-    const [userSenators, setUserSenators] = useState([]);
-    const [userRepresentative, setUserRepresentative] = useState([])
-
-    function handleFormDisplay() {
-        setFormDisplay(true)
-    }
-
-    // const resetForm = () => {
-    //     setName("")
-    //     setAddress({
-    //         line1: "",
-    //         city: "",
-    //         state: "",
-    //         zip: ""
-    //     })
-    // }
-    
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
-    //     console.log(repLookupURL + addressParams)
-    //     fetch(repLookupURL + addressParams + "&levels=country&levels=administrativeArea1&roles=legislatorUpperBody&roles=legislatorLowerBody&roles=headOfGovernment&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4", {
-    //         method: "GET",
-    //         headers: {
-    //             "content-type": "application/json",
-    //             "accept": "application/json"
-    //         }
-    //     })
-    //     .then(r => {
-    //         if (r.ok) {
-    //             r.json()
-    //             .then(representatives => {
-    //                 setRepresentatives(representatives)
-    //                 console.log(representatives)
-    //             })
-    //         } else {
-    //             r.json().then(data => setErrors(data.errors))
-    //         }
-    //     })
-    // }
-
+    const navigate = useNavigate();
+    // const [userSenators, setUserSenators] = useState([]);
+    // const [userRepresentative, setUserRepresentative] = useState([]);
 
     return (
         <div>
@@ -102,18 +51,10 @@ const Downloads = () => {
 
 
                     <div> 
-                        {formDisplay ? <Form setFormDisplay={setFormDisplay} userSenators={userSenators} setUserSenators={setUserSenators} userRepresentative={userRepresentative} setUserRepresentative={setUserRepresentative} /> : <button onClick={handleFormDisplay} class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded"> Look Up Your Representatives </button>}
+                        <button onClick={navigate("/findmyrep")} class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded"> Look Up Your Representatives </button>
                     </div>
 
                     <hr class="my-6 border-t border-gray-300"></hr>
-{/* 
-                    <div>
-                        {userRepresentative ? <RepCard userRepresentative={userRepresentative} /> : <div></div>}
-                    </div>
-
-                    <div>
-                        {userSenators ? <SenCard userSenators={userSenators} /> : <div></div>}
-                    </div> */}
 
                     {/* <hr class="my-6 border-t border-gray-300"></hr> */}
 
@@ -142,7 +83,7 @@ const Downloads = () => {
                         <p class="mt-2">Download this PDF and fill out the name of your senators, your name and address, date, and add a signature if you would like.
                         </p>
                     </div>
-                    <div class="mb-6">
+                    {/* <div class="mb-6">
                         <div class="flex justify-between">
                             <span class="text-blue-500 font-bold">Letter to your Governor</span>
                             <span>
@@ -153,7 +94,7 @@ const Downloads = () => {
                         </div>
                         <p class="mt-2">Download this PDF and fill out the name of your Governor, your name and address, date, and add a signature if you would like.
                         </p>
-                    </div>
+                    </div> */}
                     {/* <div class="mb-6">
                         <div class="flex justify-between">
                             <span class="text-blue-500 font-bold">Sound Assistant</span>

@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../resources/logo.jpg'
+import { Form } from 'react-router-dom'
 
-const RepDisplay = ({ representatives }) => {
-  console.log("from rep display", representatives)
+
+const FindMyRep = () => {
+  const [userSenators, setUserSenators] = useState([]);
+  const [userRepresentative, setUserRepresentative] = useState([]);
 
   return (
     <div>
@@ -21,12 +24,7 @@ const RepDisplay = ({ representatives }) => {
             </div>
             <div class="col-span-4 sm:col-span-9">
                 <div class="bg-white shadow rounded-lg p-6">
-                    <h2>Here are your state senators:</h2>
-                    {/* Add map with rep cards */}
-
-                    <h2>Here is your local representative:</h2>
-                    {/* Add card for local rep */}
-
+                    <Form userSenators={userSenators} setUserSenators={setUserSenators} userRepresentative={userRepresentative} setUserRepresentative={setUserRepresentative} />
                 </div>
             </div>
         </div>
@@ -36,4 +34,4 @@ const RepDisplay = ({ representatives }) => {
 )
 }
 
-export default RepDisplay
+export default FindMyRep
