@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-function Form ({ userSenators, setUserSenators, userRepresentative, setUserRepresentative }) {
+function Form ({ setUserSenators, setUserRepresentative }) {
     const navigate = useNavigate();
     const repLookupURL = "https://civicinfo.googleapis.com/civicinfo/v2/representatives?address=";
     const senatorParams = "&levels=country&roles=legislatorUpperBody&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4";
@@ -55,12 +55,12 @@ function Form ({ userSenators, setUserSenators, userRepresentative, setUserRepre
             .then(r => {
                 if (r.ok) {
                     r.json().then(data => setUserRepresentative(data.officials))
+                    navigate("/representatives")
                     // r.json().then(data => console.log("full data", data, "just officials", data.officials))
                 } else {
                     r.json().then(data => setErrors(data.errors))
                 }
             })
-        navigate("/representatives")
     }
 
     return (
