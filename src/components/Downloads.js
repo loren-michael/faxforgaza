@@ -19,6 +19,10 @@ function Downloads () {
     // const [userSenators, setUserSenators] = useState([]);
     // const [userRepresentative, setUserRepresentative] = useState([]);
 
+    function findmyreps() {
+        navigate("/findmyreps")
+    }
+
     return (
         <div>
         <div class="bg-blue-100">
@@ -51,7 +55,7 @@ function Downloads () {
 
 
                     <div> 
-                        <button onClick={navigate("/findmyrep")} class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded"> Look Up Your Representatives </button>
+                        <button onClick={findmyreps} class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded"> Look Up Your Representatives </button>
                     </div>
 
                     <hr class="my-6 border-t border-gray-300"></hr>
