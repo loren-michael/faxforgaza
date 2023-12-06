@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../resources/logo.jpg'
-import { Form } from 'react-router-dom'
+import Form from './Form'
 
 
 function FindMyRep ({ userSenators, setUserSenators, userRepresentative, setUserRepresentative }) {
