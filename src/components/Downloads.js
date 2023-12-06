@@ -14,7 +14,7 @@ import logo from '../resources/logo.jpg'
 
 
 
-const Downloads = () => {
+function Downloads () {
     const navigate = useNavigate();
     // const [userSenators, setUserSenators] = useState([]);
     // const [userRepresentative, setUserRepresentative] = useState([]);

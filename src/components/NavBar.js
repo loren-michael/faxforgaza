@@ -2,7 +2,7 @@ import "../App.css";
 import React from 'react';
 // import LorenHartmanResume from '../resources/LorenHartmanResume.pdf'
 
-const NavBar = () => {
+function NavBar () {
   return (
     <div class="flex items-center justify-between flex-wrap bg-blue-500 p-6 sticky top-0">
       <div class="flex items-center flex-shrink-0 text-white mr-6">

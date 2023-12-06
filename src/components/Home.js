@@ -3,7 +3,7 @@ import React from 'react';
 import Downloads from "./Downloads";
 // import AboutMe from './AboutMe';
 
-const Home = () => {
+function Home () {
   return (
     <div class="h-full flex-grow">
       <Downloads />
