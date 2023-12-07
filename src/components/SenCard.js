@@ -12,7 +12,7 @@ function SenCard ({ senator }) {
         {senator.name}
       </h5>
       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200 font-merriweather">
-        {senator.photoUrl ? <img src={senator.photoUrl} alt="Official Portrait"/> : <></>}
+        {senator.photoUrl.length > 0 ? <img src={senator.photoUrl} alt="Official Portrait"/> : <></>}
         {senator.party}
       </p>
       <button 
