@@ -5,10 +5,6 @@ import RepCard from './RepCard';
 
 function RepDisplay({ userRepresentative, userSenators }) {
 
-  function handleGenerate(official) {
-    console.log(official)
-  }
-
   return (
     <div>
     <div class="bg-blue-100">
@@ -29,14 +25,14 @@ function RepDisplay({ userRepresentative, userSenators }) {
                     <h2 class="text-xl font-bold mb-4 font-merriweather">Here are your state senators:</h2>
                     {userSenators.map(senator => {
                       return(
-                        <SenCard senator={senator} handleGenerate={handleGenerate} />
+                        <SenCard senator={senator} />
                       )
                     })}
 
                     <h2 class="text-xl font-bold mb-4 font-merriweather">Here is your local representative:</h2>
                     {userRepresentative.map(representative => {
                       return (
-                        <RepCard representative={representative} handleGenerate={handleGenerate} />
+                        <RepCard representative={representative} />
                       )
                     })}
 
