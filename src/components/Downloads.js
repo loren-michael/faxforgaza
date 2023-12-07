@@ -20,7 +20,7 @@ function Downloads () {
     // const [userRepresentative, setUserRepresentative] = useState([]);
 
     function findmyreps() {
-        navigate("/findmyreps")
+        navigate("/findmyrep")
     }
 
     return (

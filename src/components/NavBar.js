@@ -23,7 +23,7 @@ function NavBar () {
           <a href="https://www.house.gov/representatives/find-your-representative" target="_blank" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white font-merriweather"> Find Your Representative </a>
         </div>
         {/* <div>
-          <a href={require("../resources/LorenHartmanResume.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather">Resume</a>
+          <a href={require("../resources/file.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather">Resume</a>
         </div> */}
       </div>
     </div>
