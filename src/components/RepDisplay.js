@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from '../resources/logo.jpg';
 import SenCard from './SenCard';
 import RepCard from './RepCard';
+import { useNavigate } from 'react-router-dom';
 
 function RepDisplay({ userRepresentative, userSenators }) {
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (userRepresentative.length === 0 && userSenators.length === 0) {
+      navigate("/findmyrep")
+    }
+  }, [])
 
   return (
     <div>
