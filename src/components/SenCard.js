@@ -1,8 +1,11 @@
 import React from 'react'
 
-function SenCard ({ userSenators }) {
+function SenCard ({ senator }) {
+  console.log(senator)
   return (
-    <div>SenCard</div>
+    <div>
+      <h3 class="text-l font-bold mb-4 font-merriweather">{senator.name}</h3>
+    </div>
   )
 }
 

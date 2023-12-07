@@ -1,8 +1,10 @@
 import React from 'react'
 
-function RepCard ({ userRepresentative }) {
+function RepCard ({ representative }) {
   return (
-    <div>RepCard</div>
+    <div>
+      <h3 class="text-l font-bold mb-4 font-merriweather">{representative.name}</h3>
+    </div>
   )
 }
 
