@@ -1,6 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import logo from '../resources/logo.jpg'
+import RepCard from './RepCard';
+import SenCard from './SenCard';
 // import RepDisplay from './RepDisplay';
 // import Form from './Form';
 // import RepCard from './RepCard';
@@ -14,7 +16,7 @@ import logo from '../resources/logo.jpg'
 
 
 
-function Downloads () {
+function Downloads ({ userSenators, userRepresentative }) {
     const navigate = useNavigate();
     // const [userSenators, setUserSenators] = useState([]);
     // const [userRepresentative, setUserRepresentative] = useState([]);
@@ -48,6 +50,10 @@ function Downloads () {
                                 </p>
 
                                 <hr class="my-6 border-t border-gray-300"></hr>
+
+                                { userRepresentative ? userRepresentative.map(representative => {return (<RepCard representative={representative} />)}) : <></> }
+
+                                { userSenators ? userSenators.map(senator => {return (<SenCard senator={senator}/>)}) : <></>}
 
                                 <div> 
                                     <button onClick={findmyreps} class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded"> Look Up Your Representatives </button>

@@ -3,10 +3,10 @@ import React from 'react';
 import Downloads from "./Downloads";
 // import AboutMe from './AboutMe';
 
-function Home () {
+function Home ({userSenators, userRepresentative}) {
   return (
     <div class="h-full flex-grow">
-      <Downloads />
+      <Downloads userSenators={userSenators} userRepresentative={userRepresentative} />
     </div>
   )
 }

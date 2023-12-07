@@ -25,7 +25,7 @@ export default function App() {
       <section className="body-font font-merriweather bg-blue-100">
         <NavBar />
         <Routes>
-          <Route exact path="/" element={ <Home /> }/>
+          <Route exact path="/" element={ <Home userSenators={userSenators} userRepresentative={userRepresentative} /> }/>
           <Route path="/findmyrep" element={ <FindMyRep setUserSenators={setUserSenators} setUserRepresentative={setUserRepresentative} userSenators={userSenators} userRepresentative={userRepresentative} /> } />
           <Route path="/representatives" element={ <RepDisplay userSenators={userSenators} userRepresentative={userRepresentative} /> }/>
           {/* <Route path="/resume" element={ <Resume /> }/> */}
