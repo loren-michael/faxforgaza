@@ -9,7 +9,7 @@ function SenCard ({ senator }) {
   return (
     <div>
       <h3 class="text-l mb-4 font-merriweather pl-6">{senator.name}</h3>
-      <button onClick={handleGenerate}> Generate a letter </button>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded" onClick={handleGenerate}> Generate a letter </button>
     </div>
   )
 }
