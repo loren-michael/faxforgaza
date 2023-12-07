@@ -127,8 +127,8 @@ function Form ({ setUserSenators, setUserRepresentative }) {
                             onChange={ e => setAddress({...address, zip: e.target.value}) }
                         />
                     </div>
-                    <button onClick={resetForm} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded pr-4"> Reset </button>
-                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded pl-4"> Submit </button>
+                    <button onClick={resetForm} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-6 rounded"> Reset </button>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-6 rounded"> Submit </button>
                 </form>
             </div>
             {/* <div>
