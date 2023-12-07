@@ -128,6 +128,7 @@ function Form ({ setUserSenators, setUserRepresentative }) {
                         />
                     </div>
                     <button onClick={resetForm} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-6 rounded"> Reset </button>
+                    <br></br>
                     <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-6 rounded"> Submit </button>
                 </form>
             </div>
