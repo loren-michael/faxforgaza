@@ -12,7 +12,7 @@ function RepCard ({ representative }) {
         {representative.name}
       </h5>
       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200 font-merriweather">
-        <img src={representative.photoUrl} alt="Official Portrait"/>
+        {representative.photoUrl ? <img src={representative.photoUrl} alt="Official Portrait"/> : <></>}
         {representative.party}
       </p>
       <button 

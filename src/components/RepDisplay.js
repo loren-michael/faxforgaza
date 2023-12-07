@@ -36,7 +36,7 @@ function RepDisplay({ userRepresentative, userSenators }) {
                     <SenCard senator={senator} />
                   )
                 })}
-
+                <br></br>
                 <h2 class="text-xl font-bold mb-4 font-merriweather">Here is your local representative:</h2>
                 {userRepresentative.map(representative => {
                   return (
