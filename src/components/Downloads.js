@@ -3,18 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import logo from '../resources/logo.jpg'
 import RepCard from './RepCard';
 import SenCard from './SenCard';
-// import RepDisplay from './RepDisplay';
-// import Form from './Form';
-// import RepCard from './RepCard';
-// import SenCard from './SenCard';
-// import GovernorLetter from '../resources/GovernorLetter.pdf'
-// import HouseRepLetter from '../resources/HouseRepLetter.pdf'
-// import SenatorLetter from '../resources/SenatorLetter.pdf'
-
-// https://civicinfo.googleapis.com/civicinfo/v2/representatives?levels=country&levels=administrativeArea1&roles=legislatorUpperBody&roles=legislatorLowerBody&roles=headOfGovernment&key=[YOUR_API_KEY]
-// https://civicinfo.googleapis.com/civicinfo/v2/representatives?address=1639%20West%20Farwell%20Avenue%2C%20Chicago%20IL%2060626&levels=country&levels=administrativeArea1&roles=legislatorUpperBody&roles=legislatorLowerBody&roles=headOfGovernment&key=[YOUR_API_KEY]
-
-
 
 function Downloads ({ userSenators, userRepresentative }) {
     const navigate = useNavigate();
