@@ -33,7 +33,7 @@ function RepDisplay({ userRepresentative, userSenators }) {
                 <h2 class="text-xl font-bold mb-4 font-merriweather">Here are your state senators:</h2>
                 {userSenators.map(senator => {
                   return(
-                    <SenCard senator={senator} class="justify-center" />
+                    <SenCard senator={senator} />
                   )
                 })}
                 <br></br>
