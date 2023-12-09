@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import RepLetter from './RepLetter';
+import SenLetter from './SenLetter';
 
 function RepCard ({ representative }) {
 
