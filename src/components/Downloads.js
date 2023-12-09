@@ -6,8 +6,6 @@ import SenCard from './SenCard';
 
 function Downloads ({ userSenators, userRepresentative }) {
     const navigate = useNavigate();
-    // const [userSenators, setUserSenators] = useState([]);
-    // const [userRepresentative, setUserRepresentative] = useState([]);
 
     function findmyreps() {
         navigate("/findmyrep")
