@@ -9,11 +9,6 @@ import RepDisplay from "./components/RepDisplay";
 import RepLetter from "./components/RepLetter";
 import SenLetter from "./components/SenLetter";
 
-
-// import Projects from "./components/Projects";
-// import Resume from "./components/Resume";
-// import AboutMe from "./components/AboutMe";
-
 /**
  * Uses Tailwind CSS for styling
  * Tailwind file is imported in App.css
