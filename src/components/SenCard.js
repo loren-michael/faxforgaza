@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { StoreContext } from '../context/store';
+import { StoreContext } from '../context/SenatorStore';
 
 function SenCard ({ senator }) {
   const [setOfficial] = useContext(StoreContext);

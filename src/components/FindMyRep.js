@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { StoreContext } from '../context/store'
+import { StoreContext } from '../context/SenatorStore'
 import logo from '../resources/logo.jpg'
 import Form from './Form'
 import RepCard from './RepCard'

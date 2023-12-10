@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import * as ReactDOMClient from 'react-dom/client';
-// import { createRoot } from 'react-dom/client';
 import "./App.css";
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { StoreProvider } from './context/store';
+import { AddressProvider } from './context/AddressStore';
+import { NameProvider } from './context/NameStore';
+import { OfficialProvider } from './context/OfficialStore';
+import { RepresentativeProvider } from './context/RepresentativeStore';
+import { SenatorProvider } from './context/SenatorStore';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <StoreProvider>
-      <App/>
-    </StoreProvider>
+    <AddressProvider>
+      <NameProvider>
+        <OfficialProvider>
+          <RepresentativeProvider>
+            <SenatorProvider>
+              <App/>
+            </SenatorProvider>
+          </RepresentativeProvider>
+        </OfficialProvider>
+      </NameProvider>
+    </AddressProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

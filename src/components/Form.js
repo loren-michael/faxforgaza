@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { StoreContext } from '../context/store';
+import { StoreContext } from '../context/SenatorStore';
 import { useNavigate } from 'react-router-dom';
 
 function Form () {

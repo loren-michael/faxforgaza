@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { StoreContext } from '../context/store';
+import { StoreContext } from '../context/SenatorStore';
 import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
 
 const styles = StyleSheet.create({

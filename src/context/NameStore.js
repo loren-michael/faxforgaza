@@ -1,21 +1,22 @@
 import React, { createContext, useState } from "react";
 
-const StoreContext = createContext(null);
+const NameContext = createContext(null);
 
-const StoreProvider = ({ children }) => {
+const NameProvider = ({ children }) => {
   // const [stores, setStores] = useState([])
-  const [userSenators, setUserSenators] = useState([]);
-  const [userRepresentative, setUserRepresentative] = useState([]);
-  const [official, setOfficial] = useState({})
+  // const [userSenators, setUserSenators] = useState([]);
+  // const [userRepresentative, setUserRepresentative] = useState([]);
+  // const [official, setOfficial] = useState({})
   const [name, setName] = useState("");
-  const [address, setAddress] = useState({
-      line1: "",
-      city: "",
-      state: "",
-      zip: ""
-  });
+  // const [address, setAddress] = useState({
+  //     line1: "",
+  //     city: "",
+  //     state: "",
+  //     zip: ""
+  // });
 
-  const value = [userSenators, setUserSenators, userRepresentative, setUserRepresentative, official, setOfficial, name, setName, address, setAddress]
+  const value = [name, setName];
+  // const value = [userSenators, setUserSenators, userRepresentative, setUserRepresentative, official, setOfficial, name, setName, address, setAddress]
   // const userSenatorState = [userSenators, setUserSenators]
   // const userRepresentativeState = [userRepresentative, setUserRepresentative]
   // const requestedOfficial = [official, setOfficial]
@@ -30,9 +31,9 @@ const StoreProvider = ({ children }) => {
     //   userName: [name, setName],
     //   userAddress: [address, setAddress]
     // }}>
-    <StoreContext.Provider value={value}>
+    <NameContext.Provider value={value}>
       { children }
-    </StoreContext.Provider>)
+    </NameContext.Provider>)
 }
 
-export { StoreProvider, StoreContext }
+export { NameProvider, NameContext }
