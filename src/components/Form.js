@@ -1,6 +1,10 @@
 import React, { useState, useContext } from 'react';
-import { StoreContext } from '../context/SenatorStore';
 import { useNavigate } from 'react-router-dom';
+import { NameContext } from '../context/NameStore';
+import { AddressContext } from '../context/AddressStore';
+import { SenatorContext } from '../context/SenatorStore';
+import { RepresentativeContext } from '../context/RepresentativeStore';
+
 
 function Form () {
     const navigate = useNavigate();
@@ -9,22 +13,11 @@ function Form () {
     const repParams = "&levels=country&roles=legislatorLowerBody&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4";
     const [errors, setErrors] = useState([]);
 
-    const [setUserSenators, setUserRepresentative, name, setName, address, setAddress] = useContext(StoreContext)
-    // const {userSenatorsState, userRepresentativeState, userName, userAddress} = React.useContext(StoreContext)
-    // const {userSenators, setUserSenators} = userSenatorsState;
-    // const {userRepresentative, setUserRepresentative} = userRepresentativeState;
-    // const {name, setName} = userName;
-    // const {address, setAddress} = userAddress;
+    const [name, setName] = useContext(NameContext);
+    const [address, setAddress] = useContext(AddressContext);
+    const [userSenators, setUserSenators] = useContext(SenatorContext);
+    const [userRepresentative, setUserRepresentative] = useContext(RepresentativeContext);
 
-    // function resetForm () {
-    //     setName("")
-    //     setAddress({
-    //         line1: "",
-    //         city: "",
-    //         state: "",
-    //         zip: ""
-    //     })
-    // }
 
     function handleSubmit(e) {
         e.preventDefault();
