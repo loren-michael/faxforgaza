@@ -123,12 +123,12 @@ function Form () {
                                 onChange={ e => setAddress({...address, zip: e.target.value}) }
                             />
                         </div>
-                        <div class="p-2">
+                        <span class="p-2">
                             <button onClick={resetForm} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button>  
-                        </div>
-                        <div class="p-2">
+                        </span>
+                        <span class="p-2">
                             <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Submit </button>
-                        </div>
+                        </span>
                         
                     </form>
                 </div>
