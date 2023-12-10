@@ -25,8 +25,8 @@ function FindMyRep () {
           </div>
           <div class="col-span-4 sm:col-span-9">
               <div class="bg-white shadow rounded-lg p-6">
-                { userRepresentative ? userRepresentative.map(representative => {return (<RepCard representative={representative} />)}) : <></> }
-                { userSenators ? userSenators.map(senator => {return (<SenCard senator={senator}/>)}) : <></>}
+                {/* { userRepresentative ? userRepresentative.map(representative => {return (<RepCard representative={representative} />)}) : <></> } */}
+                {/* { userSenators ? userSenators.map(senator => {return (<SenCard senator={senator}/>)}) : <></>} */}
                 <Form />
               </div>
           </div>
