@@ -1,8 +1,6 @@
 import "../App.css";
 import React from 'react';
 import Downloads from "./Downloads";
-// import { StoreContext } from "../context/store";
-// import AboutMe from './AboutMe';
 
 function Home () {
   return (
