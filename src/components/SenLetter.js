@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   }
 });
 
-function SenLetter() {
+function SenLetter({official}) {
   return (
     <Document>
       <Page size="A4" style={styles.page}>
