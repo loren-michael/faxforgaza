@@ -9,7 +9,7 @@ import { StoreProvider } from './context/store';
 // ReactDOM.render(<App />, document.getElementById('root'));
 
 const root = document.getElementById('root');
-ReactDOMClient.createRoot(root).render(
+root.render(
   <React.StrictMode>
     <StoreProvider>
       <App />
