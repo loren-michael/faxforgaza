@@ -1,21 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as ReactDOMClient from 'react-dom/client';
+// import * as ReactDOMClient from 'react-dom/client';
+// import { createRoot } from 'react-dom/client';
 import "./App.css";
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { StoreProvider } from './context/store';
 
-// ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <StoreProvider>
+    <App />
+  </StoreProvider>
+, document.getElementById('root'));
 
-const root = document.getElementById('root');
-root.render(
-  <React.StrictMode>
-    <StoreProvider>
-      <App />
-    </StoreProvider>
-  </React.StrictMode>
-)
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <StoreProvider>
+//       <App />
+//     </StoreProvider>
+//   </React.StrictMode>
+// )
 
 // root.render(
 //   <React.StrictMode>
