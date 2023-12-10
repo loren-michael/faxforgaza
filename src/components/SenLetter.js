@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   }
 });
 
-function SenLetter({official}) {
+function SenLetter({ name, address, official }) {
   return (
     <Document>
       <Page size="A4" style={styles.page}>

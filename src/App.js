@@ -5,6 +5,8 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import FindMyRep from "./components/FindMyRep";
 import RepDisplay from "./components/RepDisplay";
+import RepLetter from "./components/RepLetter";
+import SenLetter from "./components/SenLetter";
 
 
 // import Projects from "./components/Projects";
@@ -17,15 +19,16 @@ import RepDisplay from "./components/RepDisplay";
  */
 
 export default function App() {
-  const [userSenators, setUserSenators] = useState([]);
-  const [userRepresentative, setUserRepresentative] = useState([]);
-  const [name, setName] = useState("");
-  const [address, setAddress] = useState({
-      line1: "",
-      city: "",
-      state: "",
-      zip: ""
-  });
+  // const [userSenators, setUserSenators] = useState([]);
+  // const [userRepresentative, setUserRepresentative] = useState([]);
+  // const [official, setOfficial] = useState({})
+  // const [name, setName] = useState("");
+  // const [address, setAddress] = useState({
+  //     line1: "",
+  //     city: "",
+  //     state: "",
+  //     zip: ""
+  // });
 
   return (
     <BrowserRouter>
@@ -35,7 +38,8 @@ export default function App() {
           <Route exact path="/" element={ <Home userSenators={userSenators} userRepresentative={userRepresentative} /> }/>
           <Route path="/findmyrep" element={ <FindMyRep name={name} setName={setName} address={address} setAddress={setAddress} setUserSenators={setUserSenators} setUserRepresentative={setUserRepresentative} userSenators={userSenators} userRepresentative={userRepresentative} /> } />
           <Route path="/representatives" element={ <RepDisplay userSenators={userSenators} userRepresentative={userRepresentative} /> }/>
-          {/* <Route path="/pdfgenerator" element={ <PDFDisplay /> }/> */}
+          <Route path="/repletter" element={ <RepLetter name={name} address={address} official={official} /> }/>
+          <Route path="/senletter" element={ <SenLetter /> }/>
         </Routes>
       </section>
     </BrowserRouter>
