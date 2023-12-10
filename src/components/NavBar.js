@@ -1,6 +1,6 @@
 import "../App.css";
 import React from 'react';
-// import LorenHartmanResume from '../resources/LorenHartmanResume.pdf'
+
 
 function NavBar () {
   return (
