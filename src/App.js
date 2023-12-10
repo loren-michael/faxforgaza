@@ -36,10 +36,10 @@ export default function App() {
       <section className="body-font font-merriweather bg-blue-100">
         <NavBar />
         <Routes>
-          <Route exact path="/" element={ <Home userSenators={userSenators} userRepresentative={userRepresentative} /> }/>
-          <Route path="/findmyrep" element={ <FindMyRep name={name} setName={setName} address={address} setAddress={setAddress} setUserSenators={setUserSenators} setUserRepresentative={setUserRepresentative} userSenators={userSenators} userRepresentative={userRepresentative} /> } />
-          <Route path="/representatives" element={ <RepDisplay userSenators={userSenators} userRepresentative={userRepresentative} /> }/>
-          <Route path="/repletter" element={ <RepLetter name={name} address={address} official={official} /> }/>
+          <Route exact path="/" element={ <Home /> }/>
+          <Route path="/findmyrep" element={ <FindMyRep /> } />
+          <Route path="/representatives" element={ <RepDisplay /> }/>
+          <Route path="/repletter" element={ <RepLetter /> }/>
           <Route path="/senletter" element={ <SenLetter /> }/>
         </Routes>
       </section>
