@@ -1,11 +1,12 @@
 import React, {useContext} from 'react';
-import { StoreContext } from '../context/SenatorStore';
 import { useNavigate } from 'react-router-dom';
+import { OfficialContext } from '../context/OfficialStore';
+
 
 function RepCard ({ representative }) {
   const navigate = useNavigate();
 
-  const [setOfficial] = useContext(StoreContext);
+  const [official, setOfficial] = useContext(OfficialContext)
 
   function handleGenerate() {
     console.log(representative);
