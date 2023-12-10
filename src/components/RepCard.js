@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { StoreContext } from '../context/store';
 import { useNavigate } from 'react-router-dom';
 
 function RepCard ({ representative }) {
   const navigate = useNavigate();
 
+  const [setOfficial] = useContext(StoreContext);
+
   function handleGenerate() {
-    console.log(representative)
-    // navigate("/pdfgenerator")
+    console.log(representative);
+    setOfficial(representative);
   }
 
   return (

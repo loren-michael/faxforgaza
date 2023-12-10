@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import { StoreContext } from '../context/store';
 
 function SenCard ({ senator }) {
+  const [setOfficial] = useContext(StoreContext);
 
   function handleGenerate() {
-    console.log(senator)
+    console.log(senator);
+    setOfficial(senator);
   }
 
   return (
