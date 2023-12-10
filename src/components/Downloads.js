@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import logo from '../resources/logo.jpg'
+import { StoreContext } from '../context/store'
 import RepCard from './RepCard';
 import SenCard from './SenCard';
 
-function Downloads ({ userSenators, userRepresentative }) {
+function Downloads () {
     const navigate = useNavigate();
+    
+    const [userSenators, userRepresentative] = useContext(StoreContext)
 
     function findmyreps() {
         navigate("/findmyrep")

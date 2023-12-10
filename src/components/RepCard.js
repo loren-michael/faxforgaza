@@ -1,6 +1,4 @@
 import React from 'react';
-import RepLetter from './RepLetter';
-import SenLetter from './SenLetter';
 import { useNavigate } from 'react-router-dom';
 
 function RepCard ({ representative }) {
