@@ -19,6 +19,13 @@ import RepDisplay from "./components/RepDisplay";
 export default function App() {
   const [userSenators, setUserSenators] = useState([]);
   const [userRepresentative, setUserRepresentative] = useState([]);
+  const [name, setName] = useState("");
+  const [address, setAddress] = useState({
+      line1: "",
+      city: "",
+      state: "",
+      zip: ""
+  });
 
   return (
     <BrowserRouter>
@@ -26,7 +33,7 @@ export default function App() {
         <NavBar />
         <Routes>
           <Route exact path="/" element={ <Home userSenators={userSenators} userRepresentative={userRepresentative} /> }/>
-          <Route path="/findmyrep" element={ <FindMyRep setUserSenators={setUserSenators} setUserRepresentative={setUserRepresentative} userSenators={userSenators} userRepresentative={userRepresentative} /> } />
+          <Route path="/findmyrep" element={ <FindMyRep name={name} setName={setName} address={address} setAddress={setAddress} setUserSenators={setUserSenators} setUserRepresentative={setUserRepresentative} userSenators={userSenators} userRepresentative={userRepresentative} /> } />
           <Route path="/representatives" element={ <RepDisplay userSenators={userSenators} userRepresentative={userRepresentative} /> }/>
           {/* <Route path="/pdfgenerator" element={ <PDFDisplay /> }/> */}
         </Routes>

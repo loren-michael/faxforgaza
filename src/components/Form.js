@@ -1,19 +1,19 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-function Form ({ setUserSenators, setUserRepresentative }) {
+function Form ({ setUserSenators, setUserRepresentative, name, setName, address, setAddress }) {
     const navigate = useNavigate();
     const repLookupURL = "https://civicinfo.googleapis.com/civicinfo/v2/representatives?address=";
     const senatorParams = "&levels=country&roles=legislatorUpperBody&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4";
     const repParams = "&levels=country&roles=legislatorLowerBody&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4";
     const [errors, setErrors] = useState([]);
-    const [name, setName] = useState("");
-    const [address, setAddress] = useState({
-        line1: "",
-        city: "",
-        state: "",
-        zip: ""
-    });
+    // const [name, setName] = useState("");
+    // const [address, setAddress] = useState({
+    //     line1: "",
+    //     city: "",
+    //     state: "",
+    //     zip: ""
+    // });
 
     function resetForm () {
         setName("")
