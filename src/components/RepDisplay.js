@@ -1,14 +1,17 @@
 import React, { useEffect, useContext } from 'react';
-import { StoreContext } from '../context/SenatorStore';
 import logo from '../resources/logo.jpg';
 import SenCard from './SenCard';
 import RepCard from './RepCard';
 import { useNavigate } from 'react-router-dom';
+import { RepresentativeContext } from '../context/RepresentativeStore';
+import { SenatorContext } from '../context/SenatorStore';
+
 
 function RepDisplay() {
   const navigate = useNavigate()
 
-  const [userRepresentative, userSenators] = useContext(StoreContext)
+  const [userRepresentative, setUserRepresentative] = useContext(RepresentativeContext);
+  const [userSenators, setUserSenators] = useContext(SenatorContext)
 
   useEffect(() => {
     if (userRepresentative.length === 0 && userSenators.length === 0) {
