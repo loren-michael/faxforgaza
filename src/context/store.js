@@ -15,10 +15,21 @@ const StoreProvider = ({ children }) => {
       zip: ""
   });
 
-  const value = [userSenators, setUserSenators, userRepresentative, setUserRepresentative, official, setOfficial, name, setName, address, setAddress]
+  // const value = [userSenators, setUserSenators, userRepresentative, setUserRepresentative, official, setOfficial, name, setName, address, setAddress]
+  // const userSenatorState = [userSenators, setUserSenators]
+  // const userRepresentativeState = [userRepresentative, setUserRepresentative]
+  // const requestedOfficial = [official, setOfficial]
+  // const userName = [name, setName]
+  // const userAddress = [address, setAddress]
 
   return (
-    <StoreContext.Provider value={value}>
+    <StoreContext.Provider value={{
+      userSenatorState: [userSenators, setUserSenators], 
+      userRepresentativeState: [userRepresentative, setUserRepresentative],
+      requestedOfficial: [official, setOfficial],
+      userName: [name, setName],
+      userAddress: [address, setAddress]
+    }}>
       { children }
     </StoreContext.Provider>)
 }
