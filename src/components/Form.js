@@ -9,7 +9,12 @@ function Form () {
     const repParams = "&levels=country&roles=legislatorLowerBody&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4";
     const [errors, setErrors] = useState([]);
 
-    const [setUserSenators, setUserRepresentative, name, setName, address, setAddress] = useContext(StoreContext)
+    // const [setUserSenators, setUserRepresentative, name, setName, address, setAddress] = useContext(StoreContext)
+    const {userSenatorsState, userRepresentativeState, userName, userAddress} = useContext(StoreContext)
+    const [userSenators, setUserSenators] = userSenatorsState;
+    const [userRepresentative, setUserRepresentative] = userRepresentativeState;
+    const [name, setName] = userName;
+    const [address, setAddress] = userAddress;
 
     // function resetForm () {
     //     setName("")
@@ -34,7 +39,7 @@ function Form () {
         })
             .then(r => {
                 if (r.ok) {
-                    r.json().then(data => console.log(data.officials))
+                    r.json().then(data => setUserSenators(data.officials))
                     // r.json().then(data => console.log("full data", data, "just officials", data.officials))
                 } else {
                     r.json().then(data => setErrors(data.errors))
@@ -50,7 +55,7 @@ function Form () {
         })
             .then(r => {
                 if (r.ok) {
-                    r.json().then(data => console.log(data.officials))
+                    r.json().then(data => setUserRepresentative(data.officials))
                     // navigate("/representatives")
                     
                     // r.json().then(data => console.log("full data", data, "just officials", data.officials))
