@@ -11,15 +11,15 @@ function Form () {
 
     const [setUserSenators, setUserRepresentative, name, setName, address, setAddress] = useContext(StoreContext)
 
-    function resetForm () {
-        setName("")
-        setAddress({
-            line1: "",
-            city: "",
-            state: "",
-            zip: ""
-        })
-    }
+    // function resetForm () {
+    //     setName("")
+    //     setAddress({
+    //         line1: "",
+    //         city: "",
+    //         state: "",
+    //         zip: ""
+    //     })
+    // }
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -123,12 +123,12 @@ function Form () {
                                 onChange={ e => setAddress({...address, zip: e.target.value}) }
                             />
                         </div>
-                        <span class="p-2">
+                        {/* <span class="p-2">
                             <button onClick={resetForm} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button>  
-                        </span>
-                        <span class="p-2">
+                        </span> */}
+                        <div class="p-2">
                             <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Submit </button>
-                        </span>
+                        </div>
                         
                     </form>
                 </div>
