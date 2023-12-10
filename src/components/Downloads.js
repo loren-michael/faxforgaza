@@ -41,9 +41,9 @@ function Downloads () {
 
                                 <hr class="my-6 border-t border-gray-300"></hr>
 
-                                { userRepresentative ? userRepresentative.map(representative => {return (<RepCard representative={representative} />)}) : <></> }
+                                {/* { userRepresentative ? userRepresentative.map(representative => {return (<RepCard representative={representative} />)}) : <></> } */}
 
-                                { userSenators ? userSenators.map(senator => {return (<SenCard senator={senator}/>)}) : <></>}
+                                {/* { userSenators ? userSenators.map(senator => {return (<SenCard senator={senator}/>)}) : <></>} */}
 
                                 <div> 
                                     <button onClick={findmyreps} class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded"> Look Up Your Representatives </button>
