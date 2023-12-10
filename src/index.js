@@ -7,24 +7,25 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { StoreProvider } from './context/store';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <StoreProvider>
-      <App />
-    </StoreProvider>
-  </React.StrictMode>
-, document.getElementById('root'));
-
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-
-// root.render(
+// ReactDOM.render(
 //   <React.StrictMode>
 //     <StoreProvider>
 //       <App />
 //     </StoreProvider>
 //   </React.StrictMode>
-// )
+// , document.getElementById('root'));
+
+
+const container = ReactDOM.createRoot(document.getElementById('root'));
+const root = createRoot(container)
+
+root.render(
+  <React.StrictMode>
+    <StoreProvider>
+      <App />
+    </StoreProvider>
+  </React.StrictMode>
+)
 
 // root.render(
 //   <React.StrictMode>
