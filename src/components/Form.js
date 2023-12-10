@@ -10,7 +10,7 @@ function Form () {
     const [errors, setErrors] = useState([]);
 
     // const [setUserSenators, setUserRepresentative, name, setName, address, setAddress] = useContext(StoreContext)
-    const {userSenatorsState, userRepresentativeState, userName, userAddress} = useContext(StoreContext)
+    const {userSenatorsState, userRepresentativeState, userName, userAddress} = React.useContext(StoreContext)
     const [userSenators, setUserSenators] = userSenatorsState;
     const [userRepresentative, setUserRepresentative] = userRepresentativeState;
     const [name, setName] = userName;
