@@ -11,10 +11,10 @@ function Form () {
 
     // const [setUserSenators, setUserRepresentative, name, setName, address, setAddress] = useContext(StoreContext)
     const {userSenatorsState, userRepresentativeState, userName, userAddress} = React.useContext(StoreContext)
-    const [userSenators, setUserSenators] = userSenatorsState;
-    const [userRepresentative, setUserRepresentative] = userRepresentativeState;
-    const [name, setName] = userName;
-    const [address, setAddress] = userAddress;
+    const {userSenators, setUserSenators} = userSenatorsState;
+    const {userRepresentative, setUserRepresentative} = userRepresentativeState;
+    const {name, setName} = userName;
+    const {address, setAddress} = userAddress;
 
     // function resetForm () {
     //     setName("")
