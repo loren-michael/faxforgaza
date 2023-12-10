@@ -8,7 +8,7 @@ function RepCard ({ representative }) {
 
   function handleGenerate() {
     console.log(representative)
-    navigate("/letter")
+    // navigate("/pdfgenerator")
   }
 
   return (

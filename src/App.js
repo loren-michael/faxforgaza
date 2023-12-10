@@ -28,7 +28,7 @@ export default function App() {
           <Route exact path="/" element={ <Home userSenators={userSenators} userRepresentative={userRepresentative} /> }/>
           <Route path="/findmyrep" element={ <FindMyRep setUserSenators={setUserSenators} setUserRepresentative={setUserRepresentative} userSenators={userSenators} userRepresentative={userRepresentative} /> } />
           <Route path="/representatives" element={ <RepDisplay userSenators={userSenators} userRepresentative={userRepresentative} /> }/>
-          {/* <Route path="/resume" element={ <Resume /> }/> */}
+          {/* <Route path="/pdfgenerator" element={ <PDFDisplay /> }/> */}
         </Routes>
       </section>
     </BrowserRouter>
