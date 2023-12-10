@@ -9,12 +9,12 @@ function Form () {
     const repParams = "&levels=country&roles=legislatorLowerBody&key=AIzaSyB3B5EEu9oGWIZa8hIJKa1a2VxNcBZtoP4";
     const [errors, setErrors] = useState([]);
 
-    // const [setUserSenators, setUserRepresentative, name, setName, address, setAddress] = useContext(StoreContext)
-    const {userSenatorsState, userRepresentativeState, userName, userAddress} = React.useContext(StoreContext)
-    const {userSenators, setUserSenators} = userSenatorsState;
-    const {userRepresentative, setUserRepresentative} = userRepresentativeState;
-    const {name, setName} = userName;
-    const {address, setAddress} = userAddress;
+    const [setUserSenators, setUserRepresentative, name, setName, address, setAddress] = useContext(StoreContext)
+    // const {userSenatorsState, userRepresentativeState, userName, userAddress} = React.useContext(StoreContext)
+    // const {userSenators, setUserSenators} = userSenatorsState;
+    // const {userRepresentative, setUserRepresentative} = userRepresentativeState;
+    // const {name, setName} = userName;
+    // const {address, setAddress} = userAddress;
 
     // function resetForm () {
     //     setName("")
