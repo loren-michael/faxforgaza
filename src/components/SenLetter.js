@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   }
 });
 
-function SenLetter({ name, address, official }) {
+function SenLetter() {
   const [name, address, official] = useContext(StoreContext);
 
   return (
