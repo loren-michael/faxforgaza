@@ -15,13 +15,13 @@ function SenCard ({ senator }) {
         {senator.name}
       </h5>
       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200 font-merriweather">
-        {senator.photoUrl ? <img src={senator.photoUrl} class="justify-center" alt="Official Portrait"/> : <></>}
+        {senator.photoUrl ? <img src={senator.photoUrl} alt="Official Portrait"/> : <></>}
         {senator.party}
       </p>
       <button 
         type="button"
         onClick={handleGenerate}
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded" data-te-ripple-init data-te-ripple-color="light"
       > Generate Letter </button>
     </div>
   )
