@@ -49,7 +49,7 @@ function Form () {
             .then(r => {
                 if (r.ok) {
                     r.json().then(data => setUserRepresentative(data.officials))
-                    navigate("/representatives")
+                    // navigate("/representatives")
                     
                     // r.json().then(data => console.log("full data", data, "just officials", data.officials))
                 } else {
