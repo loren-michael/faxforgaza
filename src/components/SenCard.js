@@ -9,8 +9,7 @@ function SenCard ({ senator }) {
   function handleGenerate() {
     console.log(senator);
     setOfficial(senator);
-    navigate("/senletter");
-
+    // navigate("/senletter");
   }
 
   return (
