@@ -1,12 +1,16 @@
 import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { OfficialContext } from '../context/OfficialStore';
 
 function SenCard ({ senator }) {
+  const navigate = useNavigate();
   const [official, setOfficial] = useContext(OfficialContext);
 
   function handleGenerate() {
     console.log(senator);
     setOfficial(senator);
+    navigate("/senletter");
+
   }
 
   return (

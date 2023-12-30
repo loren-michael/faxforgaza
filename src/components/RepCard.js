@@ -11,6 +11,7 @@ function RepCard ({ representative }) {
   function handleGenerate() {
     console.log(representative);
     setOfficial(representative);
+    navigate("/repletter");
   }
 
   return (
