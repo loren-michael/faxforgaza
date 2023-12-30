@@ -12,13 +12,13 @@ function SenCard ({ senator }) {
   function handleGenerate() {
     console.log(senator);
     setOfficial(senator);
-    const downloadPdf = async () => {
-      const fileName = "personalizedSenatorLetter.pdf";
-      const blob = await pdf(<SenLetter />).toBlob();
-      saveAs(blob, fileName)
-    };
-    return <button onClick={downloadPdf} >Download PDF</button>
-    // navigate("/senletter");
+    // const downloadPdf = async () => {
+    //   const fileName = "personalizedSenatorLetter.pdf";
+    //   const blob = await pdf(<SenLetter />).toBlob();
+    //   saveAs(blob, fileName)
+    // };
+    // return <button onClick={downloadPdf} >Download PDF</button>
+    navigate("/senletter");
   }
 
   return (
