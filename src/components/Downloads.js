@@ -38,7 +38,7 @@ function Downloads () {
                                 <br></br><br></br>
                                 It is our hope that if people are given these resources and links they will be more likely to utilize them daily to flood our representatives with faxes directly from their phones.
                                 <br></br><br></br>
-                                To use this resource, you can either use our form to find your representatives by clicking the button below, or, if you know the names of your representatives or would rather not use our form, you can download our blank form PDF letters below and enter in your information on your device to fax. Once you have your PDF files, go to FaxZero and find the representatives you would like to send a letter to, upload your PDF and send it!
+                                To use this resource, you can either use our form to find your representatives by clicking the button below, or, if you know the names of your representatives or would rather not use our form, you can download our blank form PDF letters below and enter in your information on your device to fax. Once you have your PDF files, go to FaxZero and find the representatives you would like to send a letter to, upload your PDF and send it! This site uses Google's Civic Information API and does not save any information about visitors.
                                 </p>
 
                                 <hr class="my-6 border-t border-gray-300"></hr>
