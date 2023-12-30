@@ -24,7 +24,7 @@ function SenLetter() {
   return (
     <Document>
       <Page size="A4" style={styles.page}>
-        <View>
+        <View style={styles.section}>
           <Text></Text>
           <Text></Text>
           
@@ -42,9 +42,11 @@ Thank you.
 
           </Text>
         </View>
-        <View>
+        <View style={styles.section}>
           <Text>{name}</Text>
-          <Text>{address}</Text>
+          <Text>{address.line1}</Text>
+          <Text>{address.city}, {address.state}</Text>
+
         </View>
       </Page>
     </Document>
