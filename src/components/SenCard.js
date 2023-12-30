@@ -1,6 +1,9 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { OfficialContext } from '../context/OfficialStore';
+import { pdf } from '@react-pdf/renderer';
+import SenLetter from './SenLetter';
+import { saveAs } from 'file-saver';
 
 function SenCard ({ senator }) {
   const navigate = useNavigate();
@@ -9,6 +12,12 @@ function SenCard ({ senator }) {
   function handleGenerate() {
     console.log(senator);
     setOfficial(senator);
+    const downloadPdf = async () => {
+      const fileName = "personalizedSenatorLetter.pdf";
+      const blob = await pdf(<SenLetter />).toBlob();
+      saveAs(blob, fileName)
+    };
+    return <button onClick={downloadPdf} >Download PDF</button>
     // navigate("/senletter");
   }
 
