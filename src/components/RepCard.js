@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { OfficialContext } from '../context/OfficialStore';
+import RepLetter from './RepLetter';
 
 
 function RepCard ({ representative }) {
@@ -8,10 +9,14 @@ function RepCard ({ representative }) {
 
   const [official, setOfficial] = useContext(OfficialContext)
 
-  function handleGenerate() {
-    console.log(representative);
-    setOfficial(representative);
-    // navigate("/repletter");
+  // function handleGenerate() {
+  //   console.log(representative);
+  //   setOfficial(representative);
+  //   // navigate("/repletter");
+  // }
+
+  function handleDownload() {
+    console.log("download button")
   }
 
   return (
@@ -24,12 +29,12 @@ function RepCard ({ representative }) {
         {representative.party}
       </p>
       <br></br>
-      
-      {/* <button 
+      <RepLetter official={representative} />
+      <button 
         type="button"
-        onClick={handleGenerate}
+        onClick={handleDownload}
         class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"
-      > Generate Letter </button> */}
+      > Download Letter </button>
     </div>
   )
 }
