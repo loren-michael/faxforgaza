@@ -54,23 +54,23 @@ function SenLetter() {
               <Text style={styles.header}></Text>
               <Text></Text>
               <br></br>
+              <br></br>
               <Text>{greeting}</Text>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph1}</Text>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph2}</Text>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph3}</Text>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph4}</Text>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph5}</Text>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph6}</Text>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph7}</Text>
-              <br></br>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{name}</Text>
               <Text>{address.line1}</Text>
               <Text>{address.city}, {address.state}  {address.zip}</Text>

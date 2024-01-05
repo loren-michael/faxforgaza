@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { NameContext } from '../context/NameStore';
 import { AddressContext } from '../context/AddressStore';
-import { OfficialContext } from '../context/OfficialStore';
+// import { OfficialContext } from '../context/OfficialStore';
 import { Document, Page, Text, View, StyleSheet, PDFViewer } from '@react-pdf/renderer';
 
 const styles = StyleSheet.create({
@@ -29,10 +29,10 @@ const styles = StyleSheet.create({
 
 
 
-function RepLetter() {
+function RepLetter({ official }) {
   const [name, setName] = useContext(NameContext);
   const [address, setAddress] = useContext(AddressContext);
-  const [official, setOfficial] = useContext(OfficialContext);
+  // const [official, setOfficial] = useContext(OfficialContext);
 
   const greeting = `Dear ${official.name},`
   const paragraph1 = `I am writing as a constituent to demand an urgent, permanent ceasefire in occupied Palestine.
@@ -54,23 +54,23 @@ function RepLetter() {
               <Text style={styles.header}></Text>
               <Text></Text>
               <br></br>
+              <br></br>
               <Text>{greeting}</Text>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph1}</Text>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph2}</Text>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph3}</Text>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph4}</Text>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph5}</Text>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph6}</Text>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph7}</Text>
-              <br></br>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{name}</Text>
               <Text>{address.line1}</Text>
               <Text>{address.city}, {address.state}  {address.zip}</Text>
