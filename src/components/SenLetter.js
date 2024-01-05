@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { NameContext } from '../context/NameStore';
 import { AddressContext } from '../context/AddressStore';
-import { OfficialContext } from '../context/OfficialStore';
+// import { OfficialContext } from '../context/OfficialStore';
 import { Document, Page, Text, View, StyleSheet, PDFViewer } from '@react-pdf/renderer';
 
 const styles = StyleSheet.create({
