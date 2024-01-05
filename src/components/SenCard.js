@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 // import { useNavigate } from 'react-router-dom';
 import { AddressContext } from '../context/AddressStore';
 import { NameContext } from '../context/NameStore';
-import { OfficialContext } from '../context/OfficialStore';
+// import { OfficialContext } from '../context/OfficialStore';
 import { Document, Page, Text, View, StyleSheet, PDFViewer } from '@react-pdf/renderer';
 // import SenLetter from './SenLetter';
 // import { saveAs } from 'file-saver';
@@ -11,7 +11,7 @@ function SenCard ({ senator }) {
   // const navigate = useNavigate();
   const [name, setName] = useContext(NameContext);
   const [address, setAddress] = useContext(AddressContext);
-  const [official, setOfficial] = useContext(OfficialContext);
+  // const [official, setOfficial] = useContext(OfficialContext);
 
   const styles = StyleSheet.create({
     page: {
@@ -78,22 +78,6 @@ function SenCard ({ senator }) {
                 {paragraph6}{"\n"}{"\n"}
                 {paragraph7}{"\n"}{"\n"}
               </Text>
-              {/* <Text>{greeting}</Text>
-              {"\n"}{"\n"}
-              <Text>{paragraph1}</Text>
-              {"\n"}{"\n"}
-              <Text>{paragraph2}</Text>
-              {"\n"}{"\n"}
-              <Text>{paragraph3}</Text>
-              {"\n"}{"\n"}
-              <Text>{paragraph4}</Text>
-              {"\n"}{"\n"}
-              <Text>{paragraph5}</Text>
-              {"\n"}{"\n"}
-              <Text>{paragraph6}</Text>
-              {"\n"}{"\n"}
-              <Text>{paragraph7}</Text>
-              {"\n"}{"\n"} */}
               <Text>{name}</Text>
               <Text>{address.line1}</Text>
               <Text>{address.city}, {address.state}  {address.zip}</Text>
