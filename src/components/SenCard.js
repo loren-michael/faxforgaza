@@ -1,10 +1,11 @@
 import React from 'react';
 import SenLetter from './SenLetter';
+import FileSaver from 'file-saver';
 
 function SenCard ({ senator }) {
 
   function handleDownload() {
-    console.log("download button")
+    
   }
 
   return (

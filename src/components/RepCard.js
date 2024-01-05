@@ -1,11 +1,11 @@
 import React from 'react';
 import RepLetter from './RepLetter';
-
+import FileSaver from 'file-saver';
 
 function RepCard ({ representative }) {
 
   function handleDownload() {
-    console.log("download button")
+    
   }
 
   return (
