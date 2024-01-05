@@ -29,10 +29,10 @@ const styles = StyleSheet.create({
 
 
 
-function SenLetter() {
+function SenLetter({ official }) {
   const [name, setName] = useContext(NameContext);
   const [address, setAddress] = useContext(AddressContext);
-  const [official, setOfficial] = useContext(OfficialContext);
+  // const [official, setOfficial] = useContext(OfficialContext);
 
   const greeting = `Dear ${official.name},`
   const paragraph1 = `I am writing as a constituent to demand an urgent, permanent ceasefire in occupied Palestine. I urge you to issue a public statement in support of the ceasefire resolution introduced in the House by Rep. Cori Bush.`
