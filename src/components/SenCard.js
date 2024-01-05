@@ -1,11 +1,25 @@
 import React from 'react';
 import SenLetter from './SenLetter';
-import FileSaver from 'file-saver';
+import { saveAs } from 'file-saver';
+import { pdf } from '@react-pdf/renderer';
 
 function SenCard ({ senator }) {
 
-  function handleDownload() {
-    
+  // const DownloadButton = () => {
+  //   const downloadPdf = async () => {
+  //     const fileName = 'test.pdf';
+  //     const blob = await pdf(<YourDocument />).toBlob();
+  //     saveAs(blob, fileName);
+  //   };
+
+  const handleDownload = () => {
+    const downloadPdf = async () => {
+      const fileName = `${senator.name}Letter.pdf`;
+      const blob = await pdf(<SenLetter official={senator} />).toBlob();
+      saveAs(blob, fileName)
+    };
+    console.log("download pdf")
+    downloadPdf();
   }
 
   return (
