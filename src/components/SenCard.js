@@ -68,7 +68,17 @@ function SenCard ({ senator }) {
               <Text></Text>
               <br></br>
               <br></br>
-              <Text>{greeting}</Text>
+              <Text>
+                {greeting}{"\n"}{"\n"}
+                {paragraph1}{"\n"}{"\n"}
+                {paragraph2}{"\n"}{"\n"}
+                {paragraph3}{"\n"}{"\n"}
+                {paragraph4}{"\n"}{"\n"}
+                {paragraph5}{"\n"}{"\n"}
+                {paragraph6}{"\n"}{"\n"}
+                {paragraph7}{"\n"}{"\n"}
+              </Text>
+              {/* <Text>{greeting}</Text>
               {"\n"}{"\n"}
               <Text>{paragraph1}</Text>
               {"\n"}{"\n"}
@@ -83,7 +93,7 @@ function SenCard ({ senator }) {
               <Text>{paragraph6}</Text>
               {"\n"}{"\n"}
               <Text>{paragraph7}</Text>
-              {"\n"}{"\n"}
+              {"\n"}{"\n"} */}
               <Text>{name}</Text>
               <Text>{address.line1}</Text>
               <Text>{address.city}, {address.state}  {address.zip}</Text>
