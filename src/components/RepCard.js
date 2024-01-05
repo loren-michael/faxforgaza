@@ -30,6 +30,7 @@ function RepCard ({ representative }) {
       </p>
       <br></br>
       <RepLetter official={representative} />
+      <br></br>
       <button 
         type="button"
         onClick={handleDownload}
