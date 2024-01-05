@@ -87,7 +87,7 @@ function SenCard ({ senator }) {
           </Document>
         </PDFViewer>
       </div> */}
-      <br></br>
+      {/* <br></br> */}
       <button 
         type="button"
         onClick={handleDownload}
