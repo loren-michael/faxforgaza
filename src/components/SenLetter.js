@@ -46,37 +46,39 @@ function SenLetter() {
 
 
   return (
-    <PDFViewer>
-      <Document>
-        <Page size="A4" style={styles.page}>
-          <View style={styles.section}>
-            <Text style={styles.header}></Text>
-            <Text></Text>
-            <br></br>
-            <Text>{greeting}</Text>
-            <br></br>
-            <Text>{paragraph1}</Text>
-            <br></br>
-            <Text>{paragraph2}</Text>
-            <br></br>
-            <Text>{paragraph3}</Text>
-            <br></br>
-            <Text>{paragraph4}</Text>
-            <br></br>
-            <Text>{paragraph5}</Text>
-            <br></br>
-            <Text>{paragraph6}</Text>
-            <br></br>
-            <Text>{paragraph7}</Text>
-            <br></br>
-            <br></br>
-            <Text>{name}</Text>
-            <Text>{address.line1}</Text>
-            <Text>{address.city}, {address.state}  {address.zip}</Text>
-          </View>
-        </Page>
-      </Document>
-    </PDFViewer>
+    <div>
+      <PDFViewer>
+        <Document>
+          <Page size="A4" style={styles.page}>
+            <View style={styles.section}>
+              <Text style={styles.header}></Text>
+              <Text></Text>
+              <br></br>
+              <Text>{greeting}</Text>
+              <br></br>
+              <Text>{paragraph1}</Text>
+              <br></br>
+              <Text>{paragraph2}</Text>
+              <br></br>
+              <Text>{paragraph3}</Text>
+              <br></br>
+              <Text>{paragraph4}</Text>
+              <br></br>
+              <Text>{paragraph5}</Text>
+              <br></br>
+              <Text>{paragraph6}</Text>
+              <br></br>
+              <Text>{paragraph7}</Text>
+              <br></br>
+              <br></br>
+              <Text>{name}</Text>
+              <Text>{address.line1}</Text>
+              <Text>{address.city}, {address.state}  {address.zip}</Text>
+            </View>
+          </Page>
+        </Document>
+      </PDFViewer>
+    </div>
   )
 }
 
