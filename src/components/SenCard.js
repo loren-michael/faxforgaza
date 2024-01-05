@@ -60,31 +60,33 @@ function SenCard ({ senator }) {
       </p>
       <br></br>
       {/* <SenLetter official={senator} /> */}
-      <PDFViewer>
-        <Document>
-          <Page size="A4" style={styles.page}>
-            <View style={styles.section}>
-              <Text style={styles.header}></Text>
-              <Text></Text>
-              <br></br>
-              <br></br>
-              <Text>
-                {greeting}{"\n"}{"\n"}
-                {paragraph1}{"\n"}{"\n"}
-                {paragraph2}{"\n"}{"\n"}
-                {paragraph3}{"\n"}{"\n"}
-                {paragraph4}{"\n"}{"\n"}
-                {paragraph5}{"\n"}{"\n"}
-                {paragraph6}{"\n"}{"\n"}
-                {paragraph7}{"\n"}{"\n"}
-              </Text>
-              <Text>{name}</Text>
-              <Text>{address.line1}</Text>
-              <Text>{address.city}, {address.state}  {address.zip}</Text>
-            </View>
-          </Page>
-        </Document>
-      </PDFViewer>
+      <div class="hidden">
+        <PDFViewer>
+          <Document>
+            <Page size="A4" style={styles.page}>
+              <View style={styles.section}>
+                <Text style={styles.header}></Text>
+                <Text></Text>
+                <br></br>
+                <br></br>
+                <Text>
+                  {greeting}{"\n"}{"\n"}
+                  {paragraph1}{"\n"}{"\n"}
+                  {paragraph2}{"\n"}{"\n"}
+                  {paragraph3}{"\n"}{"\n"}
+                  {paragraph4}{"\n"}{"\n"}
+                  {paragraph5}{"\n"}{"\n"}
+                  {paragraph6}{"\n"}{"\n"}
+                  {paragraph7}{"\n"}{"\n"}
+                </Text>
+                <Text>{name}</Text>
+                <Text>{address.line1}</Text>
+                <Text>{address.city}, {address.state}  {address.zip}</Text>
+              </View>
+            </Page>
+          </Document>
+        </PDFViewer>
+      </div>
       <br></br>
       <button 
         type="button"

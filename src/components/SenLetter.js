@@ -35,8 +35,7 @@ function SenLetter() {
   const [official, setOfficial] = useContext(OfficialContext);
 
   const greeting = `Dear ${official.name},`
-  const paragraph1 = `I am writing as a constituent to demand an urgent, permanent ceasefire in occupied Palestine.
-  I urge you to issue a public statement in support of the ceasefire resolution introduced in the House by Rep. Cori Bush.`
+  const paragraph1 = `I am writing as a constituent to demand an urgent, permanent ceasefire in occupied Palestine. I urge you to issue a public statement in support of the ceasefire resolution introduced in the House by Rep. Cori Bush.`
   const paragraph2 = `Over 20,000 Palestinians have been killed since October 7. The humanitarian situation is dire for the 2.3 million Palestinians living in Gaza. 80 percent of Palestinians living in Gaza are now homeless. Israel’s unrelenting violence has led to worsening conditions, including the rapid spread of deadly cholera and widespread shortages of food, clean water, and medical supplies. Israel has damaged or destroyed housing, educational and medical facilities. They have targeted journalists and media workers. The escalating, catastrophic violence threatens to lead to more and more loss of life for Palestinians. This is genocide.`
   const paragraph3 = `Congress must hear loud and clear that Americans support a permanent ceasefire, and want to ensure that Palestine’s freedom is no longer a dream.`
   const paragraph4 = `Millions of human lives are at stake. We must build on our collective humanity and call for an immediate ceasefire.`
@@ -55,22 +54,16 @@ function SenLetter() {
               <Text></Text>
               <br></br>
               <br></br>
-              <Text>{greeting}</Text>
-              {"\n"}{"\n"}
-              <Text>{paragraph1}</Text>
-              {"\n"}{"\n"}
-              <Text>{paragraph2}</Text>
-              {"\n"}{"\n"}
-              <Text>{paragraph3}</Text>
-              {"\n"}{"\n"}
-              <Text>{paragraph4}</Text>
-              {"\n"}{"\n"}
-              <Text>{paragraph5}</Text>
-              {"\n"}{"\n"}
-              <Text>{paragraph6}</Text>
-              {"\n"}{"\n"}
-              <Text>{paragraph7}</Text>
-              {"\n"}{"\n"}
+              <Text>
+                {greeting}{"\n"}{"\n"}
+                {paragraph1}{"\n"}{"\n"}
+                {paragraph2}{"\n"}{"\n"}
+                {paragraph3}{"\n"}{"\n"}
+                {paragraph4}{"\n"}{"\n"}
+                {paragraph5}{"\n"}{"\n"}
+                {paragraph6}{"\n"}{"\n"}
+                {paragraph7}{"\n"}{"\n"}
+              </Text>
               <Text>{name}</Text>
               <Text>{address.line1}</Text>
               <Text>{address.city}, {address.state}  {address.zip}</Text>
