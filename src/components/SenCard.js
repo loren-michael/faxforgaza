@@ -68,19 +68,27 @@ function SenCard ({ senator }) {
               <Text style={styles.header}></Text>
               <Text></Text>
               <br></br>
+              <br></br>
               <Text>{greeting}</Text>
+              <br></br>
               <br></br>
               <Text>{paragraph1}</Text>
               <br></br>
+              <br></br>
               <Text>{paragraph2}</Text>
+              <br></br>
               <br></br>
               <Text>{paragraph3}</Text>
               <br></br>
+              <br></br>
               <Text>{paragraph4}</Text>
+              <br></br>
               <br></br>
               <Text>{paragraph5}</Text>
               <br></br>
+              <br></br>
               <Text>{paragraph6}</Text>
+              <br></br>
               <br></br>
               <Text>{paragraph7}</Text>
               <br></br>
