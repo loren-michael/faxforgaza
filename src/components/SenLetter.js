@@ -2,12 +2,12 @@ import React, { useContext } from 'react';
 import { NameContext } from '../context/NameStore';
 import { AddressContext } from '../context/AddressStore';
 import { OfficialContext } from '../context/OfficialStore';
-import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
+import { Document, Page, Text, View, StyleSheet, PDFViewer } from '@react-pdf/renderer';
 
 const styles = StyleSheet.create({
   page: {
     flexDirection: 'row',
-    backgroundColor: '#E4E4E4'
+    // backgroundColor: '#E4E4E4'
   },
   section: {
     margin: 10,
@@ -46,32 +46,34 @@ function SenLetter() {
 
 
   return (
-    <Document>
-      <Page size="A4" style={styles.page}>
-        <View style={styles.section}>
-          <Text style={styles.header}></Text>
-          <Text></Text>
-          <Text>{greeting}</Text>
-          <Text />
-          <Text>{paragraph1}</Text>
-          <Text>{paragraph2}</Text>
-          <Text>{paragraph3}</Text>
-          <Text>{paragraph4}</Text>
-          <Text>{paragraph5}</Text>
-          <Text>{paragraph6}</Text>
-          <Text>{paragraph7}</Text>
-          <Text>{name}</Text>
-          <Text>{address.line1}</Text>
-          <Text>{address.city}, {address.state}  {address.zip}</Text>
-        </View>
-        <View style={styles.section}>
-          <Text>{name}</Text>
-          <Text>{address.line1}</Text>
-          <Text>{address.city}, {address.state}</Text>
+    <PDFViewer>
+      <Document>
+        <Page size="A4" style={styles.page}>
+          <View style={styles.section}>
+            <Text style={styles.header}></Text>
+            <Text></Text>
+            <Text>{greeting}</Text>
+            <Text />
+            <Text>{paragraph1}</Text>
+            <Text>{paragraph2}</Text>
+            <Text>{paragraph3}</Text>
+            <Text>{paragraph4}</Text>
+            <Text>{paragraph5}</Text>
+            <Text>{paragraph6}</Text>
+            <Text>{paragraph7}</Text>
+            <Text>{name}</Text>
+            <Text>{address.line1}</Text>
+            <Text>{address.city}, {address.state}  {address.zip}</Text>
+          </View>
+          <View style={styles.section}>
+            <Text>{name}</Text>
+            <Text>{address.line1}</Text>
+            <Text>{address.city}, {address.state}</Text>
 
-        </View>
-      </Page>
-    </Document>
+          </View>
+        </Page>
+      </Document>
+    </PDFViewer>
   )
 }
 
