@@ -15,8 +15,7 @@ function SenCard ({ senator }) {
 
   const styles = StyleSheet.create({
     page: {
-      flexDirection: 'row',
-      // backgroundColor: '#E4E4E4'
+      flexDirection: 'row'
     },
     section: {
       margin: 10,
@@ -70,29 +69,21 @@ function SenCard ({ senator }) {
               <br></br>
               <br></br>
               <Text>{greeting}</Text>
-              <br></br>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph1}</Text>
-              <br></br>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph2}</Text>
-              <br></br>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph3}</Text>
-              <br></br>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph4}</Text>
-              <br></br>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph5}</Text>
-              <br></br>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph6}</Text>
-              <br></br>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{paragraph7}</Text>
-              <br></br>
-              <br></br>
+              {"\n"}{"\n"}
               <Text>{name}</Text>
               <Text>{address.line1}</Text>
               <Text>{address.city}, {address.state}  {address.zip}</Text>
