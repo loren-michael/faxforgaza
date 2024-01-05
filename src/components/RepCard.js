@@ -1,19 +1,8 @@
-import React, {useContext} from 'react';
-// import { useNavigate } from 'react-router-dom';
-// import { OfficialContext } from '../context/OfficialStore';
+import React from 'react';
 import RepLetter from './RepLetter';
 
 
 function RepCard ({ representative }) {
-  // const navigate = useNavigate();
-
-  // const [official, setOfficial] = useContext(OfficialContext)
-
-  // function handleGenerate() {
-  //   console.log(representative);
-  //   setOfficial(representative);
-  //   // navigate("/repletter");
-  // }
 
   function handleDownload() {
     console.log("download button")
