@@ -29,6 +29,7 @@ function RepCard ({ representative }) {
         {representative.party}
       </p>
       <br></br>
+      Representative Card
       <RepLetter official={representative} />
       <button 
         type="button"
