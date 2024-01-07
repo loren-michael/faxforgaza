@@ -12,15 +12,15 @@ function SenCard ({ senator }) {
   //     saveAs(blob, fileName);
   //   };
 
-  // const handleDownload = () => {
-  //   const downloadPdf = async () => {
-  //     const fileName = `${senator.name}Letter.pdf`;
-  //     const blob = await pdf(<SenLetter />).toBlob();
-  //     saveAs(blob, fileName)
-  //   };
-  //   console.log("download pdf")
-  //   downloadPdf();
-  // };
+  const handleDownload = () => {
+    // const downloadPdf = async () => {
+    //   const fileName = `${senator.name}Letter.pdf`;
+    //   const blob = await pdf(<SenLetter />).toBlob();
+    //   saveAs(blob, fileName)
+    // };
+    // console.log("download pdf")
+    // downloadPdf();
+  };
 
   return (
     <div class="rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
@@ -32,18 +32,18 @@ function SenCard ({ senator }) {
         {senator.photoUrl ? <img src={senator.photoUrl} alt="Official Portrait"/> : <></>}
       </p>
       <br></br>
-      <PDFDownloadLink document={<SenLetter />} fileName={`${senator.name} Letter.pdf`}> 
-        <SenLetter official={senator} />
-        <br></br>
+      {/* <PDFDownloadLink document={<SenLetter />} fileName={`${senator.name} Letter.pdf`}>  */}
+        {/* <SenLetter official={senator} /> */}
+        {/* <br></br> */}
 
-        <button> Download </button> 
+        {/* <button> Download </button>  */}
 
-      </PDFDownloadLink> 
-      {/* <button 
+      {/* </PDFDownloadLink>  */}
+      <button 
         type="button"
         onClick={handleDownload}
         class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"
-      > Download Letter </button> */}
+      > Download Letter </button>
     </div>
   )
 }
