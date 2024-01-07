@@ -32,9 +32,9 @@ function SenCard ({ senator }) {
         {senator.photoUrl ? <img src={senator.photoUrl} alt="Official Portrait"/> : <></>}
       </p>
       <br></br>
-      <SenLetter official={senator} />
-      <br></br>
       <PDFDownloadLink document={<SenLetter />} fileName={`${senator.name} Letter.pdf`}> 
+        <SenLetter official={senator} />
+        <br></br>
 
         <button> Download </button> 
 
