@@ -34,7 +34,7 @@ function SenCard ({ senator }) {
       <br></br>
       <SenLetter official={senator} />
       <br></br>
-      <PDFDownloadLink document={<SenLetter official={senator} />} fileName={`${senator.name} Letter.pdf`}> 
+      <PDFDownloadLink document={<SenLetter />} fileName={`${senator.name} Letter.pdf`}> 
 
         <button> Download </button> 
 
