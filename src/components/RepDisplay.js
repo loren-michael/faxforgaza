@@ -36,6 +36,13 @@ function RepDisplay() {
             </div>
             <div class="col-span-4 sm:col-span-9">
               <div class="bg-white shadow rounded-lg p-6">
+                <h2 class="text-xl font-bold mb-4 font-merriweather">Here is your local representative:</h2>
+                {userRepresentative.map(representative => {
+                  return (
+                    <RepCard representative={representative} />
+                  )
+                })}
+                <br></br>
                 <h2 class="text-xl font-bold mb-4 font-merriweather">Here are your state senators:</h2>
                 {userSenators.map(senator => {
                   return(
@@ -43,13 +50,6 @@ function RepDisplay() {
                   )
                 })}
                 <br></br>
-                <h2 class="text-xl font-bold mb-4 font-merriweather">Here is your local representative:</h2>
-                {userRepresentative.map(representative => {
-                  return (
-                    <RepCard representative={representative} />
-                  )
-                })}
-
               </div>
             </div>
           </div>

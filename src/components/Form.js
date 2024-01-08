@@ -56,6 +56,7 @@ function Form () {
                     r.json().then(data => setErrors(data.errors))
                 }
             })
+            navigate("/representatives")
     }
 
     return (
