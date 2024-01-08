@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import { NameContext } from '../context/NameStore';
 import { AddressContext } from '../context/AddressStore';
 // import { OfficialContext } from '../context/OfficialStore';
-import { Document, Page, Text, View, StyleSheet, PDFViewer } from '@react-pdf/renderer';
+import { Document, Page, Text, View, StyleSheet, PDFViewer, PDFDownloadLink, pdf } from '@react-pdf/renderer';
+
 
 const styles = StyleSheet.create({
   page: {
@@ -44,6 +45,10 @@ function SenLetter({ official }) {
   const paragraph7 = `Thank you.`
 
 
+  function handleDownload() {
+    console.log("download button from sen letter comp")
+  }
+
   return (
     <div>
       <PDFViewer>
@@ -71,6 +76,11 @@ function SenLetter({ official }) {
           </Page>
         </Document>
       </PDFViewer>
+      <button 
+        type="button"
+        onClick={handleDownload}
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"
+      > Download Letter </button>
     </div>
   )
 }

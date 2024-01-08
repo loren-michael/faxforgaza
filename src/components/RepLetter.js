@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import { NameContext } from '../context/NameStore';
 import { AddressContext } from '../context/AddressStore';
 // import { OfficialContext } from '../context/OfficialStore';
-import { Document, Page, Text, View, StyleSheet, PDFViewer } from '@react-pdf/renderer';
+import { Document, Page, Text, View, StyleSheet, PDFViewer, PDFDownloadLink, pdf } from '@react-pdf/renderer';
+
 
 const styles = StyleSheet.create({
   page: {
@@ -43,34 +44,44 @@ function RepLetter({ official }) {
   const paragraph6 = `If you do not act, we will remember.`
   const paragraph7 = `Thank you.`
 
+  function handleDownload() {
+    console.log("download button from rep letter comp")
+  }
 
   return (
     <div>
-      <PDFViewer>
-        <Document>
-          <Page size="A4" style={styles.page}>
-            <View style={styles.section}>
-              <Text style={styles.header}></Text>
-              <Text></Text>
-              <br></br>
-              <br></br>
-              <Text>
-                {greeting}{"\n"}{"\n"}
-                {paragraph1}{"\n"}{"\n"}
-                {paragraph2}{"\n"}{"\n"}
-                {paragraph3}{"\n"}{"\n"}
-                {paragraph4}{"\n"}{"\n"}
-                {paragraph5}{"\n"}{"\n"}
-                {paragraph6}{"\n"}{"\n"}
-                {paragraph7}{"\n"}{"\n"}
-              </Text>
-              <Text>{name}</Text>
-              <Text>{address.line1}</Text>
-              <Text>{address.city}, {address.state}  {address.zip}</Text>
-            </View>
-          </Page>
-        </Document>
-      </PDFViewer>
+      <PDFDownloadLink>
+        <PDFViewer>
+          <Document>
+            <Page size="A4" style={styles.page}>
+              <View style={styles.section}>
+                <Text style={styles.header}></Text>
+                <Text></Text>
+                <br></br>
+                <br></br>
+                <Text>
+                  {greeting}{"\n"}{"\n"}
+                  {paragraph1}{"\n"}{"\n"}
+                  {paragraph2}{"\n"}{"\n"}
+                  {paragraph3}{"\n"}{"\n"}
+                  {paragraph4}{"\n"}{"\n"}
+                  {paragraph5}{"\n"}{"\n"}
+                  {paragraph6}{"\n"}{"\n"}
+                  {paragraph7}{"\n"}{"\n"}
+                </Text>
+                <Text>{name}</Text>
+                <Text>{address.line1}</Text>
+                <Text>{address.city}, {address.state}  {address.zip}</Text>
+              </View>
+            </Page>
+          </Document>
+        </PDFViewer>
+      </PDFDownloadLink>
+      <button 
+        type="button"
+        onClick={handleDownload}
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"
+      > Download Letter </button>
     </div>
   )
 }

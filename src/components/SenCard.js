@@ -1,7 +1,7 @@
 import React from 'react';
 import SenLetter from './SenLetter';
-import { saveAs } from 'file-saver';
-import { pdf, PDFDownloadLink } from '@react-pdf/renderer';
+// import { saveAs } from 'file-saver';
+// import { pdf, PDFDownloadLink } from '@react-pdf/renderer';
 
 function SenCard ({ senator }) {
 
@@ -33,17 +33,18 @@ function SenCard ({ senator }) {
       </p>
       <br></br>
       {/* <PDFDownloadLink document={<SenLetter />} fileName={`${senator.name} Letter.pdf`}>  */}
-        {/* <SenLetter official={senator} /> */}
-        {/* <br></br> */}
+        <SenLetter official={senator} />
+        <br></br>
 
         {/* <button> Download </button>  */}
 
       {/* </PDFDownloadLink>  */}
-      <button 
+      {/* <button 
         type="button"
         onClick={handleDownload}
         class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"
-      > Download Letter </button>
+      > Download Letter </button> */}
+
     </div>
   )
 }
