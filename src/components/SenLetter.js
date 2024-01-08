@@ -46,16 +46,17 @@ function SenLetter({ official }) {
   const paragraph7 = `Thank you.`
 
 
-  const handleDownload = async (documentData, fileName) => {
+  const handleDownload = async () => {
+    const fileName = `${official.name}Letter.pdf`;
     const blob = await pdf((
-      <SenLetter official={official} pdfDocumentData={documentData} />
+      <SenLetter official={official} />
     )).toBlob();
-    saveAs(blob, fileName)
+    saveAs(blob, fileName);
   }
 
   return (
     <div>
-      <PDFDownloadLink>
+      <PDFDownloadLink document={<SenLetter official={official} />}>
         <PDFViewer>
           <Document>
             <Page size="A4" style={styles.page}>
