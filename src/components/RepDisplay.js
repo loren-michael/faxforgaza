@@ -13,11 +13,11 @@ function RepDisplay() {
   const [userRepresentative, setUserRepresentative] = useContext(RepresentativeContext);
   const [userSenators, setUserSenators] = useContext(SenatorContext)
 
-  useEffect(() => {
-    if (userRepresentative.length === 0 && userSenators.length === 0) {
-      navigate("/findmyrep")
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (userRepresentative.length === 0 && userSenators.length === 0) {
+  //     navigate("/findmyrep")
+  //   }
+  // }, [])
 
   function handleNavigation() {
     navigate("/findmyrep");
