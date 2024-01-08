@@ -47,9 +47,9 @@ function RepLetter({ official }) {
 
 
   return (
-    // <div>
-      // <PDFDownloadLink>
-        // <PDFViewer>
+    <div>
+      {/* // <PDFDownloadLink> */}
+        {/* // <PDFViewer> */}
           <Document>
             <Page size="A4" style={styles.page}>
               <View style={styles.section}>
@@ -73,14 +73,14 @@ function RepLetter({ official }) {
               </View>
             </Page>
           </Document>
-    //     {/* </PDFViewer> */}
-    //   // </PDFDownloadLink>
-    //   {/* <button 
-    //     type="button"
-    //     // onClick={handleDownload}
-    //     class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"
-    //   > Download Letter </button>
-    // </div> */}
+    {/* //     </PDFViewer> */}
+    {/* //   // </PDFDownloadLink> */}
+      {/* <button 
+        type="button"
+        // onClick={handleDownload}
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"
+      > Download Letter </button>} */}
+    </div>
   )
 }
 
