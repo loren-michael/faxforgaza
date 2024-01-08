@@ -22,22 +22,22 @@ function Form () {
     function handleSubmit(e) {
         e.preventDefault();
         // SENATOR LOOKUP
-        // const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
-        // fetch(repLookupURL + addressParams + senatorParams, {
-        //     method: "GET",
-        //     headers: {
-        //         "content-type": "application/json",
-        //         "accept": "application/json"
-        //     }
-        // })
-        //     .then(r => {
-        //         if (r.ok) {
-        //             r.json().then(data => setUserSenators(data.officials))
-        //             // r.json().then(data => console.log("full data", data, "just officials", data.officials))
-        //         } else {
-        //             r.json().then(data => setErrors(data.errors))
-        //         }
-        //     })
+        const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
+        fetch(repLookupURL + addressParams + senatorParams, {
+            method: "GET",
+            headers: {
+                "content-type": "application/json",
+                "accept": "application/json"
+            }
+        })
+            .then(r => {
+                if (r.ok) {
+                    r.json().then(data => setUserSenators(data.officials))
+                    // r.json().then(data => console.log("full data", data, "just officials", data.officials))
+                } else {
+                    r.json().then(data => setErrors(data.errors))
+                }
+            })
         // REPRESENTATIVE LOOKUP
         // fetch(repLookupURL + addressParams + repParams, {
         //     method: "GET",
