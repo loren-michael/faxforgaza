@@ -56,7 +56,7 @@ function SenLetter({ official }) {
 
   return (
     <div>
-      <PDFDownloadLink document={<SenLetter official={official} />}>
+      {/* <PDFDownloadLink document={<SenLetter official={official} />}> */}
         <PDFViewer>
           <Document>
             <Page size="A4" style={styles.page}>
@@ -88,7 +88,7 @@ function SenLetter({ official }) {
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"
           > Download Letter 
         </button>
-      </PDFDownloadLink>
+      {/* </PDFDownloadLink> */}
     </div>
   )
 }
