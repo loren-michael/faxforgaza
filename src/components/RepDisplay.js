@@ -19,6 +19,10 @@ function RepDisplay() {
     }
   }, [])
 
+  function handleNavigation() {
+    navigate("/findmyrep");
+  }
+
   return (
     <div>
       <div class="bg-blue-100">
@@ -44,12 +48,13 @@ function RepDisplay() {
                 })}
                 <br></br>
                 <h2 class="text-xl font-bold mb-4 font-merriweather">Here are your state senators:</h2>
-                {userSenators.map(senator => {
+                {/* {userSenators.map(senator => {
                   return(
                     <SenCard senator={senator} />
                   )
-                })}
+                })} */}
                 <br></br>
+                <button type="button" onClick={handleNavigation} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light" > Back to Form </button>
               </div>
             </div>
           </div>
