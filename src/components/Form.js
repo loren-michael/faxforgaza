@@ -32,30 +32,30 @@ function Form () {
         })
             .then(r => {
                 if (r.ok) {
-                    r.json().then(data => console.log(data))
+                    r.json().then(data => setUserSenators(data.officials))
                     // r.json().then(data => console.log("full data", data, "just officials", data.officials))
                 } else {
                     r.json().then(data => setErrors(data.errors))
                 }
             })
         // REPRESENTATIVE LOOKUP
-        // fetch(repLookupURL + addressParams + repParams, {
-        //     method: "GET",
-        //     headers: {
-        //         "content-type": "application/json",
-        //         "accept": "application/json"
-        //     }
-        // })
-        //     .then(r => {
-        //         if (r.ok) {
-        //             r.json().then(data => setUserRepresentative(data.officials)).then(data => console.log(data))
-        //             // navigate("/representatives")
+        fetch(repLookupURL + addressParams + repParams, {
+            method: "GET",
+            headers: {
+                "content-type": "application/json",
+                "accept": "application/json"
+            }
+        })
+            .then(r => {
+                if (r.ok) {
+                    r.json().then(data => console.log(data.officials))
+                    // navigate("/representatives")
                     
-        //             // r.json().then(data => console.log("full data", data, "just officials", data.officials))
-        //         } else {
-        //             r.json().then(data => setErrors(data.errors))
-        //         }
-        //     })
+                    // r.json().then(data => console.log("full data", data, "just officials", data.officials))
+                } else {
+                    r.json().then(data => setErrors(data.errors))
+                }
+            })
     }
 
     return (
