@@ -1,5 +1,6 @@
 import React from 'react';
 import RepLetter from './RepLetter';
+import { PDFDownloadLink } from '@react-pdf/renderer';
 // import { saveAs } from 'file-saver';
 // import { pdf } from '@react-pdf/renderer';
 
@@ -25,13 +26,11 @@ function RepCard ({ representative }) {
         {representative.photoUrl ? <img src={representative.photoUrl} alt="Official Portrait"/> : <></>}
       </p>
       <br></br>
-      <RepLetter official={representative} />
+      {/* <RepLetter official={representative} /> */}
       <br></br>
-      {/* <button 
-        type="button"
-        onClick={handleDownload}
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"
-      > Download Letter </button> */}
+      <PDFDownloadLink document={<RepLetter official={representative} fileName={`${representative.name} Letter.pdf`}/>}  >
+        <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"> Download Letter </button>
+      </PDFDownloadLink>
     </div>
   )
 }
