@@ -55,36 +55,39 @@ function SenLetter({ official }) {
 
   return (
     <div>
-      <PDFViewer>
-        <Document>
-          <Page size="A4" style={styles.page}>
-            <View style={styles.section}>
-              <Text style={styles.header}></Text>
-              <Text></Text>
-              <br></br>
-              <br></br>
-              <Text>
-                {greeting}{"\n"}{"\n"}
-                {paragraph1}{"\n"}{"\n"}
-                {paragraph2}{"\n"}{"\n"}
-                {paragraph3}{"\n"}{"\n"}
-                {paragraph4}{"\n"}{"\n"}
-                {paragraph5}{"\n"}{"\n"}
-                {paragraph6}{"\n"}{"\n"}
-                {paragraph7}{"\n"}{"\n"}
-              </Text>
-              <Text>{name}</Text>
-              <Text>{address.line1}</Text>
-              <Text>{address.city}, {address.state}  {address.zip}</Text>
-            </View>
-          </Page>
-        </Document>
-      </PDFViewer>
-      <button 
-        type="button"
-        onClick={handleDownload}
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"
-      > Download Letter </button>
+      <PDFDownloadLink>
+        <PDFViewer>
+          <Document>
+            <Page size="A4" style={styles.page}>
+              <View style={styles.section}>
+                <Text style={styles.header}></Text>
+                <Text></Text>
+                <br></br>
+                <br></br>
+                <Text>
+                  {greeting}{"\n"}{"\n"}
+                  {paragraph1}{"\n"}{"\n"}
+                  {paragraph2}{"\n"}{"\n"}
+                  {paragraph3}{"\n"}{"\n"}
+                  {paragraph4}{"\n"}{"\n"}
+                  {paragraph5}{"\n"}{"\n"}
+                  {paragraph6}{"\n"}{"\n"}
+                  {paragraph7}{"\n"}{"\n"}
+                </Text>
+                <Text>{name}</Text>
+                <Text>{address.line1}</Text>
+                <Text>{address.city}, {address.state}  {address.zip}</Text>
+              </View>
+            </Page>
+          </Document>
+        </PDFViewer>
+        <button 
+          type="button"
+          onClick={handleDownload}
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"
+          > Download Letter 
+        </button>
+      </PDFDownloadLink>
     </div>
   )
 }
