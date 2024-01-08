@@ -32,7 +32,7 @@ function Form () {
         })
             .then(r => {
                 if (r.ok) {
-                    r.json().then(data => setUserSenators(data.officials))
+                    r.json().then(data => console.log(data))
                     // r.json().then(data => console.log("full data", data, "just officials", data.officials))
                 } else {
                     r.json().then(data => setErrors(data.errors))
