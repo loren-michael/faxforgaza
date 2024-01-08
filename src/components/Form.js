@@ -48,7 +48,7 @@ function Form () {
         })
             .then(r => {
                 if (r.ok) {
-                    r.json().then(data => setUserRepresentative(data.officials))
+                    r.json().then(data => setUserRepresentative(data.officials)).then(data => console.log(data))
                     // navigate("/representatives")
                     
                     // r.json().then(data => console.log("full data", data, "just officials", data.officials))
@@ -56,7 +56,6 @@ function Form () {
                     r.json().then(data => setErrors(data.errors))
                 }
             })
-            navigate("/representatives")
     }
 
     return (
