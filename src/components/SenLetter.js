@@ -3,6 +3,7 @@ import { NameContext } from '../context/NameStore';
 import { AddressContext } from '../context/AddressStore';
 // import { OfficialContext } from '../context/OfficialStore';
 import { Document, Page, Text, View, StyleSheet, PDFViewer, PDFDownloadLink, pdf } from '@react-pdf/renderer';
+import { saveAs } from 'file-saver';
 
 
 const styles = StyleSheet.create({
@@ -45,8 +46,11 @@ function SenLetter({ official }) {
   const paragraph7 = `Thank you.`
 
 
-  function handleDownload() {
-    console.log("download button from sen letter comp")
+  const handleDownload = async (documentData, fileName) => {
+    const blob = await pdf((
+      <SenLetter official={official} pdfDocumentData={documentData} />
+    )).toBlob();
+    saveAs(blob, fileName)
   }
 
   return (
