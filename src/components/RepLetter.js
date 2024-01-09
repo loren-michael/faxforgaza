@@ -1,14 +1,11 @@
 import React, { useContext } from 'react';
 import { NameContext } from '../context/NameStore';
 import { AddressContext } from '../context/AddressStore';
-// import { OfficialContext } from '../context/OfficialStore';
-import { Document, Page, Text, View, StyleSheet, PDFViewer, PDFDownloadLink, pdf } from '@react-pdf/renderer';
-
+import { Document, Page, Text, View, StyleSheet, PDFViewer } from '@react-pdf/renderer';
 
 const styles = StyleSheet.create({
   page: {
-    flexDirection: 'row',
-    // backgroundColor: '#E4E4E4'
+    flexDirection: 'row'
   },
   section: {
     margin: 10,
@@ -28,12 +25,9 @@ const styles = StyleSheet.create({
   }
 });
 
-
-
 function RepLetter({ official }) {
   const [name, setName] = useContext(NameContext);
   const [address, setAddress] = useContext(AddressContext);
-  // const [official, setOfficial] = useContext(OfficialContext);
 
   const greeting = `Dear ${official.name},`
   const paragraph1 = `I am writing as a constituent to demand an urgent, permanent ceasefire in occupied Palestine. I urge you to issue a public statement in support of the ceasefire resolution introduced in the House by Rep. Cori Bush.`
@@ -43,8 +37,6 @@ function RepLetter({ official }) {
   const paragraph5 = `I will end this letter with a reminder that 60% of American voters support a ceasefire, yet only 11 percent of our elected representatives have shown support of this view. This poll data includes 76% of Democrats, 57% of Independents, and 49% of Republicans.`
   const paragraph6 = `If you do not act, we will remember.`
   const paragraph7 = `Thank you.`
-
-
 
   return (
     <div>
@@ -73,12 +65,6 @@ function RepLetter({ official }) {
             </Page>
           </Document>
         </PDFViewer>
-
-      {/* <button 
-        type="button"
-        // onClick={handleDownload}
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"
-      > Download Letter </button>} */}
     </div>
   )
 }
