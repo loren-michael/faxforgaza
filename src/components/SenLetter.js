@@ -39,31 +39,31 @@ function SenLetter({ official }) {
   const paragraph7 = `Thank you.`
 
   return (
-          <Document>
-            <Page size="A4" style={styles.page}>
-              <View style={styles.section}>
-                <Text style={styles.header}></Text>
-                <Text></Text>
-                <br></br>
-                <br></br>
-                <Text style={styles.text}>
-                  {greeting}{"\n"}{"\n"}
-                  {paragraph1}{"\n"}{"\n"}
-                  {paragraph2}{"\n"}{"\n"}
-                  {paragraph3}{"\n"}{"\n"}
-                  {paragraph4}{"\n"}{"\n"}
-                  {paragraph5}{"\n"}{"\n"}
-                  {paragraph6}{"\n"}{"\n"}
-                  {paragraph7}{"\n"}{"\n"}
-                </Text>
-                <Text style={styles.text}>
-                {name}{"\n"}
-                {address.line1}{"\n"}
-                {address.city}, {address.state}  {address.zip}
-                </Text>
-              </View>
-            </Page>
-          </Document>
+    <Document>
+      <Page size="A4" style={styles.page}>
+        <View style={styles.section}>
+          <Text style={styles.header}></Text>
+          <Text></Text>
+          <br></br>
+          <br></br>
+          <Text style={styles.text}>
+            {greeting}{"\n"}{"\n"}
+            {paragraph1}{"\n"}{"\n"}
+            {paragraph2}{"\n"}{"\n"}
+            {paragraph3}{"\n"}{"\n"}
+            {paragraph4}{"\n"}{"\n"}
+            {paragraph5}{"\n"}{"\n"}
+            {paragraph6}{"\n"}{"\n"}
+            {paragraph7}{"\n"}{"\n"}
+          </Text>
+          <Text style={styles.text}>
+          {name}{"\n"}
+          {address.line1}{"\n"}
+          {address.city}, {address.state}  {address.zip}
+          </Text>
+        </View>
+      </Page>
+    </Document>
   )
 }
 

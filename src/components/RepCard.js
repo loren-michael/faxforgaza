@@ -1,10 +1,11 @@
 import React from 'react';
+import repPdfSaver from './RepPdfSaver';
 
 function RepCard ({ representative }) {
 
   function handleDownload(e) {
-    console.log(e)
-    console.log(representative)
+    e.preventDefault();
+    repPdfSaver(representative);
   }
 
   return (

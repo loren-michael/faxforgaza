@@ -1,10 +1,11 @@
 import React from 'react';
+import senPdfSaver from './SenPdfSaver';
 
 function SenCard ({ senator }) {
 
   function handleDownload(e) {
-    console.log(e)
-    console.log(senator)
+    e.preventDefault();
+    senPdfSaver(senator);
   }
 
   return (
