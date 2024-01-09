@@ -1,5 +1,4 @@
 import React from 'react';
-import SenLetter from './SenLetter';
 
 function SenCard ({ senator }) {
 
@@ -17,10 +16,6 @@ function SenCard ({ senator }) {
         {senator.party}
         {senator.photoUrl ? <img src={senator.photoUrl} alt="Official Portrait"/> : <></>}
       </p>
-      <br></br>
-      <div>
-        {/* <SenLetter official={senator} /> */}
-      </div>
       <br></br>
       <button onClick={e => handleDownload(e)} type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"> Download Letter </button>
     </div>
