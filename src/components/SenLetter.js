@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   text: {
-    margin: 12,
-    fontSize: 16,
+    margin: 20,
+    fontSize: 12,
     textAlign: "justify",
     fontFamily: "Times-Roman",
   }
