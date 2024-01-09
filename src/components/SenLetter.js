@@ -46,13 +46,13 @@ function SenLetter({ official }) {
   const paragraph7 = `Thank you.`
 
 
-  const handleDownload = async () => {
-    const fileName = `${official.name}Letter.pdf`;
-    const blob = await pdf((
-      <SenLetter official={official} />
-    )).toBlob();
-    saveAs(blob, fileName);
-  }
+  // const handleDownload = async () => {
+  //   const fileName = `${official.name}Letter.pdf`;
+  //   const blob = await pdf((
+  //     <SenLetter official={official} />
+  //   )).toBlob();
+  //   saveAs(blob, fileName);
+  // }
 
   return (
     <div>
@@ -84,7 +84,7 @@ function SenLetter({ official }) {
         </PDFViewer>
         <button 
           type="button"
-          onClick={handleDownload}
+          // onClick={handleDownload}
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"
           > Download Letter 
         </button>
