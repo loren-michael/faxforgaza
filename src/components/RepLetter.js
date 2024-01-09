@@ -58,9 +58,11 @@ function RepLetter({ official }) {
                   {paragraph6}{"\n"}{"\n"}
                   {paragraph7}{"\n"}{"\n"}
                 </Text>
-                <Text style={styles.text}>{name}</Text>
-                <Text style={styles.text}>{address.line1}</Text>
-                <Text style={styles.text}>{address.city}, {address.state}  {address.zip}</Text>
+                <Text style={styles.text}>
+                {name}{"\n"}
+                {address.line1}{"\n"}
+                {address.city}, {address.state}  {address.zip}
+                </Text>
               </View>
             </Page>
           </Document>
