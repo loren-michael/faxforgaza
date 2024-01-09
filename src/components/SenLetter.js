@@ -56,9 +56,8 @@ function SenLetter({ official }) {
 
   return (
     <div>
-      sen letter
       {/* <PDFDownloadLink document={<SenLetter official={official} />}> */}
-        {/* <PDFViewer>
+        <PDFViewer>
           <Document>
             <Page size="A4" style={styles.page}>
               <View style={styles.section}>
@@ -82,7 +81,7 @@ function SenLetter({ official }) {
               </View>
             </Page>
           </Document>
-        </PDFViewer> */}
+        </PDFViewer>
         {/* <button 
           type="button"
           // onClick={handleDownload}

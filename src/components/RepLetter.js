@@ -48,8 +48,7 @@ function RepLetter({ official }) {
 
   return (
     <div>
-      rep letter
-        {/* <PDFViewer>
+        <PDFViewer>
           <Document>
             <Page size="A4" style={styles.page}>
               <View style={styles.section}>
@@ -73,7 +72,7 @@ function RepLetter({ official }) {
               </View>
             </Page>
           </Document>
-        </PDFViewer> */}
+        </PDFViewer>
 
       {/* <button 
         type="button"
