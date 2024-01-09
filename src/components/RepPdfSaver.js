@@ -3,15 +3,15 @@ import { saveAs } from "file-saver";
 import { pdf } from "@react-pdf/renderer";
 import RepLetter from "./RepLetter";
 
-const repPdfSaver = async (documentData) => {
-  console.log(documentData)
-  // const blob = await pdf((
-  //   <RepLetter
-  //     title='Senator Letter PDF'
-  //     pdfDocumentData={documentData}
-  //   />
-  // )).toBlob();
-  // saveAs(blob, `RepresentativeLetter.pdf`)
+const repPdfSaver = async (representative) => {
+  console.log(representative)
+  const blob = await pdf((
+    <RepLetter
+      title={`${representative.name} Letter`}
+      official={representative}
+    />
+  )).toBlob();
+  saveAs(blob, `${representative.name} Letter.pdf`)
 };
 
 export default repPdfSaver;
