@@ -40,7 +40,7 @@ function SenLetter({ official }) {
 
   return (
     <div>
-        {/* <PDFViewer> */}
+        <PDFViewer>
           <Document>
             <Page size="A4" style={styles.page}>
               <View style={styles.section}>
@@ -66,7 +66,7 @@ function SenLetter({ official }) {
               </View>
             </Page>
           </Document>
-        {/* </PDFViewer> */}
+        </PDFViewer>
     </div>
   )
 }
