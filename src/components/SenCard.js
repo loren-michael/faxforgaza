@@ -15,7 +15,9 @@ function SenCard ({ senator }) {
       </p>
       <br></br>
       <div>
-        <SenLetter official={senator} />
+        <PDFViewer>
+          <SenLetter official={senator} />
+        </PDFViewer>
       </div>
       <br></br>
       <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"> Download Letter </button>

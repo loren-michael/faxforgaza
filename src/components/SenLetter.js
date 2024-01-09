@@ -39,7 +39,7 @@ function SenLetter({ official }) {
   const paragraph7 = `Thank you.`
 
   return (
-    // <div>
+    <div>
         {/* <PDFViewer> */}
           <Document>
             <Page size="A4" style={styles.page}>
@@ -67,7 +67,7 @@ function SenLetter({ official }) {
             </Page>
           </Document>
         {/* </PDFViewer> */}
-    // </div>
+    </div>
   )
 }
 
