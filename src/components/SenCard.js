@@ -1,5 +1,6 @@
 import React from 'react';
 import SenLetter from './SenLetter';
+import { PDFViewer } from '@react-pdf/renderer';
 
 function SenCard ({ senator }) {
 
@@ -13,7 +14,11 @@ function SenCard ({ senator }) {
         {senator.photoUrl ? <img src={senator.photoUrl} alt="Official Portrait"/> : <></>}
       </p>
       <br></br>
-      <SenLetter official={senator} />
+      <div>
+        <PDFViewer>
+          <SenLetter official={senator} />
+        </PDFViewer>
+      </div>
       <br></br>
       <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"> Download Letter </button>
     </div>

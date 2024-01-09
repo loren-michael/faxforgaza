@@ -30,7 +30,7 @@ function SenLetter({ official }) {
   const [address, setAddress] = useContext(AddressContext);
 
   const greeting = `Dear ${official.name},`
-  const paragraph1 = `I am writing as a constituent to demand an urgent, permanent ceasefire in occupied Palestine. I urge you to issue a public statement in support of the ceasefire resolution introduced in the House by Rep. Cori Bush.`
+  const paragraph1 = `I am writing as a constituent to demand an immediate, permanent ceasefire in occupied Palestine. I urge you to issue a public statement in support of the ceasefire resolution introduced in the House by Rep. Cori Bush.`
   const paragraph2 = `Over 22,000 Palestinians have been killed since October 7. The humanitarian situation is dire for the 2.3 million Palestinians living in Gaza. 80 percent of Palestinians living in Gaza are now homeless. Israel’s unrelenting violence has led to worsening conditions, including the rapid spread of deadly cholera and widespread shortages of food, clean water, and medical supplies. Israel has damaged or destroyed housing, educational and medical facilities. They have targeted journalists and media workers. The escalating, catastrophic violence threatens to lead to more and more loss of life for Palestinians. This is genocide.`
   const paragraph3 = `Congress must hear loud and clear that Americans support a permanent ceasefire, and want to ensure that Palestine’s freedom is no longer a dream.`
   const paragraph4 = `Millions of human lives are at stake. We must build on our collective humanity and call for an immediate ceasefire.`
@@ -39,8 +39,8 @@ function SenLetter({ official }) {
   const paragraph7 = `Thank you.`
 
   return (
-    <div>
-        <PDFViewer>
+    // <div>
+        {/* <PDFViewer> */}
           <Document>
             <Page size="A4" style={styles.page}>
               <View style={styles.section}>
@@ -66,8 +66,8 @@ function SenLetter({ official }) {
               </View>
             </Page>
           </Document>
-        </PDFViewer>
-    </div>
+        {/* </PDFViewer> */}
+    // </div>
   )
 }
 

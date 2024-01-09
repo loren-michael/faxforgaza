@@ -1,5 +1,6 @@
 import React from 'react';
 import RepLetter from './RepLetter';
+import { PDFViewer } from '@react-pdf/renderer';
 
 function RepCard ({ representative }) {
 
@@ -13,7 +14,11 @@ function RepCard ({ representative }) {
         {representative.photoUrl ? <img src={representative.photoUrl} alt="Official Portrait"/> : <></>}
       </p>
       <br></br>
-      <RepLetter official={representative} />
+      <div>
+        <PDFViewer>
+          <RepLetter official={representative} />
+        </PDFViewer>
+      </div>
       <br></br>
       <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"> Download Letter </button>
     </div>
