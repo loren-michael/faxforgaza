@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { NameContext } from '../context/NameStore';
 import { AddressContext } from '../context/AddressStore';
-import { Document, Page, Text, View, StyleSheet, PDFViewer } from '@react-pdf/renderer';
+import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
 
 const styles = StyleSheet.create({
   page: {
@@ -39,8 +39,6 @@ function RepLetter({ official }) {
   const paragraph7 = `Thank you.`
 
   return (
-    <div>
-        <PDFViewer>
           <Document>
             <Page size="A4" style={styles.page}>
               <View style={styles.section}>
@@ -66,8 +64,6 @@ function RepLetter({ official }) {
               </View>
             </Page>
           </Document>
-        </PDFViewer>
-    </div>
   )
 }
 
