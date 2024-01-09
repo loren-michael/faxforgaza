@@ -16,7 +16,9 @@ function SenCard ({ senator }) {
       <br></br>
       <div>
         <PDFViewer>
-          <SenLetter official={senator} />
+          <div>
+            <SenLetter official={senator} />
+          </div>
         </PDFViewer>
       </div>
       <br></br>

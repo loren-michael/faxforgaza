@@ -16,7 +16,9 @@ function RepCard ({ representative }) {
       <br></br>
       <div>
         <PDFViewer>
-          <RepLetter official={representative} />
+          <div>
+            <RepLetter official={representative} />
+          </div>
         </PDFViewer>
       </div>
       <br></br>
