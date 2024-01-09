@@ -48,8 +48,8 @@ function RepLetter({ official }) {
 
   return (
     <div>
-      {/* // <PDFDownloadLink> */}
-        <PDFViewer>
+      rep letter
+        {/* <PDFViewer>
           <Document>
             <Page size="A4" style={styles.page}>
               <View style={styles.section}>
@@ -73,8 +73,8 @@ function RepLetter({ official }) {
               </View>
             </Page>
           </Document>
-        </PDFViewer>
-    {/* //   // </PDFDownloadLink> */}
+        </PDFViewer> */}
+
       {/* <button 
         type="button"
         // onClick={handleDownload}

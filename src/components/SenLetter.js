@@ -56,8 +56,9 @@ function SenLetter({ official }) {
 
   return (
     <div>
+      sen letter
       {/* <PDFDownloadLink document={<SenLetter official={official} />}> */}
-        <PDFViewer>
+        {/* <PDFViewer>
           <Document>
             <Page size="A4" style={styles.page}>
               <View style={styles.section}>
@@ -81,13 +82,13 @@ function SenLetter({ official }) {
               </View>
             </Page>
           </Document>
-        </PDFViewer>
-        <button 
+        </PDFViewer> */}
+        {/* <button 
           type="button"
           // onClick={handleDownload}
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"
           > Download Letter 
-        </button>
+        </button> */}
       {/* </PDFDownloadLink> */}
     </div>
   )
