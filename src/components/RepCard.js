@@ -1,12 +1,14 @@
 import React from 'react';
+import { PDFDownloadLink } from '@react-pdf/renderer';
+import RepLetter from './RepLetter';
 import repPdfSaver from './RepPdfSaver';
 
 function RepCard ({ representative }) {
 
-  function handleDownload(e) {
-    e.preventDefault();
-    repPdfSaver(representative);
-  }
+  // function handleDownload(e) {
+  //   e.preventDefault();
+  //   repPdfSaver(representative);
+  // }
 
   return (
     <div class="rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
@@ -18,7 +20,14 @@ function RepCard ({ representative }) {
         {representative.photoUrl ? <img src={representative.photoUrl} alt="Official Portrait"/> : <></>}
       </p>
       <br></br>
-      <button onClick={e => handleDownload(e)} type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"> Download Letter </button>
+      <div>
+        <PDFDownloadLink document={<RepLetter official={representative} />} fileName={`${representative.name} Letter.pdf`}>
+          {({ blob, url, loading, error }) =>
+            loading ? 'Loading document...' : 'Download now!'
+          }
+        </PDFDownloadLink>
+      </div>
+      {/* <button onClick={e => handleDownload(e)} type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"> Download Letter </button> */}
     </div>
   )
 }
