@@ -8,7 +8,7 @@ function RepCard ({ representative }) {
   function handleDownload(e) {
     const representativeName = representative.name
     e.preventDefault();
-    repPdfSaver(representativeName);
+    // repPdfSaver(representativeName);
   }
 
   return (

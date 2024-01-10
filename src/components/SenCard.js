@@ -5,7 +5,7 @@ function SenCard ({ senator }) {
 
   function handleDownload(e) {
     e.preventDefault();
-    senPdfSaver(senator);
+    // senPdfSaver(senator);
   }
 
   return (
