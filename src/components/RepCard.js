@@ -21,7 +21,7 @@ function RepCard ({ representative }) {
       </p>
       <br></br>
       <div>
-        <PDFDownloadLink document={<RepLetter official={representative} />} fileName={`${representative.name} Letter.pdf`}>
+        <PDFDownloadLink document={<RepLetter />} fileName="this is a pdf.pdf">
           {({ blob, url, loading, error }) =>
             loading ? 'Loading document...' : 'Download now!'
           }
