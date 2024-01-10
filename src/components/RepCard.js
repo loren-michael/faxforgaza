@@ -1,5 +1,5 @@
 import React from 'react';
-import { PDFDownloadLink } from '@react-pdf/renderer';
+import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer';
 import RepLetter from './RepLetter';
 import repPdfSaver from './RepPdfSaver';
 
@@ -22,6 +22,10 @@ function RepCard ({ representative }) {
       </p>
       <br></br>
       {/* <RepLetter official={representative} /> */}
+      <PDFViewer>
+        <RepLetter official={representative} />
+      </PDFViewer>
+
       <br></br>
       <button onClick={console.log("click!")} type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"> Download Letter </button>
     </div>
