@@ -40,8 +40,8 @@ function RepLetter({ official }) {
   const paragraph7 = `Thank you.`
 
   return (
-    <div>
-    <PDFViewer>
+    // <div>
+    // {/* <PDFViewer> */}
     <Document>
       <Page size="A4" style={styles.page}>
         <View style={styles.section}>
@@ -67,8 +67,8 @@ function RepLetter({ official }) {
         </View>
       </Page>
     </Document>
-    </PDFViewer>
-    </div>
+    // {/* </PDFViewer> */}
+    // {/* </div> */}
   )
 }
 
