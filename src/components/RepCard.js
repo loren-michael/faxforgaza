@@ -6,8 +6,9 @@ import repPdfSaver from './RepPdfSaver';
 function RepCard ({ representative }) {
 
   function handleDownload(e) {
+    const representativeName = representative.name
     e.preventDefault();
-    repPdfSaver(representative);
+    repPdfSaver(representativeName);
   }
 
   return (
