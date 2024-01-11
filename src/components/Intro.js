@@ -82,18 +82,6 @@ function Downloads () {
                                     <p class="mt-2">Download this PDF and fill out the name of your senators, your name and address, date, and add a signature if you would like.
                                     </p>
                                 </div>
-                                <div class="mb-6">
-                                    <div class="flex justify-between">
-                                        <span class="text-blue-500 font-bold">Letter to your State Senators</span>
-                                        <span>
-                                            <div>
-                                                <a href={require("../resources/BlankSenLetter.pdf")} download="myFile" class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded">Download</a>
-                                            </div>
-                                        </span>
-                                    </div>
-                                    <p class="mt-2">Download this PDF and fill out the name of your senators, your name and address, date, and add a signature if you would like.
-                                    </p>
-                                </div>
                             </div>
                         </div>
                     </div>
