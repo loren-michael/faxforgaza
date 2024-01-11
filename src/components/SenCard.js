@@ -23,7 +23,7 @@ function SenCard ({ senator }) {
       textAlign: "center",
     },
     text: {
-      margin: 20,
+      margin: 30,
       fontSize: 12,
       textAlign: "justify",
       fontFamily: "Times-Roman",
@@ -52,8 +52,9 @@ function SenCard ({ senator }) {
       </h5>
       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200 font-merriweather">
         {senator.party}
-        {senator.photoUrl ? <img src={senator.photoUrl} alt="Official Portrait"/> : <></>}
+        {/* {senator.photoUrl ? <img src={senator.photoUrl} alt="Official Portrait"/> : <></>} */}
       </p>
+      <br></br>
       <div>
         <PDFViewer>
           <Document>

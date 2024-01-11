@@ -24,7 +24,7 @@ function RepCard ({ representative }) {
       textAlign: "center",
     },
     text: {
-      margin: 20,
+      margin: 30,
       fontSize: 12,
       textAlign: "justify",
       fontFamily: "Times-Roman",
@@ -54,9 +54,9 @@ function RepCard ({ representative }) {
       </h5>
       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200 font-merriweather">
         {representative.party}
-        {representative.photoUrl ? <img src={representative.photoUrl} alt="Official Portrait"/> : <></>}
+        {/* {representative.photoUrl ? <img src={representative.photoUrl} alt="Official Portrait"/> : <></>} */}
       </p>
-      {/* <br></br> */}
+      <br></br>
       {/* <RepLetter official={representative} /> */}
       <div>
       <PDFViewer>
