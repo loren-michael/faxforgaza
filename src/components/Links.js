@@ -27,9 +27,9 @@ function Links() {
 {/* Co-Sponsors */}
                   <div class="mb-6">
                     <div class="flex justify-between">
-                      <a href="https://www.congress.gov/bill/118th-congress/house-resolution/786/cosponsors" class="text-blue-500 font-bold">House Resolution 786 Summary</a>
+                      <a href="https://www.congress.gov/bill/118th-congress/house-resolution/786/cosponsors" class="text-blue-500 font-bold">HR 786 Co-Sponsors</a>
                     </div>
-                    <p class="mt-2">This link takes you to the official summary of House Resolution 786 introduced by Cori Bush (D-MO) on October 16, 2023.</p>
+                    <p class="mt-2">The official list of co-sponsors of H. Res. 786. Look up your representative and then check this list to see if they have co-sponsored the resolution.</p>
                   </div>
 
                   <hr class="my-6 border-t border-gray-300"></hr>
