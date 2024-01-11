@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
-import { Document, Page, Text, View, StyleSheet, PDFViewer } from '@react-pdf/renderer';
+import { Document, Page, Text, View, StyleSheet, PDFViewer, PDFDownloadLink } from '@react-pdf/renderer';
 import { NameContext } from '../context/NameStore';
 import { AddressContext } from '../context/AddressStore';
-import repPdfSaver from './RepPdfSaver';
 
 function RepCard ({ representative }) {
   const [name, setName] = useContext(NameContext);
@@ -39,12 +38,35 @@ function RepCard ({ representative }) {
     const paragraph6 = `If you do not act, we will remember.`
     const paragraph7 = `Thank you.`
 
-  function handleDownload(e) {
-    const representativeName = representative.name;
-    e.preventDefault();
-    repPdfSaver(representativeName);
-  }
+  const fileName = `${representative.name} Letter.pdf`;
 
+  const ThisRepresentativeLetter = () => (
+    <Document>
+      <Page size="A4" style={styles.page}>
+        <View style={styles.section}>
+          <Text style={styles.header}></Text>
+          <Text></Text>
+          <br></br>
+          <br></br>
+          <Text style={styles.text}>
+            {greeting}{"\n"}{"\n"}
+            {paragraph1}{"\n"}{"\n"}
+            {paragraph2}{"\n"}{"\n"}
+            {paragraph3}{"\n"}{"\n"}
+            {paragraph4}{"\n"}{"\n"}
+            {paragraph5}{"\n"}{"\n"}
+            {paragraph6}{"\n"}{"\n"}
+            {paragraph7}{"\n"}{"\n"}
+          </Text>
+          <Text style={styles.text}>
+          {name}{"\n"}
+          {address.line1}{"\n"}
+          {address.city}, {address.state}  {address.zip}
+          </Text>
+        </View>
+      </Page>
+    </Document>
+)
 
   return (
     <div class="rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
@@ -55,38 +77,22 @@ function RepCard ({ representative }) {
         {representative.party}
         {representative.photoUrl ? <img src={representative.photoUrl} alt="Official Portrait"/> : <div></div>}
       </p>
+      <p>Document preview:</p>
+      <PDFViewer>
+        <ThisRepresentativeLetter />
+      </PDFViewer>
       <br></br>
       <div>
-      <PDFViewer>
-        <Document>
-          <Page size="A4" style={styles.page}>
-            <View style={styles.section}>
-              <Text style={styles.header}></Text>
-              <Text></Text>
-              <br></br>
-              <br></br>
-              <Text style={styles.text}>
-                {greeting}{"\n"}{"\n"}
-                {paragraph1}{"\n"}{"\n"}
-                {paragraph2}{"\n"}{"\n"}
-                {paragraph3}{"\n"}{"\n"}
-                {paragraph4}{"\n"}{"\n"}
-                {paragraph5}{"\n"}{"\n"}
-                {paragraph6}{"\n"}{"\n"}
-                {paragraph7}{"\n"}{"\n"}
-              </Text>
-              <Text style={styles.text}>
-              {name}{"\n"}
-              {address.line1}{"\n"}
-              {address.city}, {address.state}  {address.zip}
-              </Text>
-            </View>
-          </Page>
-        </Document>
-      </PDFViewer>
+        <PDFDownloadLink>
+        {({ loading }) =>
+            loading ? 
+              <button type="button" class="disabled bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"> Loading document...</button> 
+              : 
+              <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init="false" data-te-ripple-color="dark"> Download Letter </button>
+          }
+        </PDFDownloadLink>
       </div>
       <br></br>
-      <button onClick={e => handleDownload(e)} type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"> Download Letter </button>
     </div>
   )
 }

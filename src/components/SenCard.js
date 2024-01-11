@@ -38,7 +38,7 @@ function SenCard ({ senator }) {
   const paragraph6 = `If you do not act, we will remember.`
   const paragraph7 = `Thank you.`
 
-  const fileName = `${senator.name} Letter.pdf`
+  const fileName = `${senator.name} Letter.pdf`;
 
   const ThisSenatorLetter = () => (
           <Document>
