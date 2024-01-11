@@ -41,7 +41,7 @@ function RepCard ({ representative }) {
     const paragraph7 = `Thank you.`
 
   function handleDownload(e) {
-    const representativeName = representative.name
+    const representativeName = representative.name;
     e.preventDefault();
     repPdfSaver(representativeName);
   }
