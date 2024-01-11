@@ -23,7 +23,7 @@ function SenCard ({ senator }) {
     },
     text: {
       margin: 30,
-      fontSize: 20,
+      fontSize: 16,
       textAlign: "justify",
       fontFamily: "Times-Roman",
     }
