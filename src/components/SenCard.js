@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { Document, Page, Text, View, StyleSheet, PDFViewer, PDFDownloadLink } from '@react-pdf/renderer';
 import { NameContext } from '../context/NameStore';
 import { AddressContext } from '../context/AddressStore';
-import senPdfSaver from './SenPdfSaver';
 
 function SenCard ({ senator }) {
   const [name, setName] = useContext(NameContext);
@@ -69,12 +68,6 @@ function SenCard ({ senator }) {
           </Document>
   )
 
-  // function handleDownload(e) {
-  //   const senatorName = senator.name;
-  //   e.preventDefault();
-  //   senPdfSaver(senatorName);
-  // }
-
   return (
     <div class="rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
       <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50 font-merriweather">
@@ -82,12 +75,16 @@ function SenCard ({ senator }) {
       </h5>
       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200 font-merriweather">
         {senator.party}
-        {/* {senator.photoUrl ? <img src={senator.photoUrl} alt="Official Portrait"/> : <></>} */}
+        {senator.photoUrl ? <img src={senator.photoUrl} alt="Official Portrait"/> : <></>}
       </p>
+      <p>Document preview:</p>
+      <PDFViewer>
+        <ThisSenatorLetter />
+      </PDFViewer>
       <br></br>
       <div>
         <PDFDownloadLink document={<ThisSenatorLetter />} fileName={fileName} >
-          {({ blob, url, loading, error }) =>
+          {({ loading }) =>
             loading ? 
               <button type="button" class="disabled bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"> Loading document...</button> 
               : 
