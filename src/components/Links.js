@@ -22,6 +22,24 @@ function Links() {
                 <h2 class="text-xl font-bold mb-4 font-merriweather">Other Helpful Links</h2>
                 <br></br>
                 <br></br>
+
+{/* FaxZero */}
+                <div class="mb-6">
+                  <div class="flex justify-between">
+                    <a href="https://www.congress.gov/bill/118th-congress/house-resolution/786" class="text-blue-500 font-bold">House Resolution 786 Summary</a>
+                    {/* <span>
+                      <div>
+                        <a href="https://www.congress.gov/bill/118th-congress/house-resolution/786" class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded"> Go </a>
+                      </div>
+                    </span> */}
+                  </div>
+                  <p class="mt-2">This link takes you to the official summary of House Resolution 786 introduced by Cori Bush (D-MO) on October 16, 2023.</p>
+                </div>
+
+                  <hr class="my-6 border-t border-gray-300"></hr>
+
+
+
 {/* House Summary */}
                   <div class="mb-6">
                     <div class="flex justify-between">
