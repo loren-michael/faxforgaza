@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Document, Page, Text, View, StyleSheet, PDFViewer } from '@react-pdf/renderer';
+import { Document, Page, Text, View, StyleSheet, PDFViewer, PDFDownloadLink } from '@react-pdf/renderer';
 import { NameContext } from '../context/NameStore';
 import { AddressContext } from '../context/AddressStore';
 import senPdfSaver from './SenPdfSaver';
@@ -39,25 +39,10 @@ function SenCard ({ senator }) {
   const paragraph6 = `If you do not act, we will remember.`
   const paragraph7 = `Thank you.`
 
-  function handleDownload(e) {
-    const senatorName = senator.name;
-    e.preventDefault();
-    senPdfSaver(senatorName);
-  }
+  const fileName = `${senator.name} Letter.pdf`
 
-  return (
-    <div class="rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-      <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50 font-merriweather">
-        State Senator {senator.name}
-      </h5>
-      <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200 font-merriweather">
-        {senator.party}
-        {/* {senator.photoUrl ? <img src={senator.photoUrl} alt="Official Portrait"/> : <></>} */}
-      </p>
-      <br></br>
-      <div>
-        <PDFViewer>
-          <Document id={`${senator.name}Letter`}>
+  const thisSenatorLetter = () => (
+          <Document>
             <Page size="A4" style={styles.page}>
               <View style={styles.section}>
                 <Text style={styles.header}></Text>
@@ -82,10 +67,33 @@ function SenCard ({ senator }) {
               </View>
             </Page>
           </Document>
-        </PDFViewer>
+  )
+
+  // function handleDownload(e) {
+  //   const senatorName = senator.name;
+  //   e.preventDefault();
+  //   senPdfSaver(senatorName);
+  // }
+
+  return (
+    <div class="rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+      <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50 font-merriweather">
+        State Senator {senator.name}
+      </h5>
+      <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200 font-merriweather">
+        {senator.party}
+        {/* {senator.photoUrl ? <img src={senator.photoUrl} alt="Official Portrait"/> : <></>} */}
+      </p>
+      <br></br>
+      <div>
+        <PDFDownloadLink document={<thisSenatorLetter />} fileName={fileName} >
+          {({ blob, url, loading, error }) =>
+            loading ? 'Loading document...' : 'Download now!'
+          }
+        </PDFDownloadLink>
       </div>
       <br></br>
-      <button onClick={e => handleDownload(e)} type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"> Download Letter </button>
+      {/* <button onClick={e => handleDownload(e)} type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"> Download Letter </button> */}
     </div>
   )
 }
