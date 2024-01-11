@@ -23,12 +23,12 @@ function RepCard ({ representative }) {
       <br></br>
       {/* <RepLetter official={representative} /> */}
       <div>
-      <PDFViewer>
-        <RepLetter />
-      </PDFViewer>
+      {/* <PDFViewer> */}
+        {/* <RepLetter /> */}
+      {/* </PDFViewer> */}
       </div>
       <br></br>
-      <button onClick={e => handleDownload(e)} type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"> Download Letter </button>
+      {/* <button onClick={e => handleDownload(e)} type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light"> Download Letter </button> */}
     </div>
   )
 }
