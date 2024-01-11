@@ -60,7 +60,7 @@ function RepCard ({ representative }) {
       {/* <RepLetter official={representative} /> */}
       <div>
       <PDFViewer>
-        <Document>
+        <Document id="RepresentativeLetter">
           <Page size="A4" style={styles.page}>
             <View style={styles.section}>
               <Text style={styles.header}></Text>

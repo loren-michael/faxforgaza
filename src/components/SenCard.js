@@ -57,7 +57,7 @@ function SenCard ({ senator }) {
       <br></br>
       <div>
         <PDFViewer>
-          <Document>
+          <Document id={`${senator.name}Letter`}>
             <Page size="A4" style={styles.page}>
               <View style={styles.section}>
                 <Text style={styles.header}></Text>
