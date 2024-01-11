@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { Document, Page, Text, View, StyleSheet, PDFViewer } from '@react-pdf/renderer';
 import { NameContext } from '../context/NameStore';
 import { AddressContext } from '../context/AddressStore';
-// import RepLetter from './RepLetter';
 import repPdfSaver from './RepPdfSaver';
 
 function RepCard ({ representative }) {
@@ -25,7 +24,7 @@ function RepCard ({ representative }) {
     },
     text: {
       margin: 30,
-      fontSize: 12,
+      fontSize: 20,
       textAlign: "justify",
       fontFamily: "Times-Roman",
     }
@@ -54,10 +53,9 @@ function RepCard ({ representative }) {
       </h5>
       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200 font-merriweather">
         {representative.party}
-        {/* {representative.photoUrl ? <img src={representative.photoUrl} alt="Official Portrait"/> : <></>} */}
+        {representative.photoUrl ? <img src={representative.photoUrl} alt="Official Portrait"/> : <div></div>}
       </p>
       <br></br>
-      {/* <RepLetter official={representative} /> */}
       <div>
       <PDFViewer>
         <Document>
