@@ -20,7 +20,7 @@ function Downloads () {
         <div>
             <div class="bg-blue-100">
                 <div class="container mx-auto py-8">
-                    <div class="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4">
+                    <div class="grid grid-cols-1">
                         <div class="col-span-4 sm:col-span-3">
                             <div class="bg-white shadow rounded-lg p-6">
                                 <div class="flex flex-col items-center">
