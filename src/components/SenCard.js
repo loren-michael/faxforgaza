@@ -41,7 +41,7 @@ function SenCard ({ senator }) {
 
   const fileName = `${senator.name} Letter.pdf`
 
-  const thisSenatorLetter = () => (
+  const ThisSenatorLetter = () => (
           <Document>
             <Page size="A4" style={styles.page}>
               <View style={styles.section}>
@@ -86,7 +86,7 @@ function SenCard ({ senator }) {
       </p>
       <br></br>
       <div>
-        <PDFDownloadLink document={<thisSenatorLetter />} fileName={fileName} >
+        <PDFDownloadLink document={<ThisSenatorLetter />} fileName={fileName} >
           {({ blob, url, loading, error }) =>
             loading ? 'Loading document...' : 'Download now!'
           }
