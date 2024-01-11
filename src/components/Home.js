@@ -1,11 +1,11 @@
 import "../App.css";
 import React from 'react';
-import Downloads from "./Downloads";
+import Intro from "./Intro";
 
 function Home () {
   return (
     <div class="h-full flex-grow">
-      <Downloads />
+      <Intro />
     </div>
   )
 }

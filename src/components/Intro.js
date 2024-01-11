@@ -34,12 +34,14 @@ function Downloads () {
                         <div class="col-span-4 sm:col-span-9">
                             <div class="bg-white shadow rounded-lg p-6">
                                 <h2 class="text-xl font-bold mb-4 font-merriweather">Fax For Gaza</h2>
-                                <p class="text-gray-700 font-merriweather">Fax for Gaza is a site meant to make it a little easier to contact your representatives by providing PDF files that you can fax for free to your representatives using FaxZero.com
+                                <p class="text-gray-700 font-merriweather">Fax for Gaza makes it a little easier to contact your representatives to support a ceasefire in Palestine by providing PDF files that you can fax for free to your representatives using FaxZero.com
                                 <br></br><br></br>
                                 It is our hope that if people are given these resources and links they will be more likely to utilize them daily to flood our representatives with faxes directly from their phones.
                                 <br></br><br></br>
-                                To use this resource, you can either use our form to find your representatives by clicking the button below, or, if you know the names of your representatives or would rather not use our form, you can download our blank form PDF letters below and enter in your information on your device to fax. Once you have your PDF files, go to FaxZero and find the representatives you would like to send a letter to, upload your PDF and send it! This site uses Google's Civic Information API and does not save any information about visitors.
+                                To use this resource, you can either use our form to find your representatives by clicking the button below, or, if you know the names of your representatives or would rather not use our form, you can download our blank form PDF letters below and enter in your information on your device to fax. Once you have your PDF files, go to FaxZero.com using the link above, find your representatives, upload your PDF and send it!
                                 <br></br><br></br>
+                                This site uses Google's Civic Information API and does NOT save any information about visitors.
+                                <br></br>
                                 To share any feedback, please write to: faxforgaza at gmail dot com
                                 </p>
 
