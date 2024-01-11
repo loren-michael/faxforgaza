@@ -56,12 +56,10 @@ function SenCard ({ senator }) {
                   {paragraph4}{"\n"}{"\n"}
                   {paragraph5}{"\n"}{"\n"}
                   {paragraph6}{"\n"}{"\n"}
-                  {paragraph7}{"\n"}{"\n"}
-                </Text>
-                <Text style={styles.text}>
-                {name}{"\n"}
-                {address.line1}{"\n"}
-                {address.city}, {address.state}  {address.zip}
+                  {paragraph7}{"\n"}{"\n"}{"\n"}
+                  {name}{"\n"}
+                  {address.line1}{"\n"}
+                  {address.city}, {address.state}  {address.zip}
                 </Text>
               </View>
             </Page>
