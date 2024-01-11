@@ -19,9 +19,9 @@ function NavBar () {
       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-sm lg:flex-grow">
           {/* <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4 font-merriweather">Home</a> */}
-          <a href="https://faxzero.com/fax_congress.php" target="_blank" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4 font-merriweather"> FaxZero </a>
-          <a href="https://www.house.gov/representatives/find-your-representative" target="_blank" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white font-merriweather"> House.gov Rep Search </a>
-          <a href="/links" target="_blank" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white font-merriweather"> Other Links </a>
+          <a href="https://faxzero.com/fax_congress.php" target="_blank" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4 font-merriweather p-4"> FaxZero </a>
+          <a href="https://www.house.gov/representatives/find-your-representative" target="_blank" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white font-merriweather p-4"> House.gov Rep Search </a>
+          <a href="/links" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white font-merriweather p-4"> Other Links </a>
         </div>
         {/* <div>
           <a href={require("../resources/file.pdf")} download="myFile" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0 font-merriweather">Resume</a>

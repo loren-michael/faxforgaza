@@ -73,7 +73,7 @@ function SenCard ({ senator }) {
       </h5>
       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200 font-merriweather">
         {senator.party}
-        {senator.photoUrl ? <img src={senator.photoUrl} alt="Official Portrait"/> : <></>}
+        {senator.photoUrl ? <img src={senator.photoUrl} alt="Official Portrait"/> : <> </>}
       </p>
       <p>Document preview:</p>
       <PDFViewer>
