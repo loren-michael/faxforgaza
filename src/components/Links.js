@@ -1,5 +1,4 @@
 import React from 'react'
-// import logo from '../resources/logo.jpg';
 
 function Links() {
 
@@ -24,7 +23,7 @@ function Links() {
                   <hr class="my-6 border-t border-gray-300"></hr>
 
 {/* FaxZero Sens */}
-<div class="mb-6">
+                <div class="mb-6">
                   <div class="flex justify-between">
                     <a href="https://faxzero.com/fax_senate.php" class="text-blue-500 font-bold">FaxZero Senators</a>
                   </div>
