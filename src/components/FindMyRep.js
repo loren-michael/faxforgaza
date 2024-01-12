@@ -1,15 +1,8 @@
-import React, { useContext } from 'react';
-import { SenatorContext } from '../context/SenatorStore';
-import { RepresentativeContext } from '../context/RepresentativeStore';
+import React from 'react';
 import logo from '../resources/logo.jpg';
 import Form from './Form';
-import RepCard from './RepCard';
-import SenCard from './SenCard';
-
 
 function FindMyRep () {
-  const [userSenators, setUserSenators] = useContext(SenatorContext);
-  const [userRepresentative, setUserRepresentative] = useContext(RepresentativeContext);
 
   return (
     <div>
@@ -27,8 +20,6 @@ function FindMyRep () {
           </div>
           <div class="col-span-4 sm:col-span-9">
               <div class="bg-white shadow rounded-lg p-6">
-                { userRepresentative ? userRepresentative.map(representative => {return (<RepCard representative={representative} />)}) : <></> }
-                { userSenators ? userSenators.map(senator => {return (<SenCard senator={senator}/>)}) : <></>}
                 <Form />
               </div>
           </div>

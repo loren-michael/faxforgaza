@@ -48,14 +48,27 @@ function Form () {
         })
             .then(r => {
                 if (r.ok) {
-                    r.json().then(data => setUserRepresentative(data.officials))
-                    // navigate("/representatives")
+                    r.json().then(data => setUserRepresentative(data.officials));
+                    navigate("/representatives");
                     
                     // r.json().then(data => console.log("full data", data, "just officials", data.officials))
                 } else {
                     r.json().then(data => setErrors(data.errors))
                 }
             })
+    }
+
+    function resetForm(e) {
+        e.preventDefault();
+        setName("");
+        setAddress({
+            line1: "",
+            city: "",
+            state: "",
+            zip: ""
+        });
+        setUserRepresentative([]);
+        setUserSenators([]);
     }
 
     return (
@@ -122,9 +135,9 @@ function Form () {
                                 onChange={ e => setAddress({...address, zip: e.target.value}) }
                             />
                         </div>
-                        {/* <span class="p-2">
-                            <button onClick={resetForm} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button>  
-                        </span> */}
+                        <span class="p-2">
+                            <button onClick={e => resetForm(e)} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button>  
+                        </span>
                         <div class="p-2">
                             <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Submit </button>
                         </div>
