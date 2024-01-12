@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import FindMyRep from "./components/FindMyRep";
+import RepDisplay from "./components/RepDisplay";
 import Links from "./components/Links";
 
 /**
@@ -12,16 +13,6 @@ import Links from "./components/Links";
  */
 
 export default function App() {
-  // const [userSenators, setUserSenators] = useState([]);
-  // const [userRepresentative, setUserRepresentative] = useState([]);
-  // const [official, setOfficial] = useState({})
-  // const [name, setName] = useState("");
-  // const [address, setAddress] = useState({
-  //     line1: "",
-  //     city: "",
-  //     state: "",
-  //     zip: ""
-  // });
 
   return (
     <BrowserRouter>
@@ -30,6 +21,7 @@ export default function App() {
         <Routes>
           <Route exact path="/" element={ <Home /> }/>
           <Route path="/findmyrep" element={ <FindMyRep /> } />
+          <Route path="/representatives" element={ <RepDisplay /> } />
           <Route path="/links" element={ <Links /> } />
         </Routes>
       </section>
