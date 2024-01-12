@@ -19,12 +19,11 @@ function RepDisplay() {
   }
 
   return (
-    <div> Test from repdisplay
+    <div>
       <div class="bg-blue-100">
         <div class="container mx-auto py-8">
           <div class="col-span-4 sm:col-span-9">
             <div class="bg-white shadow rounded-lg p-6">
-              <h3>Your local representative:</h3>
               <br></br>
                 {userRepresentative.map(representative => {
                   return (
@@ -32,8 +31,6 @@ function RepDisplay() {
                   )
                 })}
               <br></br>
-              <br></br>
-              <h3 class="text-xl font-bold mb-4 font-merriweather">Here are your state senators:</h3>
                 {userSenators.map(senator => {
                   return(
                     <SenCard senator={senator} />
