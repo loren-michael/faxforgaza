@@ -49,7 +49,7 @@ function Form () {
             .then(r => {
                 if (r.ok) {
                     r.json().then(data => setUserRepresentative(data.officials));
-                    navigate("/representatives");
+                    navigate("/myreps");
                     
                     // r.json().then(data => console.log("full data", data, "just officials", data.officials))
                 } else {
@@ -138,9 +138,9 @@ function Form () {
                         <span class="p-2">
                             <button onClick={e => resetForm(e)} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button>  
                         </span>
-                        <div class="p-2">
+                        <span class="p-2">
                             <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Submit </button>
-                        </div>
+                        </span>
                         
                     </form>
                 </div>

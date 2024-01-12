@@ -21,7 +21,7 @@ export default function App() {
         <Routes>
           <Route exact path="/" element={ <Home /> }/>
           <Route path="/findmyrep" element={ <FindMyRep /> } />
-          <Route path="/representatives" element={ <RepDisplay /> } />
+          <Route path="/myreps" element={ <RepDisplay /> } />
           <Route path="/links" element={ <Links /> } />
         </Routes>
       </section>
