@@ -36,9 +36,9 @@ function Links() {
 {/* Official Rep Lookup */}
                 <div class="mb-6">
                   <div class="flex justify-between">
-                    <a href="https://www.congress.gov/bill/118th-congress/house-resolution/786" class="text-blue-500 font-bold">House Resolution 786 Summary</a>
+                    <a href="https://www.congress.gov/members/find-your-member" class="text-blue-500 font-bold">Congress.gov Representative Lookup</a>
                   </div>
-                  <p class="mt-2">This link takes you to the official summary of House Resolution 786 introduced by Cori Bush (D-MO) on October 16, 2023.</p>
+                  <p class="mt-2">A government website for looking up your representatives as an alternative to using our form.</p>
                 </div>
 
                   <hr class="my-6 border-t border-gray-300"></hr>
