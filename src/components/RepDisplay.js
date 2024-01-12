@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import SenCard from './SenCard';
 import RepCard from './RepCard';
 import { useNavigate } from 'react-router-dom';
@@ -12,6 +12,11 @@ function RepDisplay() {
   const [userRepresentative, setUserRepresentative] = useContext(RepresentativeContext);
   const [userSenators, setUserSenators] = useContext(SenatorContext)
 
+  useEffect(() => {
+    if (userRepresentative.length === 0 && userSenators.length === 0) {
+      navigate("/findmyrep")
+    }
+  }, [])
 
   function handleNavToForm(e) {
     e.preventDefault();
