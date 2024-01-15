@@ -135,6 +135,8 @@ function Form () {
                                 onChange={ e => setAddress({...address, zip: e.target.value}) }
                             />
                         </div>
+                        <br></br>
+                        <br></br>
                         <span class="p-2">
                             <button onClick={e => resetForm(e)} class="bg-green-700 hover:bg-green-900 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button>  
                         </span>

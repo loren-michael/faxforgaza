@@ -42,7 +42,7 @@ function RepDisplay() {
                   )
                 })}
               <br></br>
-              <button type="button" onClick={e => handleNavToForm(e)} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light" > Back to Form </button>
+              <button type="button" onClick={e => handleNavToForm(e)} class="bg-green-700 hover:bg-green-900 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init data-te-ripple-color="light" > Back to Form </button>
             </div>
           </div>
         </div>
