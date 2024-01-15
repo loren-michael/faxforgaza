@@ -4,7 +4,7 @@ function Links() {
 
   return (
     <div>
-      <div class="bg-blue-100">
+      <div class="bg-green-100">
         <div class="container mx-auto py-8">
           <div class="col-span-4 sm:col-span-9">
               <div class="bg-white shadow rounded-lg p-6">
