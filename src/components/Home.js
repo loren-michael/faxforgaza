@@ -4,7 +4,7 @@ import Intro from "./Intro";
 
 function Home () {
   return (
-    <div class="h-full flex-grow">
+    <div class="h-screen flex-grow">
       <Intro />
     </div>
   )
