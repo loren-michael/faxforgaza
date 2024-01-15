@@ -83,7 +83,7 @@ function SenCard ({ senator }) {
       <div>
         <PDFDownloadLink document={<ThisSenatorLetter />} fileName={fileName} >
           {
-            <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init="false" data-te-ripple-color="dark"> Download Letter </button>
+            <button type="button" class="bg-green-700 hover:bg-green-900 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init="false" data-te-ripple-color="dark"> Download Letter </button>
           }
         </PDFDownloadLink>
       </div>

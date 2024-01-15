@@ -6,7 +6,7 @@ function FindMyRep () {
 
   return (
     <div>
-      <div class="bg-green-100">
+      <div class="h-screen flex-grow bg-green-100">
         <div class="container mx-auto py-8">
           <div class="grid grid-cols-1">
             {/* <div class="bg-white shadow rounded-lg p-6">

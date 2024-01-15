@@ -11,7 +11,7 @@ function Downloads () {
 
     return (
         <div>
-            <div class="bg-green-100">
+            <div class="h-screen flex-grow bg-green-100">
                 <div class="container mx-auto py-8">
                     <div class="grid grid-cols-1">
                         <div class="col-span-4 sm:col-span-3">
@@ -45,7 +45,7 @@ function Downloads () {
                                 {/* { userSenators ? userSenators.map(senator => {return (<SenCard senator={senator}/>)}) : <></>} */}
 
                                 <div> 
-                                    <button onClick={findmyreps} class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded"> Look Up Your Representatives </button>
+                                    <button onClick={findmyreps} class="bg-green-700 hover:bg-green-900 text-white font-merriweather font-bold py-2 px-4 rounded"> Look Up Your Representatives </button>
                                 </div>
 
                                 <hr class="my-6 border-t border-gray-300"></hr>
@@ -53,10 +53,10 @@ function Downloads () {
                                 <h2 class="text-xl font-bold mt-6 mb-4">Blank Form PDF Downloads</h2>
                                 <div class="mb-6">
                                     <div class="flex justify-between">
-                                        <span class="text-blue-500 font-bold">Letter to your House Representative</span>
+                                        <span class="text-green-800 font-bold">Letter to your House Representative</span>
                                         <span>
                                             <div>
-                                                <a href={require("../resources/BlankHouseRepLetter.pdf")} download="myFile" class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded">Download</a>
+                                                <a href={require("../resources/BlankHouseRepLetter.pdf")} download="myFile" class="bg-green-700 hover:bg-green-900 text-white font-merriweather font-bold py-2 px-4 rounded">Download</a>
                                             </div>
                                         </span>
                                     </div>
@@ -65,10 +65,10 @@ function Downloads () {
                                 </div>
                                 <div class="mb-6">
                                     <div class="flex justify-between">
-                                        <span class="text-blue-500 font-bold">Letter to your State Senators</span>
+                                        <span class="text-green-800 font-bold">Letter to your State Senators</span>
                                         <span>
                                             <div>
-                                                <a href={require("../resources/BlankSenatorLetter.pdf")} download="myFile" class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded">Download</a>
+                                                <a href={require("../resources/BlankSenatorLetter.pdf")} download="myFile" class="bg-green-700 hover:bg-green-900 text-white font-merriweather font-bold py-2 px-4 rounded">Download</a>
                                             </div>
                                         </span>
                                     </div>

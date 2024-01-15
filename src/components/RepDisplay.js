@@ -25,7 +25,7 @@ function RepDisplay() {
 
   return (
     <div>
-      <div class="bg-green-100">
+      <div class="h-screen flex-grow bg-green-100">
         <div class="container mx-auto py-8">
           <div class="col-span-4 sm:col-span-9">
             <div class="bg-white shadow rounded-lg p-6">

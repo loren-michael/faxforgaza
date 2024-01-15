@@ -136,10 +136,10 @@ function Form () {
                             />
                         </div>
                         <span class="p-2">
-                            <button onClick={e => resetForm(e)} class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button>  
+                            <button onClick={e => resetForm(e)} class="bg-green-700 hover:bg-green-900 text-white font-bold font-merriweather py-2 px-4 rounded"> Reset </button>  
                         </span>
                         <span class="p-2">
-                            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold font-merriweather py-2 px-4 rounded"> Submit </button>
+                            <button type="submit" class="bg-green-700 hover:bg-green-900 text-white font-bold font-merriweather py-2 px-4 rounded"> Submit </button>
                         </span>
                         
                     </form>
