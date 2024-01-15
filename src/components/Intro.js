@@ -68,7 +68,7 @@ function Downloads () {
                                         <span class="text-blue-500 font-bold">Letter to your State Senators</span>
                                         <span>
                                             <div>
-                                                <a href={require("../resources/BlankSenLetter.pdf")} download="myFile" class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded">Download</a>
+                                                <a href={require("../resources/BlankSenatorLetter.pdf")} download="myFile" class="bg-blue-500 hover:bg-blue-700 text-white font-merriweather font-bold py-2 px-4 rounded">Download</a>
                                             </div>
                                         </span>
                                     </div>
