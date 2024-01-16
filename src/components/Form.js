@@ -77,7 +77,7 @@ function Form () {
             <div class="mb-6">
                 <div class="flex justify-between">
                     {errors.map(err => {
-                        return (<p>{err.message}</p>)
+                        return (<p>{err.message}error</p>)
                     })}
                     <form onSubmit={handleSubmit}>
                         <div class="md:col-span-5">
