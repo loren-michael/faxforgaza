@@ -108,6 +108,7 @@ function Form () {
         //     })
         console.log(userRepresentative);
         console.log(userSenators);
+        navigate("/myreps")
     }
 
     function resetForm(e) {
