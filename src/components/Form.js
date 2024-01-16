@@ -21,6 +21,8 @@ function Form () {
 
     function handleSubmit(e) {
         e.preventDefault();
+        console.log(userRepresentative)
+        console.log(userSenators)
         // SENATOR LOOKUP
         const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
         fetch(repLookupURL + addressParams + senatorParams, {
@@ -49,13 +51,13 @@ function Form () {
             .then(r => {
                 if (r.ok) {
                     r.json().then(data => setUserRepresentative(data.officials));
-                    navigate("/myreps");
-                    
                     // r.json().then(data => console.log("full data", data, "just officials", data.officials))
                 } else {
                     r.json().then(data => setErrors(data.errors))
                 }
             })
+        console.log(userRepresentative)
+        console.log(userSenators)
     }
 
     function resetForm(e) {
@@ -77,7 +79,7 @@ function Form () {
             <div class="mb-6">
                 <div class="flex justify-between">
                     {errors.map(err => {
-                        return (<p>{err.message}error</p>)
+                        return (<p>{err.message}</p>)
                     })}
                     <form onSubmit={handleSubmit}>
                         <div class="md:col-span-5">
