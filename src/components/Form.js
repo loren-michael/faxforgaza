@@ -19,6 +19,23 @@ function Form () {
     const [userRepresentative, setUserRepresentative] = useContext(RepresentativeContext);
 
 
+
+    // function handleFavorite() {
+    //     setFavorite(function (favorite) {
+    //         const newFavorite = !favorite;
+    //         return newFavorite;
+    //     })
+    // };
+
+    function handleSenSet(data) {
+        setUserSenators(function (userSenators) {
+            const sens = data.officials
+            return sens
+        })
+    }
+
+
+
     function handleSubmit(e) {
         e.preventDefault();
         console.log(userRepresentative)
@@ -34,7 +51,8 @@ function Form () {
         })
             .then(r => {
                 if (r.ok) {
-                    r.json().then(data => setUserSenators(data.officials))
+                    r.json().then(data => handleSenSet(data))
+                    console.log(userSenators)
                     // r.json().then(data => console.log("full data", data, "just officials", data.officials))
                 } else {
                     r.json().then(data => setErrors(data.errors))
