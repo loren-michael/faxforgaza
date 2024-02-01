@@ -19,15 +19,53 @@ function Form () {
     const [userRepresentative, setUserRepresentative] = useContext(RepresentativeContext);
 
 
-
-    // function handleFavorite() {
-    //     setFavorite(function (favorite) {
-    //         const newFavorite = !favorite;
-    //         return newFavorite;
+    // function handleSenFetch() {
+    //     const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
+    //     fetch(repLookupURL + addressParams + senatorParams, {
+    //         method: "GET",
+    //         headers: {
+    //             "content-type": "application/json",
+    //             "accept": "application/json"
+    //         }
     //     })
-    // };
+    //         .then(r => {
+    //             if (r.ok) {
+    //                 r.json().then(data => setUserSenators(data.officials))
+    //                 // r.json().then(data => console.log("full data", data, "just officials", data.officials))
+    //             } else {
+    //                 r.json().then(data => setErrors(data.errors))
+    //             }
+    //     })
+    // }
 
-    function handleSenFetch() {
+    // function handleRepFetch() {
+    //     const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
+    //     fetch(repLookupURL + addressParams + repParams, {
+    //         method: "GET",
+    //         headers: {
+    //             "content-type": "application/json",
+    //             "accept": "application/json"
+    //         }
+    //     })
+    //         .then(r => {
+    //             if (r.ok) {
+    //                 r.json().then(data => setUserRepresentative(data.officials));
+    //                 // r.json().then(data => console.log("full data", data, "just officials", data.officials))
+    //             } else {
+    //                 r.json().then(data => setErrors(data.errors))
+    //             }
+    //     })
+    // }
+
+
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        // console.log(userRepresentative);
+        // console.log(userSenators);
+        // handleSenFetch();
+        // handleRepFetch();
+        // SENATOR LOOKUP
         const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
         fetch(repLookupURL + addressParams + senatorParams, {
             method: "GET",
@@ -43,11 +81,8 @@ function Form () {
                 } else {
                     r.json().then(data => setErrors(data.errors))
                 }
-        })
-    }
-
-    function handleRepFetch() {
-        const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
+            })
+        // REPRESENTATIVE LOOKUP
         fetch(repLookupURL + addressParams + repParams, {
             method: "GET",
             headers: {
@@ -62,52 +97,9 @@ function Form () {
                 } else {
                     r.json().then(data => setErrors(data.errors))
                 }
-        })
-    }
-
-
-
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log(userRepresentative);
-        console.log(userSenators);
-        handleSenFetch();
-        handleRepFetch();
-        // SENATOR LOOKUP
-        // const addressParams = "%" + address.line1.replaceAll(" ", "%20") + "%20" + address.city + "%20" + address.state + "%20" + address.state + "%20" + address.zip
-        // fetch(repLookupURL + addressParams + senatorParams, {
-        //     method: "GET",
-        //     headers: {
-        //         "content-type": "application/json",
-        //         "accept": "application/json"
-        //     }
-        // })
-        //     .then(r => {
-        //         if (r.ok) {
-        //             r.json().then(data => setUserSenators(data.officials))
-        //             // r.json().then(data => console.log("full data", data, "just officials", data.officials))
-        //         } else {
-        //             r.json().then(data => setErrors(data.errors))
-        //         }
-        //     })
-        // REPRESENTATIVE LOOKUP
-        // fetch(repLookupURL + addressParams + repParams, {
-        //     method: "GET",
-        //     headers: {
-        //         "content-type": "application/json",
-        //         "accept": "application/json"
-        //     }
-        // })
-        //     .then(r => {
-        //         if (r.ok) {
-        //             r.json().then(data => setUserRepresentative(data.officials));
-        //             // r.json().then(data => console.log("full data", data, "just officials", data.officials))
-        //         } else {
-        //             r.json().then(data => setErrors(data.errors))
-        //         }
-        //     })
-        console.log(userRepresentative);
-        console.log(userSenators);
+            })
+        // console.log(userRepresentative);
+        // console.log(userSenators);
         navigate("/myreps")
     }
 
