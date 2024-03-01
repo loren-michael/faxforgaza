@@ -80,18 +80,18 @@ function RepCard ({ representative }) {
         <ThisRepresentativeLetter />
       </PDFViewer>
       <br></br>
-      <div>
+      <span>
         <PDFDownloadLink document={<ThisRepresentativeLetter />} fileName={fileName} >
           {
             <button type="button" class="bg-green-700 hover:bg-green-900 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init="false" data-te-ripple-color="dark"> Download Letter </button>
           }
         </PDFDownloadLink>
         <div>
-          <a href="https://faxzero.com/fax_congress.php" class="text-green-800 font-bold">
+          <a href="https://faxzero.com/fax_congress.php" class="text-green-800 font-bold" target="_blank" rel="noopener noreferrer">
             <button type="button" class="bg-green-700 hover:bg-green-900 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init="false" data-te-ripple-color="dark"> FaxZero Representative List </button>
           </a>
         </div>
-      </div>
+      </span>
       <br></br>
     </div>
   )
