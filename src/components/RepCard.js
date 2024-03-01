@@ -7,6 +7,8 @@ function RepCard ({ representative }) {
   const [name, setName] = useContext(NameContext);
   const [address, setAddress] = useContext(AddressContext);
 
+  Font.registerHyphenationCallback(word => [word]);
+  
   const styles = StyleSheet.create({
     page: {
       flexDirection: 'row'
