@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Document, Page, Text, View, StyleSheet, PDFViewer, PDFDownloadLink } from '@react-pdf/renderer';
+import { Document, Page, Text, View, StyleSheet, PDFViewer, PDFDownloadLink, Font } from '@react-pdf/renderer';
 import { NameContext } from '../context/NameStore';
 import { AddressContext } from '../context/AddressStore';
 
