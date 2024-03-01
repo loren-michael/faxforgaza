@@ -87,7 +87,7 @@ function SenCard ({ senator }) {
           }
         </PDFDownloadLink>
         <div>
-          <a href="https://faxzero.com/senate.php" class="text-green-800 font-bold" target="_blank" rel="noopener noreferrer">
+          <a href="https://faxzero.com/fax_senate.php" class="text-green-800 font-bold" target="_blank" rel="noopener noreferrer">
             <button type="button" class="bg-green-700 hover:bg-green-900 text-white font-bold font-merriweather p-2 rounded justify-center" data-te-ripple-init="false" data-te-ripple-color="dark"> FaxZero Senator List </button>
           </a>
         </div>
