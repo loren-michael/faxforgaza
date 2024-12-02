@@ -18,7 +18,8 @@
     "react-scripts": "3.3.1",
     "react-to-pdf": "^1.0.1",
     "react-youtube": "^10.1.0",
-    "serve": "^11.3.2"
+    "serve": "^11.3.2",
+    "yoga-layout": "^3.1.0"
   },
   "scripts": {
     "start": "NODE_OPTIONS=--openssl-legacy-provider sammy.js; serve -s _static -l tcp://0.0.0.0:$PORT -n --openssl-legacy-provider",
